@@ -1,0 +1,86 @@
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+  --white : #FFFFFF;
+  --gray-1: #6F6F6F;
+  --gray-2: #CCCCCC;
+  --gray-3: #C4C4C4;;
+  --gray-4: #999999;
+  --gray-5: #808080;
+  --gray-6: #666666;
+  --gray-7: #4D4D4D;
+  --gray-8: #333333;
+  --gray-9: #1A1A1A;
+  --black : #000000;
+  
+  --bright-red: #eb5757;
+  --dark-red: #660101;
+
+  --fonts-1: "DM Serif Display", sans-serif;
+  --fonts-2: "Inter", sans-serif;
+}
+
+html {
+  font-size      : 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position  : relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg, img {
+  vertical-align: middle;
+}
+
+button {
+  border          : 0;
+  background-color: transparent;
+  cursor          : auto;
+}
+
+input,
+textarea,
+select {
+  border: 0;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin     : 0;
+  font-family: inherit;
+  font-size  : inherit;
+  line-height: inherit;
+}
