@@ -76,6 +76,9 @@
     border-radius: 0.8rem;
     margin-left: 1.4rem;
 }
+.btn:hover{
+    cursor: pointer;
+}
 
 .nav-item .propery-fee{
     color: var(--white);
