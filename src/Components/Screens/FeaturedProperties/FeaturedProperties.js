@@ -18,7 +18,7 @@ export default function FeaturedProperties() {
             <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={2}
+        spaceBetween={20}
         freeMode={true}
         pagination={{
           clickable: true,
