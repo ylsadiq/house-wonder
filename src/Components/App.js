@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Partials/Section/Footer/Footer';
 import NavBar from './Partials/Section/NavBar/NavBar';
 import Banner from './Screens/Banner/Banner';
 import FeaturedProperties from './Screens/FeaturedProperties/FeaturedProperties';
@@ -15,6 +16,7 @@ function App() {
         <FeaturedProperties />
         <LuxuryProperty />
         <LookingProperty />
+        <Footer />
     </div>
   );
 }
