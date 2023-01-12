@@ -1,0 +1,43 @@
+.quote-icon {
+    width: 4rem !important;
+    height: 4rem;
+    display: inline-block !important;
+    margin-bottom: 2.1rem;
+}
+.testmonial-card {
+    border: none;
+    border-radius: 1.6rem;
+    background-color: var(--white);
+    padding: 5rem 4rem;
+    max-width: 45.3rem;
+    margin: auto;
+}
+.testmonial-card p {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    color: var(--gray-1);
+    padding-bottom: 7.9rem;
+    border-bottom: 0.1rem solid var(--gray-2);
+    margin-bottom: 4rem;
+}
+.testmonial-user {
+    display: flex;
+    align-items: center;
+}
+.testmonial-user h5 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--black);
+    letter-spacing: -0.01em;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.testmonial-user h6 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--gray-1);
+    padding-left: 1.2rem;
+}
