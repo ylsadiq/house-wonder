@@ -1,0 +1,35 @@
+.Looking-property{
+    padding-top: 10rem;
+}
+.custom-container {
+    max-width: 118rem;
+    width: 100%;
+    padding: 10rem 0;
+    margin: auto;
+}
+.looking-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    background-color: var(--black);
+    border-radius: 3.2rem;
+    padding: 7rem 7rem;
+}
+.looking-content-details{
+    align-self: center;
+}
+.looking-content-details h3{
+    font-family: var(--fonts-1);
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 7rem;
+    color: var(--white);
+}
+.looking-content-details p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--gray-3);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
