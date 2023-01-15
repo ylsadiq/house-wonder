@@ -41,21 +41,54 @@ function Testimonial() {
                 </div>
             </div>
         </SwiperSlide>
-        <SwiperSlide>we promised was it delivered. There is a minor Communication issues. Being not
-                                communicated timely. The experience was really fun and rewarding. I would definitey
-                                recommend to everyone.</SwiperSlide>
-        <SwiperSlide>They promised was it delivered. There is a minor Communication issues. Being not
-                                communicated timely. The experience was really fun and rewarding. I would definitey
-                                recommend to everyone.</SwiperSlide>
-        <SwiperSlide>we promised was it delivered. There is a minor Communication issues. Being not
-                                communicated timely. The experience was really fun and rewarding. I would definitey
-                                recommend to everyone.</SwiperSlide>
-        <SwiperSlide>They promised was it delivered. There is a minor Communication issues. Being not
-                                communicated timely. The experience was really fun and rewarding. I would definitey
-                                recommend to everyone.</SwiperSlide>
-        <SwiperSlide>we promised was it delivered. There is a minor Communication issues. Being not
-                                communicated timely. The experience was really fun and rewarding. I would definitey
-                                recommend to everyone.</SwiperSlide>
+        <SwiperSlide>
+        <div class="card testmonial-card">
+                <img class="quote-icon" src={quoteIcon} alt="" />
+                <p>They promised was it delivered. There is a minor Communication issues. Being not
+                    communicated timely. The experience was really fun and rewarding. I would definitey
+                    recommend to everyone.</p>
+
+                <div class="testmonial-user">
+                    <div><img src={avater} alt="" /></div>
+                    <div>
+                        <h5>Shaon Minhaj</h5>
+                        <h6>Happy Customer</h6>
+                    </div>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="card testmonial-card">
+                <img class="quote-icon" src={quoteIcon} alt="" />
+                <p>They promised was it delivered. There is a minor Communication issues. Being not
+                    communicated timely. The experience was really fun and rewarding. I would definitey
+                    recommend to everyone.</p>
+
+                <div class="testmonial-user">
+                    <div><img src={avater} alt="" /></div>
+                    <div>
+                        <h5>Shaon Minhaj</h5>
+                        <h6>Happy Customer</h6>
+                    </div>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="card testmonial-card">
+                <img class="quote-icon" src={quoteIcon} alt="" />
+                <p>They promised was it delivered. There is a minor Communication issues. Being not
+                    communicated timely. The experience was really fun and rewarding. I would definitey
+                    recommend to everyone.</p>
+
+                <div class="testmonial-user">
+                    <div><img src={avater} alt="" /></div>
+                    <div>
+                        <h5>Shaon Minhaj</h5>
+                        <h6>Happy Customer</h6>
+                    </div>
+                </div>
+            </div>
+            </SwiperSlide>
       </Swiper>
     </>
             </div>
