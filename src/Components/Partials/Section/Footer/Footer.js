@@ -16,7 +16,7 @@ function Footer() {
                 <div className="footer-content">
                 <div className="social-home">
                     <a href=""><img src={whiteLogo} alt="" /></a>
-                    <div class="social-link">
+                    <div className="social-link">
                         <a href="#">
                             <img src={facebook} alt="" />
                         </a>
@@ -55,10 +55,10 @@ function Footer() {
                 </div>
                 </div>
                 <div className="copyright-content">
-                <div class="copyright">
+                <div className="copyright">
                         ©
                         Copyright 2020 - 2021
-                        <span class="dot"></span>
+                        <span className="dot"></span>
                         All rights reserved by Bastu
                     </div>
                 </div>

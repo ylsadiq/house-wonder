@@ -1,0 +1,135 @@
+.advance-search-sticky{
+    position: fixed;
+    top: 9.9rem;
+    left: 0;
+    right: 0;
+    transition: .3s;
+    z-index: 1020;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: var(--white);
+    border: 1px solid var(--gray-2);
+    padding: 0 4rem;
+}
+.advance-search-content{
+    position: relative;
+}
+.advance-search .adv-search-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    border-radius: 1.2rem;
+    padding: 1.2rem 1.2rem 1.2rem 3rem;
+}
+.advance-search-input{
+    position: relative;
+    
+}
+.advance-search-input input{
+        padding: 1.6rem 1.6rem 1.6rem 2.7rem;
+        width: 80rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--gray-1);
+        border: none;
+}
+.advance-search-input img {
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.advance-btn{
+    background: var(--black);
+    color: var(--white);
+    padding: 1.3rem 2rem;
+}
+
+.advance-search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.advance-content{
+    padding: 1rem ;
+}
+.advance-content .searchSelect{
+    width: 100%;
+}
+.advance-search-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+}
+/* .advance-selector{
+
+} */
+.advance-select{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+.form-floating {
+    position: relative;
+}
+
+.formSearch .searchSelect {
+    height: calc(6rem + 1rem);
+    padding-left: 2rem;
+    padding-right: 2.2rem;
+    padding-top: 2.2rem;
+    
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--gray-1);
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    transition: all ease-in-out .1sec;
+}
+
+.formSearch:hover .searchSelect{
+    border: 2px solid var(--gray-2);
+    cursor: pointer;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 0;
+    left: 1.8rem;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--gray-4);
+}
+.form-input{
+    height: calc(6rem + 1rem);
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    border: 2px solid var(--gray-2);
+    border-radius: 1rem;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.form-input label{
+    font-weight: normal;
+    font-size: 1.6rem !important;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+    padding: 2.7rem 2.4rem;
+}

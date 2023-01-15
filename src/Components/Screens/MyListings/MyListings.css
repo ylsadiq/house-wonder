@@ -1,0 +1,160 @@
+.mylistings-section{
+    padding-top: 10rem;
+}
+.mylistings-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card-bg {
+    /* filter: drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05)); */
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 1.6rem;
+    border: none;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.result-title {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    margin-bottom: 3.6rem;
+}
+.result-title span:first-child {
+    font-weight: normal;
+    color: var(--gray-4);
+}
+.result-title span:nth-child(2) {
+    font-weight: bold;
+    color: var(--black);
+}
+.my-listing-items{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap:40px;
+}
+
+.items-img{
+    border: none;
+    overflow: hidden;
+    max-height: 600px;
+    height: 350px;
+    position: relative;
+}
+.items-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.property-tag {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+.property-tag span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 0.4rem 0.8rem;
+    background-color: var(--white);
+    border: 0.1rem solid var(--black);
+    border-radius: 0.4rem;
+}
+.items-details{
+    padding: 2rem;
+}
+.propertyId {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--black);
+    /* margin-bottom: 2rem; */
+}
+.horizontalGps{
+    display: flex;
+    justify-content: space-between;
+}
+.propertyCardbody h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--black);
+    margin-bottom: 0.6rem;
+}
+.propertyCardbody p {
+    font-weight: normal;
+    font-size: 1.74rem;
+    line-height: 2rem;
+    color: var(--gray-1);
+    min-height: 50px;
+}
+.propertyCardbody ul {
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 0.1rem solid var(--gray-2);
+    min-height: 112px;
+}
+.propertyCardbody ul li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    color: var(--black);
+    padding-right: 2.8rem;
+    position: relative;
+}
+.propertyCardbody ul li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    color: var(--black);
+    padding-right: 2.8rem;
+    position: relative;
+}
+.propertyCardbody ul li::after {
+    content: '';
+    position: absolute;
+    height: 0.4rem;
+    width: 0.4rem;
+    background-color: var(--black);
+    border-radius: 50%;
+    right: 0.8rem;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.propertyCardbody ul li:last-child:after {
+    background-color: transparent;
+}
+.propertyCardbody h6 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+}
+.propertyCardbody h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.03em;
+    color: var(--black);
+}
+
+.my-listing-map{
+    position: sticky;
+    top: 10.1rem;
+}
+.property-map{
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 10.1rem);
+}

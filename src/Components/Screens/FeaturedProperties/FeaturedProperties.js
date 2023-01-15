@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import 'swiper/swiper-bundle.css';
 import { FreeMode } from "swiper";
+import { Link } from 'react-router-dom';
 
 export default function FeaturedProperties() {
   return (
@@ -37,12 +38,12 @@ export default function FeaturedProperties() {
           }}
       >
         <SwiperSlide>
-            <a className="slider-img-wrapper card">
+            <Link className="slider-img-wrapper card">
             <img src={slider1} alt="" />
             <div className="property-tag">
                 <span>verified</span>
             </div>
-            <div class="property-card-body">
+            <div className="property-card-body">
                 <h1>Luxurious Apartment</h1>
                 <p><img src={location} alt="" />
                 Gulshan 1, Dhaka,Gulshan 1, Dhaka,Gulshan 1, Dhaka</p>
@@ -59,15 +60,15 @@ export default function FeaturedProperties() {
                 <h2>Tk. 2,00,00,000</h2>
 
             </div>
-            </a>
+            </Link>
             </SwiperSlide>
         <SwiperSlide>
-            <a className="slider-img-wrapper card">
+            <Link className="slider-img-wrapper card">
             <img src={slider1} alt="" />
             <div className="property-tag">
                 <span>verified</span>
             </div>
-            <div class="property-card-body">
+            <div className="property-card-body">
                 <h1>Luxurious Apartment</h1>
                 <p><img src={location} alt="" />
                 Gulshan 1, Dhaka,Gulshan 1, Dhaka,Gulshan 1, Dhaka</p>
@@ -84,15 +85,15 @@ export default function FeaturedProperties() {
                 <h2>Tk. 2,00,00,000</h2>
 
             </div>
-            </a>
+            </Link>
             </SwiperSlide>
         <SwiperSlide>
-            <a className="slider-img-wrapper card">
+            <Link className="slider-img-wrapper card">
             <img src={slider1} alt="" />
             <div className="property-tag">
                 <span>verified</span>
             </div>
-            <div class="property-card-body">
+            <div className="property-card-body">
                 <h1>Luxurious Apartment</h1>
                 <p><img src={location} alt="" />
                 Gulshan 1, Dhaka,Gulshan 1, Dhaka,Gulshan 1, Dhaka</p>
@@ -109,15 +110,15 @@ export default function FeaturedProperties() {
                 <h2>Tk. 2,00,00,000</h2>
 
             </div>
-            </a>
+            </Link>
             </SwiperSlide>
         <SwiperSlide>
-            <a className="slider-img-wrapper">
+            <Link className="slider-img-wrapper">
             <img src={slider1} alt="" />
             <div className="property-tag">
                 <span>verified</span>
             </div>
-            <div class="property-card-body">
+            <div className="property-card-body">
                 <h1>Luxurious Apartment</h1>
                 <p><img src={location} alt="" />
                 Gulshan 1, Dhaka,Gulshan 1, Dhaka,Gulshan 1, Dhaka</p>
@@ -134,7 +135,7 @@ export default function FeaturedProperties() {
                 <h2>Tk. 2,00,00,000</h2>
 
             </div>
-            </a>
+            </Link>
             </SwiperSlide>
       </Swiper>
     </>

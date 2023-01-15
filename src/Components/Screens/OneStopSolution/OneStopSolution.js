@@ -9,8 +9,8 @@ function OneStopSolution() {
             <h1 className='section-title'>One Stop Property Solution</h1>
             <div className="card-item">
             <div className="card-container">
-                <div class="card property-soul-card">
-                        <div class="card-body">
+                <div className="card property-soul-card">
+                        <div className="card-body">
                             <h2>
                                 Buy/Sell/Rent 
                                <span className='card-wrap'> for Free</span>
@@ -19,8 +19,8 @@ function OneStopSolution() {
                             <img src={soul} alt="" />
                         </div>
                     </div>
-                <div class="card property-soul-card">
-                        <div class="card-body">
+                <div className="card property-soul-card">
+                        <div className="card-body">
                             <h2>
                                 Buy/Sell/Rent 
                                <span className='card-wrap'> for Free</span>
@@ -29,8 +29,8 @@ function OneStopSolution() {
                             <img src={soul} alt="" />
                         </div>
                     </div>
-                <div class="card property-soul-card">
-                        <div class="card-body">
+                <div className="card property-soul-card">
+                        <div className="card-body">
                             <h2>
                                 Buy/Sell/Rent 
                                <span className='card-wrap'> for Free</span>

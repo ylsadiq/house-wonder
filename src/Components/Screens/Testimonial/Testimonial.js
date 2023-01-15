@@ -14,7 +14,7 @@ function Testimonial() {
     <section className="testimonial">
         <div className="container-fluid">
             <div className="custom-container">
-                <h1 class="section-title">What Our Customers
+                <h1 className="section-title">What Our Customers
                     <span className='luxury'>Say About Us</span></h1>
                     <>
       <Swiper
@@ -26,13 +26,13 @@ function Testimonial() {
         className="mySwiper"
       >
         <SwiperSlide> 
-            <div class="card testmonial-card">
-                <img class="quote-icon" src={quoteIcon} alt="" />
+            <div className="card testmonial-card">
+                <img className="quote-icon" src={quoteIcon} alt="" />
                 <p>They promised was it delivered. There is a minor Communication issues. Being not
                     communicated timely. The experience was really fun and rewarding. I would definitey
                     recommend to everyone.</p>
 
-                <div class="testmonial-user">
+                <div className="testmonial-user">
                     <div><img src={avater} alt="" /></div>
                     <div>
                         <h5>Shaon Minhaj</h5>
@@ -42,13 +42,13 @@ function Testimonial() {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div class="card testmonial-card">
-                <img class="quote-icon" src={quoteIcon} alt="" />
+        <div className="card testmonial-card">
+                <img className="quote-icon" src={quoteIcon} alt="" />
                 <p>They promised was it delivered. There is a minor Communication issues. Being not
                     communicated timely. The experience was really fun and rewarding. I would definitey
                     recommend to everyone.</p>
 
-                <div class="testmonial-user">
+                <div className="testmonial-user">
                     <div><img src={avater} alt="" /></div>
                     <div>
                         <h5>Shaon Minhaj</h5>
@@ -58,13 +58,13 @@ function Testimonial() {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div class="card testmonial-card">
-                <img class="quote-icon" src={quoteIcon} alt="" />
+        <div className="card testmonial-card">
+                <img className="quote-icon" src={quoteIcon} alt="" />
                 <p>They promised was it delivered. There is a minor Communication issues. Being not
                     communicated timely. The experience was really fun and rewarding. I would definitey
                     recommend to everyone.</p>
 
-                <div class="testmonial-user">
+                <div className="testmonial-user">
                     <div><img src={avater} alt="" /></div>
                     <div>
                         <h5>Shaon Minhaj</h5>
@@ -74,13 +74,13 @@ function Testimonial() {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div class="card testmonial-card">
-                <img class="quote-icon" src={quoteIcon} alt="" />
+          <div className="card testmonial-card">
+                <img className="quote-icon" src={quoteIcon} alt="" />
                 <p>They promised was it delivered. There is a minor Communication issues. Being not
                     communicated timely. The experience was really fun and rewarding. I would definitey
                     recommend to everyone.</p>
 
-                <div class="testmonial-user">
+                <div className="testmonial-user">
                     <div><img src={avater} alt="" /></div>
                     <div>
                         <h5>Shaon Minhaj</h5>
