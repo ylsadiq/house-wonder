@@ -5,7 +5,8 @@ function Packages() {
   return (
     <section className="packages">
         <div className="container-fluid">
-        <h1 class="section-title">Packages</h1>
+            <div className="package-container">
+            <h1 class="section-title">Packages</h1>
         <h1 class="package-subTitle"> Upto 3000 sqft area</h1>
         <div className="package-card">
         <div class="card package-card-update">
@@ -81,6 +82,7 @@ function Packages() {
             </div>
         </div>
         </div>
+            </div>
         </div>
     </section>
   )

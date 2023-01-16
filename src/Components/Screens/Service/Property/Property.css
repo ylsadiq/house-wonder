@@ -1,0 +1,48 @@
+.property-content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.property-content h2{
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'DM Serif Display', serif;
+}
+.service-banner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: #fff;
+    border: 0.1rem solid #e8e8e8;
+    border-radius: 1.6rem;
+    background-clip: padding-box;
+    text-align: left;
+}
+.property-item-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.property-details{
+    display: flex;
+    align-self: center;
+    padding: 6rem;
+}
+.property-link{
+    text-decoration: none;
+    color: var(--gray-9);
+}
+.property-link button{
+    border: 1px solid var(--black);
+}
+.property-details h6{
+    font-size: 2.3rem;
+    padding-bottom: 3rem;
+}
+.property-img {
+    width: 550px;
+    max-width: 600px;
+}
+.property-img img{
+    width: 100%;
+}

@@ -5,6 +5,7 @@ import NavBar from './Partials/Section/NavBar/NavBar';
 import Buy from './Screens/Buy/Buy';
 import Home from './Screens/Home/Home';
 import Packages from './Screens/Packages/Packages';
+import Service from './Screens/Service/Service';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/home" element={<Home />}/>
         <Route path="/buy" element={<Buy />}/>
         <Route path="/packages" element={<Packages />}/>
+        <Route path="/service" element={<Service />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
