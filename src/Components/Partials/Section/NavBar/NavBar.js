@@ -20,9 +20,9 @@ function NavBar() {
                 </div>
             <div className="right_menu">
             <ul className="navbar-nav">
-                    <li className="nav-item"><Link className="nav-link" to="">Packages</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to="">Service</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to="">contact</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/service">Service</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/contact">contact</Link></li>
                     <li className="nav-item"><button className='login btn'>Log In</button></li>
                 </ul>
             </div>
