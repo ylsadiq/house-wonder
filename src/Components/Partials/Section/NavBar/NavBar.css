@@ -7,7 +7,7 @@
 }
 .bg-light {
     background-color: var(--white);
-    border-bottom: 1px solid var(--gray2);
+    border-bottom: 1px solid var(--gray-2);
 }
 .container-fluid {
     max-width: 1260px;
@@ -19,7 +19,7 @@
     grid-template-columns: 70px 1fr 1fr;
     gap: 10px;
     padding: 2rem 4rem;
-    font-family: var(--fonts-2);
+    font-family: "Inter", sans-serif;
 }
 .navbar-brand{
     display: block;
@@ -64,6 +64,19 @@
     line-height: 1.6rem;
     color: var(--gray-1);
     padding: 1.4rem 2.5rem;
+}
+#dropdown-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dropdown-toggle{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 0rem;
+    height: 7rem;
 }
 
 .btn{
