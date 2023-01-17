@@ -22,7 +22,7 @@ function Service() {
                     <div className="services-details">
                     <h3>Introducing</h3>
                     <h1>Property Services</h1>
-                    <p class="one-para">One-stop destination for all your property-related needs</p>
+                    <p className="one-para">One-stop destination for all your property-related needs</p>
                     <div className="service-box">
 
                     <div className="service-list">
@@ -68,7 +68,7 @@ function Service() {
 
                     </div>
                     
-                    <p class="service-property-details">You can post your property on our website for free
+                    <p className="service-property-details">You can post your property on our website for free
                         or
                         you can subscribe to one of our packages to sell/rent your property faster.
                     </p>

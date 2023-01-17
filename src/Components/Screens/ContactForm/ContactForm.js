@@ -7,8 +7,8 @@ function ContactForm() {
         <div className="container-fluid">
         <div className="contact-container">
             <div className="contact-details">
-            <h1 class="section-title pb-1">Contact Us</h1>
-            <p class="section-description">With a question or conern</p>
+            <h1 className="section-title pb-1">Contact Us</h1>
+            <p className="section-description">With a question or conern</p>
             </div>
             <form className='contact-info'>
                 <div className="contact-input">
@@ -27,7 +27,7 @@ function ContactForm() {
                         {/* <p className="error" htmlFor="contact_email">Please enter at least 11 characters.</p> */}
                     </div>
                     <div className="form-floation">
-                    <select class="form-select" name="contact_regarding">
+                    <select className="form-select" name="contact_regarding">
                                 <option value="">Select</option>
                                 <option value="property">Property</option>
                                 <option value="package">Package</option>
@@ -35,11 +35,11 @@ function ContactForm() {
                             </select>
                     </div>
                     <div className="form-floation">
-                    <textarea class="form-control" placeholder="Your Message" spellCheck="false"></textarea>
+                    <textarea className="form-control" placeholder="Your Message" spellCheck="false"></textarea>
                     <label htmlFor="">Your Massage</label>
                     </div>
                 </div>
-                <button class="btn btn-dark">Send</button>
+                <button className="btn btn-dark">Send</button>
             </form>
         </div>
         </div>

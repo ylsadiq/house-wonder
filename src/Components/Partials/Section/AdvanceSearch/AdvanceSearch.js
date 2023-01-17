@@ -23,93 +23,93 @@ function AdvanceSearch() {
             </div>
             <div className="advance-content">
             <div className="advance-selector">
-            <h5 class="advance-search-title ">Advanced Search</h5>
+            <h5 className="advance-search-title ">Advanced Search</h5>
                 <div className="advance-select">
-                <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">Buy</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All Cities</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All Areas</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                    <div class="form-floating">
-                    <input type="text" class="form-input" id="minSqft" />
-                    <label for="minSqft">Size (Min)- sqft.</label>
+                    <div className="form-floating">
+                    <input type="text" className="form-input" id="minSqft" />
+                    <label htmlFor="minSqft">Size (Min)- sqft.</label>
                     </div>
 
-                    <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                    <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
-                    <div class="form-floating formSearch">
-                        <select id="lookingto" class="form-select searchSelect">
+                    <div className="form-floating formSearch">
+                        <select id="lookingto" className="form-select searchSelect">
                             <option selected="">All</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label for="lookingto">Looking to</label>
+                        <label htmlFor="lookingto">Looking to</label>
                     </div>
 
-                    <div class="form-floating">
-                    <input type="text" class="form-input" id="minSqft" />
-                    <label for="minSqft">Size (Min)- sqft.</label>
+                    <div className="form-floating">
+                    <input type="text" className="form-input" id="minSqft" />
+                    <label htmlFor="minSqft">Size (Min)- sqft.</label>
                     </div>
-                    <div class="form-floating">
-                    <input type="text" class="form-input" id="minSqft" />
-                    <label for="minSqft">Size (Min)- sqft.</label>
+                    <div className="form-floating">
+                    <input type="text" className="form-input" id="minSqft" />
+                    <label htmlFor="minSqft">Size (Min)- sqft.</label>
                     </div>
 
-                    <div class="form-floating">
-                    <input type="text" class="form-input" id="minSqft" />
-                    <label for="minSqft">Size (Min)- sqft.</label>
+                    <div className="form-floating">
+                    <input type="text" className="form-input" id="minSqft" />
+                    <label htmlFor="minSqft">Size (Min)- sqft.</label>
                     </div>
-                    <div class="form-floating">
-                    <input type="text" class="form-input" id="minSqft" />
-                    <label for="minSqft">Size (Min)- sqft.</label>
+                    <div className="form-floating">
+                    <input type="text" className="form-input" id="minSqft" />
+                    <label htmlFor="minSqft">Size (Min)- sqft.</label>
                     </div>
                 </div>
             </div>

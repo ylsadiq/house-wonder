@@ -17,14 +17,14 @@ function MyListings() {
         <Link className="my-listing-items">
             <div className="card items-img">
                 <img src={property} alt="" />
-                <div class="property-tag">
+                <div className="property-tag">
                     <span>verified</span>
                 </div>
             </div>
             <div className="items-details">
-            <div class="propertyCardbody horizontal-prop-card">
-                                        <h5 class="propertyId">ID: #BB635340</h5>
-                                        <div class="horizontalGps">
+            <div className="propertyCardbody horizontal-prop-card">
+                                        <h5 className="propertyId">ID: #BB635340</h5>
+                                        <div className="horizontalGps">
                                                 <h1>Luxurious Apartment</h1>
                                             <div>
                                                 <img src={location} alt="" />
@@ -48,14 +48,14 @@ function MyListings() {
         <Link className="my-listing-items">
             <div className="card items-img">
                 <img src={property} alt="" />
-                <div class="property-tag">
+                <div className="property-tag">
                     <span>verified</span>
                 </div>
             </div>
             <div className="items-details">
-            <div class="propertyCardbody horizontal-prop-card">
-                                        <h5 class="propertyId">ID: #BB635340</h5>
-                                        <div class="horizontalGps">
+            <div className="propertyCardbody horizontal-prop-card">
+                                        <h5 className="propertyId">ID: #BB635340</h5>
+                                        <div className="horizontalGps">
                                                 <h1>Luxurious Apartment</h1>
                                             <div>
                                                 <img src={location} alt="" />
@@ -79,14 +79,14 @@ function MyListings() {
         <Link className="my-listing-items">
             <div className="card items-img">
                 <img src={property} alt="" />
-                <div class="property-tag">
+                <div className="property-tag">
                     <span>verified</span>
                 </div>
             </div>
             <div className="items-details">
-            <div class="propertyCardbody horizontal-prop-card">
-                                        <h5 class="propertyId">ID: #BB635340</h5>
-                                        <div class="horizontalGps">
+            <div className="propertyCardbody horizontal-prop-card">
+                                        <h5 className="propertyId">ID: #BB635340</h5>
+                                        <div className="horizontalGps">
                                                 <h1>Luxurious Apartment</h1>
                                             <div>
                                                 <img src={location} alt="" />

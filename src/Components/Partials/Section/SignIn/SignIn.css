@@ -1,21 +1,25 @@
 .sign-in{
     position: absolute;
     max-width: 80rem;
-    left: 3rem;
+    left: 5.5rem;
     top: 0;
-}
-.modal{
-    background: red;
-    display:block;
-    position: fixed;
-    width: 95%;
-    height: calc(100vh - 15px);
 }
 .fade {
     transition: opacity .15s linear;
+    display:block;
+    position: fixed;
+    width: 90%;
+    height: calc(100vh - 15px);
 }
-.modal .modal-dialog {
+.modal.show .modal-dialog {
     transform: none;
+}
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0,-61px);
+}
+.modal.modal-dialog {
+    transition: transform .3s ease-out;
 }
 .authModalcontent {
     border-radius: 2.4rem;
@@ -35,5 +39,119 @@
 .modal-button{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end;    
+}
+.modal-button button{
+    padding: 1.5rem 2rem;
+}
+.modal-button:hover button{
+    cursor: pointer;
+}
+.modal-content{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.modal-body{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 20px;
+}
+.sideImage {
+    position: relative;
+}
+.sideImage img:first-child {
+    width: 100%;
+    height: 100%;
+}
+.sideImage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+.modalLogoImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 18.7rem;
+    width: 100%;
+}
+.rightContent {
+    max-width: 41.4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.login-input input{
+    width: 100%;
+}
+.rightContent h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+    color: var(--black);
+}
+.rightContent h6 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+.passwordToglerBtn {
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    right: 1.8rem;
+    margin: auto;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.login-btn{
+    padding-top: 3rem;
+}
+.haveAccount span {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 0.3rem;
+}
+.haveAccount {
+    padding-top: 4rem;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: var(--gray-1);
+}
+.haveAccount span {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 0.3rem;
 }

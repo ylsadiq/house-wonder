@@ -9,13 +9,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
@@ -31,13 +31,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
@@ -53,13 +53,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
@@ -75,13 +75,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
@@ -97,13 +97,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
@@ -119,13 +119,13 @@ function Property() {
         <div className="property-content">
             <h2>Post Your Property</h2>
             <a href="">
-            <div class="service-banner">
-                <a class="service-link" href="#">
+            <div className="service-banner">
+                <a className="service-link" href="#">
                     <div className="property-item-box">
                         <div className="property-details">
                             <a className="property-link">
                                 <h6>You can post your property on our website for free or you can subscribe to one of our packages to sell/rent your property faster.</h6>
-                                <button class="btn btn-outline-dark">Request Service</button>
+                                <button className="btn btn-outline-dark">Request Service</button>
                             </a>
                         </div>
                         <div className="property-img">
