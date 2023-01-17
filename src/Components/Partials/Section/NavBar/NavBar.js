@@ -9,7 +9,6 @@ function NavBar() {
     const handleModal = (e) =>{
         e.preventDefault();
         setShowModal((showModal) => !showModal);
-        console.log(showModal);
      }
   return (
     <>
@@ -31,7 +30,7 @@ function NavBar() {
                     <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/service">Service</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/contact">contact</Link></li>
-                    <li className="nav-item"><button className='login btn'>Log In</button></li>
+                    <li className="nav-item"><button onClick={handleModal} className='login btn'>Log In</button></li>
                 </ul>
             </div>
             </div>           

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SignIn.css';
 import modalBanner from '../../../../Assets/image/modal/modal-banner.png';
-import modalLogo from '../../../../Assets/logo.svg';
+import modalLogo from '../../../../Assets/image/bastu-login-logo.svg';
+import SignUp from './SignUp/SignUp';
 
 function SignIn({showModal, setShowModal}) {
+    const [showSignUp, setShowSignUp] = useState(false);
+    const handleSignUp = (e) =>{
+        e.preventDefault();
+        setShowSignUp((showSignUp) => !showSignUp);
+     }
   return (
     <section className="sign-in">
         <div className="container-fluid">
@@ -24,7 +30,7 @@ function SignIn({showModal, setShowModal}) {
                         <div className="rightContent">
                             <h1>Welcome!</h1>
                             <h6 className="loginTxt">Log In to your account</h6>
-                            <form method="post" name="form_login" id="form_login" novalidate="novalidate">
+                            <form method="post">
                                 {/* <input type="hidden" name="_token" value="g5JtVGdfjVpkSAbP4vlYT58QNNqHEbhJ5MaCFVky" /> */}
                                 <div className="login-input">
                                     <div className="grid-1 authFormInput">
@@ -55,7 +61,7 @@ function SignIn({showModal, setShowModal}) {
 
 
                                     <div className="grid-1 haveAccount">
-                                        <p>Don’t have any account?<span>Create one!</span>
+                                        <p>Don’t have any account?<span onClick={handleSignUp}>Create one!</span>
                                         </p>
                                     </div>
                                     
@@ -70,6 +76,7 @@ function SignIn({showModal, setShowModal}) {
                     </div>
                 </div>
             </div>
+        {showSignUp && <SignUp showModal={showModal} setShowModal={setShowModal}/>}
         </div>
     </section>
   )

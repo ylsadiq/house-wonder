@@ -1,0 +1,12 @@
+.sign-in-up .create-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightContent h6 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}

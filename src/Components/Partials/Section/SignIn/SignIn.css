@@ -54,7 +54,7 @@
 }
 .modal-body{
     display: grid;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 440px 1fr;
     gap: 20px;
 }
 .sideImage {
@@ -82,7 +82,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    max-width: 18.7rem;
+    max-width: 16rem;
     width: 100%;
 }
 .rightContent {
