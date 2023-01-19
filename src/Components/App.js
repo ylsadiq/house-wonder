@@ -5,6 +5,7 @@ import NavBar from './Partials/Section/NavBar/NavBar';
 
 import Buy from './Screens/Buy/Buy';
 import ContactForm from './Screens/ContactForm/ContactForm';
+import ChangePassword from './Screens/DashBoard/ChangePassword/ChangePassword';
 import DashBoard from './Screens/DashBoard/DashBoard';
 import MyListings from './Screens/DashBoard/MyListings/MyListings';
 import MyProfile from './Screens/DashBoard/MyProfile/MyProfile';
@@ -32,6 +33,7 @@ function App() {
         } >
         <Route index element={<MyListings />}></Route>
         <Route path='myprofile' element={<MyProfile />}></Route>
+        <Route path='changePassword' element={<ChangePassword />}></Route>
       </Route>
       </Routes>
       <Footer />

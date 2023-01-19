@@ -25,7 +25,7 @@ function DashBoard() {
                         <ul className='post-item'>
                             <li className='nav-item'><Link className='nav-link active' to="/dashboard"><img src={userlogo} alt="" />My Listings</Link></li>
                             <li className='nav-item'><Link className='nav-link' to="/dashboard/myprofile"><img src={userlogo} alt="" /> My Profile</Link></li>
-                            <li className='nav-item'><Link className='nav-link' to=""><img src={userlogo} alt="" />Change Password</Link></li>
+                            <li className='nav-item'><Link className='nav-link' to="/dashboard/changePassword"><img src={userlogo} alt="" />Change Password</Link></li>
                             <li className='nav-item'><Link className='nav-link' to=""><img src={userlogo} alt="" />Requested Packages</Link></li>
                             <li className='nav-item'><Link className='nav-link' to=""><img src={userlogo} alt="" />Requested Services</Link></li>
                             <li onClick={handleDropdown} id='dropdown-item' className='nav-item'>
