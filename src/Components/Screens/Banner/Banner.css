@@ -35,4 +35,68 @@
     line-height: 3.4rem;
     text-align: center;
     color: var(--gray-3);
+    font-family: var(--fonts-2);
+}
+.tab-button img{
+    padding: 0 1.5rem;
+}
+@media screen and (max-width: 767.98px){
+    .hero-box h1{
+        font-size: 3.8rem;
+        line-height: 6rem;
+    }
+    .heroBox p{
+        font-size: 1.6;
+    }
+    .tab-button>button{
+        display: none;
+    }
+    .search-box{
+        max-width: 60rem;
+    }
+    .tab-container{
+        margin-top: 3rem;
+    }
+    .tab-input::after{
+        right: -150px;
+    }
+}
+@media screen and (max-width: 620px){
+    .search-box{
+        max-width: 50rem;
+    }
+    .tab-container{
+        margin-top: 2.5rem;
+    }
+    .tab-input::after{
+        right: -130px;
+    }
+}
+@media screen and (max-width: 520px){
+    .search-box{
+        max-width: 40rem;
+    }
+    .tab-container{
+        margin-top: 2rem;
+    }
+    .tab-input::after{
+        right: -70px;
+    }
+    
+}
+@media screen and (max-width: 390px){
+    .tab-input::after{
+        right: -20px;
+    }
+    .tab-container{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width: 340px){
+    .tab-input::after{
+        right: -10px;
+    }
+    .tab-container{
+        margin-top: 1rem;
+    }
 }

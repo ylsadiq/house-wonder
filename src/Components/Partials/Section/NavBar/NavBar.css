@@ -65,6 +65,9 @@
     color: var(--gray-1);
     padding: 1.4rem 2.5rem;
 }
+.nav-band{
+    display: none;
+}
 #dropdown-item{
     display: flex;
     align-items: center;
@@ -111,4 +114,20 @@
 .login{
     color: var(--black);
     border: 0.2rem solid var(--black);
+}
+@media screen and (max-width: 767.98px){
+    .nav-menu{
+        grid-template-columns:1fr 1fr;
+    }
+    .left_menu{
+        display: none;
+    }
+    .right_menu{
+        display: none;
+    }
+    .nav-band{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

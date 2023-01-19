@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './NavBar.css';
 import logo from  '../../../../Assets/logo.svg'
 import { Link } from 'react-router-dom';
-import SignIn from '../../Section/SignIn/SignIn'
+import SignIn from '../../Section/SignIn/SignIn';
 
 function NavBar() {
     const [showModal, setShowModal] = useState(false);
@@ -25,6 +25,9 @@ function NavBar() {
                     <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
                 </ul>
                 </div>
+            <div className="nav-band">
+            <img src='http://bastu.com.bd/beta-thirteen/frontend/new_ui/assets/images/hamburger.svg' alt="" />
+            </div>
             <div className="right_menu">
             <ul className="navbar-nav">
                     <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>

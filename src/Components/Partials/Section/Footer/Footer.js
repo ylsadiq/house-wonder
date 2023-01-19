@@ -48,7 +48,7 @@ function Footer() {
                 <h6>CONTACT INFO</h6>
                 <ul>
                     <li className='footer-link'><img className='footer-icon' src={telephone} alt="" />+8809613823343,</li>
-                    <li className='footer-link'><span className='footer-number'>+8801678133343</span></li>
+                    <li className='footer-link number'><span className='footer-number'>+8801678133343</span></li>
                     <li className='footer-link'><img className='footer-icon' src={address} alt="" /> info@bastu.com.bd</li>
                     <li className='footer-link'><img className='footer-icon' src={location} alt="" /> Dhanmondi, Dhaka-1209</li>
                 </ul>

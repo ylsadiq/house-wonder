@@ -97,3 +97,41 @@
     margin: auto;
     border-radius: 50%;
 }
+@media screen and (max-width: 767.98px){
+    .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-home{
+        padding: 0 1rem;
+        max-width: 9rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .social-home{
+        max-width: 10rem;
+        margin: 0 auto;
+    }
+    .footer-menu .number{
+        display: block;
+    }
+    .social-link{
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    .social-link a{
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+        margin-right: .5rem;
+    }
+}

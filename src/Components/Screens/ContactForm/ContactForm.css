@@ -41,6 +41,10 @@
     color: var(--black);
 }
 
+.form-control::placeholder{
+    opacity: 0;
+}
+
 .form-floation>label {
     position: absolute;
     top: 0;

@@ -26,7 +26,7 @@ function MyProfile() {
                       <label for="lastName">Last Name</label>
                   </div>
                 <div class="form-floation">
-                      <input type="email" class="form-control" placeholder="email" />
+                      <input type="email" class="form-control" placeholder="Email" />
                       <label for="email">Email Address</label>
                   </div>
                 <div class="form-floation">
