@@ -1,20 +1,133 @@
 .tab-content-header{
     display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 30px;
+    grid-template-columns: 1fr 160px;
+    gap: 40px;
 }
 .listing-title{
     font-family: 'DM Serif Display', serif;
     font-weight: normal;
-    font-size: 4.8rem;
+    font-size: 4.4rem;
     line-height: 6.6rem;
     color: var(--black);
 }
-.btn:hover{
-    color: #fff;
+.tab-content-header button{
+    max-width: 15rem;
+    height: 5.5rem;
+    margin: 0 auto;
+}
+.add-listing:hover{
+    border: 1px solid var(--white);
+}
+.add-listing:hover img svg{
+    stroke: var(--white);
+}
+/* .btn:hover{
+    color: var(--white);
     background-color: #212529;
     border-color: #212529;
-}
+} */
 .tab-content .add-listing{
-    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    margin: .4rem auto;
+    border: 1px solid var(--black);
+    border-radius: 5rem;
+}
+.tab-content .add-listing img{
+    width: 100%;
+    padding-bottom: .4rem;
+}
+.my-listing-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.listing-card {
+    border-radius: 1.6rem;
+    overflow: hidden;
+    border: 1px solid rgba(196, 196, 196, 0.4);
+    position: relative;
+}
+.listing-card img{
+    width: 100%;
+}
+.property-tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+.property-tag span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 0.4rem 0.8rem;
+    background-color: var(--white);
+    border: 0.1rem solid var(--black);
+    border-radius: 0.4rem;
+}
+.property-status span img {
+    height: 2rem;
+    width: 2rem;
+    margin-top: -0.4rem;
+}
+.property-status span img {
+    height: 2rem;
+    width: 2rem;
+    margin-top: -0.4rem;
+}
+.card-body{
+    padding: 2rem 2.4rem 2.8rem 2.4rem;
+}
+.card-body h1{
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: var(--black);
+    font-family: "Inter", sans-serif;
+}
+.card-body p{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: var(--gray-1);
+}
+.listing-location{
+    height: 1.6rem;
+}
+.listing-location img{
+    width: 100%;
+}
+.card-body ul {
+    padding: 1.4rem 0;
+}
+.card-body h6{
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-top: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+.listing-card>.card-body h2{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    text-align: left;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    color: var(--black);
+}
+.card-body>.property-card-body{
+    padding: 0;
+}
+.card-body>.property-card-body ul li{
+    padding-right: 1.8rem;
 }

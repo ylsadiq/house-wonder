@@ -108,6 +108,10 @@
     border: 0.2rem solid var(--black);
     margin: 4rem 0;
 }
+.btn-outline-dark{
+    color: var(--black);
+    border: 0.2rem solid var(--black);
+}
 .btn-outline-dark:hover {
     color: #fff;
     background-color: #212529;

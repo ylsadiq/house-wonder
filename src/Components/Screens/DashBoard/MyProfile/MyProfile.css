@@ -1,0 +1,22 @@
+
+.post-user-info{
+    display: flex;
+    align-items: center;
+}
+.post-user-img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    margin-right: 7.5rem;
+}
+.post-user-img img{
+    width: 100%;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.my-profile-footer{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
