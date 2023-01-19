@@ -9,6 +9,7 @@ import ChangePassword from './Screens/DashBoard/ChangePassword/ChangePassword';
 import DashBoard from './Screens/DashBoard/DashBoard';
 import MyListings from './Screens/DashBoard/MyListings/MyListings';
 import MyProfile from './Screens/DashBoard/MyProfile/MyProfile';
+import RequestedPackages from './Screens/DashBoard/RequestedPackages/RequestedPackages';
 import Home from './Screens/Home/Home';
 import Packages from './Screens/Packages/Packages';
 import Service from './Screens/Service/Service';
@@ -34,6 +35,7 @@ function App() {
         <Route index element={<MyListings />}></Route>
         <Route path='myprofile' element={<MyProfile />}></Route>
         <Route path='changePassword' element={<ChangePassword />}></Route>
+        <Route path='RequestedPackages' element={<RequestedPackages />}></Route>
       </Route>
       </Routes>
       <Footer />
