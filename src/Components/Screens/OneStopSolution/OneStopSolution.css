@@ -63,3 +63,16 @@
 .card-body .card-wrap{
     display: block;
 }
+@media screen and (max-width: 767.98px){
+    .section-title{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        padding-bottom: 2rem;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0 2rem;
+    }
+}

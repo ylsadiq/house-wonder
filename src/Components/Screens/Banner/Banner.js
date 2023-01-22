@@ -14,7 +14,7 @@ function Banner() {
             </div>
         <div>
         </div>
-        {/* <TabMenu /> */}
+        <TabMenu />
             </div>
         </div>
     </section>

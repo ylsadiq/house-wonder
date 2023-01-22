@@ -158,3 +158,24 @@
     overflow: hidden;
     height: calc(100vh - 10.1rem);
 }
+@media screen and (max-width: 767.98px){
+    .mylistings-section{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 20px;
+    }
+    .my-listing-items{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .items-img{
+        max-height: 400px;
+        height: 180px;
+    }
+    .items-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

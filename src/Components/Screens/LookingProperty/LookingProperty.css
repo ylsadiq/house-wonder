@@ -33,3 +33,35 @@
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+.btn-light{
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--white);
+    font-weight: 700;
+    padding: 1.4rem 2rem;
+}
+@media screen and (max-width: 767.98px){
+    .looking-content{
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 4rem;
+    }
+    .looking-content-img{
+        max-width: 30rem;
+        margin: auto;
+        display: block;
+    }
+    .looking-content-img img{
+        width: 100%;
+    }
+    .looking-content-details h3{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .looking-content-details p{
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}

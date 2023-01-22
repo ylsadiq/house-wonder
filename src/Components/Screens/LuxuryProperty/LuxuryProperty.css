@@ -101,3 +101,19 @@
 .buy-now button{
     width: 100%;
 }
+@media screen and (max-width: 767.98px){
+    .luxury-content{
+        grid-template-columns: 1fr;
+    }
+    .luxury-details{
+        order: 2;
+    }
+    .luxury-img{
+        max-width: 400px;
+        width: 100%;
+        order: 1;
+    }
+    .luxury-img img{
+        width: 100%;
+    }
+}

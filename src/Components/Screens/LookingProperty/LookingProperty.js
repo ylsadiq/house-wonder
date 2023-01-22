@@ -15,8 +15,8 @@ function LookingProperty() {
                     <h3>What are you looking for?</h3>
                     <p>Bastu helps you sell your home faster and for more money by covering the cost of home
                         improvement services — no upfront fees or interest charged.</p>
-                    <button className="btn btn-light" data-bs-toggle="modal" data-bs-target="#postReqModal">
-                        Postyour requirement
+                    <button className="btn btn-light">
+                        Post your requirement
                     </button>
                 </div>
             </div>

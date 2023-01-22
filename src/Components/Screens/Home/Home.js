@@ -11,11 +11,11 @@ function Home() {
   return (
     <>
     <Banner />
-        {/* <OneStopSolution />
+        <OneStopSolution />
         <FeaturedProperties />
         <LuxuryProperty />
         <LookingProperty />
-        <Testimonial /> */}
+        <Testimonial />
     </>
   )
 }
