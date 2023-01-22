@@ -18,7 +18,7 @@ export default function FeaturedProperties() {
             <div className="featured-propary-slider">
             <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={20}
         freeMode={true}
         pagination={{
@@ -28,12 +28,16 @@ export default function FeaturedProperties() {
         className="mySwiper"
         breakpoints={{
             640: {
-              width: 640,
               slidesPerView: 1,
+              spaceBetween: 20,
             },
             768: {
-              width: 768,
               slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
             },
           }}
       >

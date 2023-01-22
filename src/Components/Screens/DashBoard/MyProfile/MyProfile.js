@@ -11,8 +11,11 @@ function MyProfile() {
                 <div className="post-user-img">
                 <img src={userProfile} alt="" />
                 </div>
+                <div className="post-btn">
                 <div className="btn btn-dark">Change</div>
                 <div className="btn">Remove</div>
+                </div>
+                
             </div>
           <form action="">
             <div className="user-info-form grid-2">

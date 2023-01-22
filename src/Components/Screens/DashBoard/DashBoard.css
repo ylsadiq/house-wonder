@@ -51,3 +51,8 @@
 .arrow-down{
     transform: rotate(180deg);
 }
+@media screen and (max-width: 767.98px){
+    .dashboard-drawar{
+        display: none;
+    }
+}

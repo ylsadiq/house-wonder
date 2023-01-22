@@ -89,3 +89,31 @@ table tbody td {
     padding: .8rem;
     border: none;
 }
+@media screen and (max-width: 767.98px){
+    /* .listing-title{
+        font-size: 3.5rem !important;
+        line-height: 5rem !important;
+        text-align: center;
+    } */
+    .listing-title{
+        font-size: 3.5rem !important;
+        line-height: 5rem !important;
+    }
+    .listing-items{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .requested-header{
+        display: block !important;
+    }
+    .dataTables_length{
+        display: block;
+    }
+    .dataTables_filter{
+        display: block;
+    }
+    .table{
+        overflow-x:auto
+    }
+}

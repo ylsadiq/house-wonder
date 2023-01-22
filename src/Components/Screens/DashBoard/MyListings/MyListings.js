@@ -9,7 +9,7 @@ function MyListings() {
     <section className="tab-content">
       <div className="tab-content-header">
       <h1 class="listing-title">My Listings</h1>
-      <button className='btn'><span className='add-listing'><img src={addIcon} alt="" /></span> Add Listing</button>
+      <button className='btn'><span className='add-listing'><img src={addIcon} alt="" /></span> <span className='add-text'>Add Listing</span></button>
       </div>
 
       <div className="my-listing-card">

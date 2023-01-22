@@ -18,8 +18,22 @@ function Testimonial() {
                     <span className='luxury'>Say About Us</span></h1>
                     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
+        breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
         freeMode={true}
         navigation={true}
         modules={[FreeMode, Navigation]}
