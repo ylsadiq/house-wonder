@@ -13,17 +13,17 @@ function ContactForm() {
             <form className='contact-info'>
                 <div className="contact-input">
                     <div className="form-floation">
-                        <input type="text" className='form-control' placeholder='yourName'/>
-                        <label htmlFor="Name">yourName</label>
+                        <input type="text" className='form-control' placeholder='YourName'/>
+                        <label htmlFor="Name">Your Name</label>
                     </div>
                     <div className="form-floation">
-                        <input type="text" className='form-control' placeholder='yourEmail'/>
-                        <label htmlFor="Name">yourEmail</label>
+                        <input type="text" className='form-control' placeholder='YourEmail'/>
+                        <label htmlFor="Name">Your Email</label>
                         {/* <p className="error" htmlFor="contact_email">Please enter a valid email address.</p> */}
                     </div>
                     <div className="form-floation">
-                        <input type="text" className='form-control' placeholder='yourPhone'/>
-                        <label htmlFor="Name">yourPhone</label>
+                        <input type="text" className='form-control' placeholder='YourPhone'/>
+                        <label htmlFor="Name">Your Phone</label>
                         {/* <p className="error" htmlFor="contact_email">Please enter at least 11 characters.</p> */}
                     </div>
                     <div className="form-floation">
