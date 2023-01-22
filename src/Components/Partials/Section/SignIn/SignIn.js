@@ -27,6 +27,7 @@ function SignIn({showModal, setShowModal}) {
                             <div></div>
                             <img className="modalLogoImg" src={modalLogo} alt="" />
                         </div>
+                        <div className="right-modal">
                         <div className="rightContent">
                             <h1>Welcome!</h1>
                             <h6 className="loginTxt">Log In to your account</h6>
@@ -72,6 +73,8 @@ function SignIn({showModal, setShowModal}) {
 
 
                         </div>
+                        </div>
+                        
                         </div>
                     </div>
                 </div>

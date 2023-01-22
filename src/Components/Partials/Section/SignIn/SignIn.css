@@ -155,3 +155,46 @@
     color: var(--black);
     margin-left: 0.3rem;
 }
+
+@media screen and (max-width: 767.98px){
+    .modal-button button{
+        padding: 1rem 1.5rem;
+    }
+    .fade{
+        position: inherit;
+        height: calc(100vh - 20px);
+    }
+    .sign-in{
+        left: 2rem;
+        overflow-y:auto
+    }
+    .modal-body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .right-modal{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sideImage{
+        display: none;
+    }
+    .rightContent{
+        width: 100%;
+    }
+    .modal-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .haveAccount{
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .haveAccount p{
+        text-align: center;
+    }
+    .haveAccount span{
+        display: inline-block;
+    }
+}
