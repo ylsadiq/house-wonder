@@ -78,3 +78,57 @@
 
     font-family: "Inter", sans-serif;
 }
+@media screen and (max-width: 767.98px){
+    /* .property-img {
+        max-width: 500px !important;
+        width: 400px !important;
+    } */
+    .services-img{
+        max-width: 400px;
+        width: 300px !important;
+    }
+    .service-img img{
+        width: 100%;
+    }
+    .services-items{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .property-content h2{
+        margin-top: 4rem;
+        font-size: 4rem !important; 
+    }
+    .property-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        order: 2;
+        padding: 3rem !important;
+    }
+    .services-img{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .service-img img{
+        width: 100%;
+    }
+    .property-item-box{
+        grid-template-columns:  1fr !important;
+        gap: 20px;
+    }
+    .service-box{
+        grid-template-columns:  1fr !important;
+        gap: 20px;
+    }
+    .property-img{
+        order: 1;
+        width: 300px !important;
+    }
+    .property-img img{
+        width: 100%;
+    }
+    .property-details h6 {
+        font-size: 1.8rem !important;
+        padding-bottom: 2.2rem;
+        font-weight: 400;
+    }
+}
