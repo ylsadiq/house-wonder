@@ -1,10 +1,15 @@
+.search-contentiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .mylistings-section{
     padding-top: 10rem;
 }
 .mylistings-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 .card-bg {
     /* filter: drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05)); */

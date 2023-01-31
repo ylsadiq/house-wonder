@@ -24,6 +24,7 @@ function TableListing() {
             <input type="search" class="" placeholder="" /></label>
         </div>
         </div>
+        <div className="table-container">
         <table className='table'>
             <thead className='table-header'>
             <tr className="header-row">
@@ -84,6 +85,8 @@ function TableListing() {
             </tr>
             </tbody>
         </table>
+        </div>
+        
         <Pagination />
     </>
   )

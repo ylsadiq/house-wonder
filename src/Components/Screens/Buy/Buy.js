@@ -8,7 +8,6 @@ function Buy() {
     <section className="buy">
         <div className="container-fluid">
             {/* <AdvanceSearch /> */}
-            
             <MyListings />
         </div>
     </section>

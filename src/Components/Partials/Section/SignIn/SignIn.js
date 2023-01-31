@@ -6,6 +6,7 @@ import SignUp from './SignUp/SignUp';
 
 function SignIn({showModal, setShowModal}) {
     const [showSignUp, setShowSignUp] = useState(false);
+    
     const handleSignUp = (e) =>{
         e.preventDefault();
         setShowSignUp((showSignUp) => !showSignUp);

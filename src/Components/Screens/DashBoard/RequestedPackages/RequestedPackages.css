@@ -90,22 +90,25 @@ table tbody td {
     border: none;
 }
 @media screen and (max-width: 767.98px){
-    /* .listing-title{
+    .listing-title{
         font-size: 3.5rem !important;
         line-height: 5rem !important;
-        text-align: center;
-    } */
+        text-align: left;
+    }
+    .dashboard-box{
+        grid-template-columns: 1fr;
+    }
     .listing-title{
         font-size: 3.5rem !important;
         line-height: 5rem !important;
     }
     .listing-items{
         display: block;
-        text-align: center;
-        margin: 0 auto;
     }
     .requested-header{
         display: block !important;
+        margin: 0 auto;
+        align-items: center !important;
     }
     .dataTables_length{
         display: block;
@@ -113,7 +116,13 @@ table tbody td {
     .dataTables_filter{
         display: block;
     }
+    .requested-header{
+        overflow: auto,
+    }
+    .table-container{
+    }
     .table{
-        overflow-x:auto
+        width: 90rem !important;
+
     }
 }

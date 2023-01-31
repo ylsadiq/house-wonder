@@ -6,6 +6,7 @@ import Buy from './Screens/Buy/Buy';
 import ContactForm from './Screens/ContactForm/ContactForm';
 import ChangePassword from './Screens/DashBoard/ChangePassword/ChangePassword';
 import DashBoard from './Screens/DashBoard/DashBoard';
+import MyListingForm from './Screens/DashBoard/MyListings/MyListingForm/MyListingForm';
 import MyListings from './Screens/DashBoard/MyListings/MyListings';
 import MyProfile from './Screens/DashBoard/MyProfile/MyProfile';
 import RequestedPackages from './Screens/DashBoard/RequestedPackages/RequestedPackages';
@@ -32,6 +33,7 @@ function App() {
             <DashBoard />
         } >
         <Route index element={<MyListings />}></Route>
+        <Route path='mylisting-form' element={<MyListingForm />}></Route>
         <Route path='myprofile' element={<MyProfile />}></Route>
         <Route path='changePassword' element={<ChangePassword />}></Route>
         <Route path='RequestedPackages' element={<RequestedPackages />}></Route>
