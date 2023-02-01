@@ -1,0 +1,87 @@
+.feature-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--black);
+}
+.second-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.property-feature{
+    display: flex;
+    justify-content: flex-start;
+}
+.property-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.check-box{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    /* align-self: center; */
+    padding: 2rem 0;
+}
+.form-check-label{
+    font-weight: normal;
+    font-size: 1.6rem !important;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+    margin-left: .8rem;
+    line-height: 2rem;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url(../../../../../../Assets/icon/check.svg);
+}
+.form-check-input:checked {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+.authFormInput{
+    display: none;
+}
+.authFormInput.active{
+    display:block;
+}
+.form-check-input {
+    font-weight: normal;
+    font-size: 1.6rem !important;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,.25);
+    appearance: none;
+}
+.featuresInpGroup {
+    border: 0.2rem solid var(--gray-2);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.featuresInpGroup button img {
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.featuresInpGroup button {
+    padding: 1.8rem 0rem;
+    border: none;
+    background-color: transparent;
+}
+.counter{
+    text-align: center;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 5rem;
+}

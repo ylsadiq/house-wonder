@@ -1,18 +1,23 @@
 import React from 'react'
 import './MyListingForm.css'
+import SecondForm from './SecondForm/SecondForm'
+import ThirdForm from './ThirdForm/ThirdForm'
 
 function MyListingForm() {
   return (
+    <>
+    
+    
     <div className="my-listing-form">
         <div className="container-fluid">
             <div className="my-listing-step">
             <div className="progress-count">
                 <h6>step <span>1</span> of <span>2</span></h6>
             </div>
-            <div className="progress form-progress">
+            <div className="progress form-progress mb-4">
                 <div className="progress-bar form-prog"></div>
             </div>
-            <div className="form-title">
+            <div className="form-title mt-2">
                 Hi, <span>test11</span>
                 <span className='second-line'>Let's start posting your property.</span>
             </div>
@@ -21,7 +26,7 @@ function MyListingForm() {
                 <div className="post-map">
 
                 </div>
-            <h1 className='map-heading'>Find and pin the exact location of your property. This will make finding your property easier for the tenants. </h1>
+            <h1 className='map-heading'>Find and pin the exact location of your property. This will make finding your property easier htmlFor the tenants. </h1>
             <form action="">
 
             <div className="ratio-box">
@@ -29,15 +34,15 @@ function MyListingForm() {
                 <div className="auth-form">
                 <div className="auth-form-input">
                     <input type="radio" id="owner" name="mylisting" value="owner" />
-                    <label for="owner">Owner</label>
+                    <label htmlFor="owner">Owner</label>
                 </div>
                 <div className="auth-form-input">
                     <input type="radio" id="representative" name="mylisting" value="representative" />
-                    <label for="representative">Representative</label>
+                    <label htmlFor="representative">Representative</label>
                 </div>
                 <div className="auth-form-input">
                     <input type="radio" id="agent" name="mylisting" value="agent" />
-                    <label for="agent">Agent</label>
+                    <label htmlFor="agent">Agent</label>
                 </div>
                 </div>
             </div>
@@ -46,11 +51,11 @@ function MyListingForm() {
                 <div className="auth-form">
                 <div className="auth-form-input">
                     <input type="radio" id="sell" name="mylisting" value="sell" />
-                    <label for="sell">Sell</label>
+                    <label htmlFor="sell">Sell</label>
                 </div>
                 <div className="auth-form-input">
                     <input type="radio" id="rent" name="mylisting" value="rent" />
-                    <label for="rent">Rent</label>
+                    <label htmlFor="rent">Rent</label>
                 </div>
                 </div>
             </div>
@@ -58,7 +63,7 @@ function MyListingForm() {
             <div class="form-floating">
                 <div class="form-floation mb-4 mt-2">
                     <input type="text" name="property_header" class="form-control" id='propHeader' placeholder="Property Header (Hint: Type your property tittle here)" />
-                    <label for="propHeader">You can post your property under headers like "Shaptak Digonto: 3BHK flat for rent" or "Ready apartment for sale" etc.</label>
+                    <label htmlFor="propHeader">You can post your property under headers like "Shaptak Digonto: 3BHK flat htmlFor rent" or "Ready apartment htmlFor sale" etc.</label>
                 </div>
             </div>
             </div>
@@ -68,12 +73,12 @@ function MyListingForm() {
                 <div className="auth-form">
                 <div className="auth-form-input">
                     <input type="radio" id="readyToMove" name="mylisting" value="readyToMove" />
-                    <label for="readyToMove">Ready to move</label>
+                    <label htmlFor="readyToMove">Ready to move</label>
                 </div>
 
                 <div className="auth-form-input">
                     <input type="radio" id="availableFrom" name="mylisting" value="availableFrom" />
-                    <label for="availableFrom">Available from</label>
+                    <label htmlFor="availableFrom">Available from</label>
                 </div>
                 </div>
             </div>
@@ -83,7 +88,7 @@ function MyListingForm() {
                     <option value="">Dhaka</option>
                     <option value="property">Property</option><option value="package">Package</option>
                     <option value="service">Service</option></select>
-                    <label for="city">Property City</label>
+                    <label htmlFor="city">Property City</label>
                     </div>
                     
                     <div class="form-floation">
@@ -152,16 +157,16 @@ function MyListingForm() {
             <div class="form-floation mb-4 mt-2">
             <textarea class="form-control" 
             placeholder="Describe your property in a few lines. You can include the name of your house, the location it is situated in, number of bedrooms and bathrooms and other amenities."
-            id="propDescr" name="property_description" spellcheck="false">
+            id="propDescr" name="property_description" spellCheck="false">
             </textarea>
-            <label for="propDescr">Describe your property in a few lines. You can include the name of your house, the location it is situated in, number of bedrooms and bathrooms and other amenities.</label>
+            <label htmlFor="propDescr">Describe your property in a few lines. You can include the name of your house, the location it is situated in, number of bedrooms and bathrooms and other amenities.</label>
             </div>
             </div>
             
             <div className="grid-1">
             <div class="form-floation mb-4 mt-2">
             <input type="text" placeholder="Property Video Id(EX: IZXg_rDyZ18)" class="form-control" name="video_url" id="video_url" />
-                <label for="video_url">Property Video Url</label>
+                <label htmlFor="video_url">Property Video Url</label>
             </div>
             </div>
 
@@ -170,12 +175,12 @@ function MyListingForm() {
                 <div className="auth-form">
                 <div className="auth-form-input">
                     <input type="radio" id="contactWithMe" name="mylisting" value="contactWithMe" />
-                    <label for="contactWithMe">Contact With Me</label>
+                    <label htmlFor="contactWithMe">Contact With Me</label>
                 </div>
 
                 <div className="auth-form-input">
                     <input type="radio" id="assignPerson" name="mylisting" value="availableFrom" />
-                    <label for="assignPerson">Assign Contact Person</label>
+                    <label htmlFor="assignPerson">Assign Contact Person</label>
                 </div>
                 </div>
             </div>
@@ -183,12 +188,12 @@ function MyListingForm() {
             <div className="grid-2 mb-4 mt-2">
             <div class="form-floation">
             <input id="contactPersonName" name="property_contact_person_name" type="text" class="form-control required" placeholder="contactPersonName" />
-            <label for="contactPersonName">Contact Person
+            <label htmlFor="contactPersonName">Contact Person
                 Name</label>
             </div>
             <div class="form-floation">
             <input id="contactPersonRel" name="property_contact_person_relation" type="text" class="form-control required" placeholder="contactPersonRel" />
-            <label for="contactPersonRel">Contact Person
+            <label htmlFor="contactPersonRel">Contact Person
                 Relation</label>
             </div>
 
@@ -196,21 +201,27 @@ function MyListingForm() {
             <div className="grid-2 mb-4 mt-2">
             <div class="form-floation">
             <input id="contactPersonEmail" name="property_contact_person_email" type="text" class="form-control" placeholder="contactPersonRel" /> 
-            <label for="contactPersonEmail">Contact Person Email</label>
+            <label htmlFor="contactPersonEmail">Contact Person Email</label>
             </div>
             <div class="form-floation">
             <input id="contactPersonPhone" name="property_contact_person_phone" type="text" class="form-control required" placeholder="contactPersonRel" />
-            <label for="contactPersonPhone">Contact Person Phone</label>
+            <label htmlFor="contactPersonPhone">Contact Person Phone</label>
             </div>
 
             </div>
-            <input type="submit" className='btn btn-dark mb-4 mt-2' value="Continue" />
+            <div className="form-footer">
+            <input type="submit" className='btn btn-dark mb-4 mt-2 listing-btn' value="Continue" />
+            </div>
             </form>
             
 
             </div>
         </div>
     </div>
+
+    {/* <SecondForm /> */}
+    <ThirdForm />
+    </>
   )
 }
 

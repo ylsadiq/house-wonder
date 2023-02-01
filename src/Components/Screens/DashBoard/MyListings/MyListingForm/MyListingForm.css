@@ -1,5 +1,6 @@
 .my-listing-form{
-    padding-top: 1rem;
+    padding: 3rem 0 6rem 0;
+    display: none;
 }
 .my-listing-step{
     padding-bottom: 2rem;
@@ -136,4 +137,12 @@
     color: var(--black);
     display: flex;
     align-self: flex-end;
+}
+.form-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0;
+}
+.listing-btn{
+    padding: 2rem 4.5rem;
 }
