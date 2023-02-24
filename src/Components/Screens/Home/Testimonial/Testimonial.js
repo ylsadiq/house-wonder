@@ -1,8 +1,8 @@
 import React from 'react';
 import './Testimonial.css';
 import { Swiper, SwiperSlide } from "swiper/react";
-import quoteIcon from '../../../Assets/home/quote icon.svg';
-import avater from '../../../Assets/home/testimonial image 2.png'
+import quoteIcon from '../../../../Assets/home/quote icon.svg';
+import avater from '../../../../Assets/home/testimonial image 2.png'
 
 import "swiper/css";
 import "swiper/css/navigation";

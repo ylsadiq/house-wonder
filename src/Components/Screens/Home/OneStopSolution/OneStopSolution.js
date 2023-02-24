@@ -1,6 +1,6 @@
 import React from 'react';
 import './OneStopSolution.css';
-import soul from '../../../Assets/home/illustration 1.png'
+import soul from '../../../../Assets/home/illustration 1.png'
 
 function OneStopSolution() {
   return (

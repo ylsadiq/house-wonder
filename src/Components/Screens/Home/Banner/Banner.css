@@ -2,7 +2,7 @@
     position: relative;
 }
 .hero-container{
-    background-image: url(../../../Assets/home/hero-img.svg);
+    background-image: url(../../../../Assets/home/hero-img.svg);
     height: calc(100vh - 15px);
     background-repeat: no-repeat;
     background-size: cover;

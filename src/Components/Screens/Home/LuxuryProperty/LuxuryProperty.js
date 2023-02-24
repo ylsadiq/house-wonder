@@ -1,7 +1,7 @@
 import React from 'react';
 import './LuxuryProperty.css';
-import location from '../../../Assets/home/location icon.svg';
-import luxuryImage from '../../../Assets/home/luxury image.png'
+import location from '../../../../Assets/home/location icon.svg';
+import luxuryImage from '../../../../Assets/home/luxury image.png'
 
 function LuxuryProperty() {
   return (

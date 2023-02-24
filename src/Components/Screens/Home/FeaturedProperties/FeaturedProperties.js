@@ -1,8 +1,8 @@
 import React from 'react'
 import './FeaturedProperties.css';
 import { Swiper, SwiperSlide } from "swiper/react";
-import slider1 from '../../../Assets/home/property image 1.png';
-import location from '../../../Assets/home/location icon.svg'
+import slider1 from '../../../../Assets/home/property image 1.png';
+import location from '../../../../Assets/home/location icon.svg'
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";

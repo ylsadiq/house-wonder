@@ -1,7 +1,7 @@
 import React from 'react';
 import './TabMenu.css';
-import searchIcon from '../../../../Assets/home/search icon.svg';
-import filter from '../../../../Assets/home/filter icon.svg'
+import searchIcon from '../../../../../Assets/home/search icon.svg';
+import filter from '../../../../../Assets/home/filter icon.svg'
 function TabMenu() {
   return (
     <div className="tab-container">

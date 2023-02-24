@@ -1,5 +1,4 @@
-import React from 'react';
-import TabMenu from '../../Partials/Section/TabMenu/TabMenu';
+import TabMenu from './TabMenu/TabMenu';
 import './Banner.css'
 
 function Banner() {

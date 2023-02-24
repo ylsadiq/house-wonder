@@ -1,6 +1,5 @@
-import React from 'react';
 import './LookingProperty.css';
-import lookingFor from '../../../Assets/home/what are you looking for-image.png'
+import lookingFor from '../../../../Assets/home/what are you looking for-image.png'
 
 function LookingProperty() {
   return (

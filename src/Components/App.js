@@ -27,17 +27,13 @@ function App() {
         <Route path="/packages" element={<Packages />}/>
         <Route path="/service" element={<Service />}/>
         <Route path="/contact" element={<ContactForm />}/>
-        <Route
-        path="/dashboard"
-        element={
-            <DashBoard />
-        } >
-        <Route index element={<MyListings />}></Route>
-        <Route path='mylisting-form' element={<MyListingForm />}></Route>
-        <Route path='myprofile' element={<MyProfile />}></Route>
-        <Route path='changePassword' element={<ChangePassword />}></Route>
-        <Route path='RequestedPackages' element={<RequestedPackages />}></Route>
-      </Route>
+        <Route path="/dashboard" element={<DashBoard />} >
+          <Route index element={<MyListings />}></Route>
+          <Route path='mylisting-form' element={<MyListingForm />}></Route>
+          <Route path='myprofile' element={<MyProfile />}></Route>
+          <Route path='changePassword' element={<ChangePassword />}></Route>
+          <Route path='RequestedPackages' element={<RequestedPackages />}></Route>
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
