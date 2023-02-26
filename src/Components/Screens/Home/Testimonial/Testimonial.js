@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Testimonial.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import quoteIcon from '../../../../Assets/home/quote icon.svg';
@@ -8,8 +8,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { FreeMode, Navigation } from "swiper";
+import { TESTIMONIALS_API } from '../../../../Utilities/APIs/APIs';
+import axios from 'axios';
 
 function Testimonial() {
+
+    const [testimonials, setTestimonials] = useState(null);
+
+    useEffect(() => {
+        async function getAndSetTestimonials() {
+          const {data} = await axios.get(TESTIMONIALS_API)
+          setTestimonials(data.name)
+        }
+    
+        getAndSetTestimonials()
+      }, [])
+
+
   return (
     <section className="testimonial">
         <div className="container-fluid">
