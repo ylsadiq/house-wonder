@@ -1,5 +1,5 @@
 import React from 'react';
-import AdvanceSearch from '../../Partials/Section/AdvanceSearch/AdvanceSearch';
+// import AdvanceSearch from '../../Partials/Section/AdvanceSearch/AdvanceSearch';
 import MyListings from '../MyListings/MyListings';
 import './Buy.css';
 

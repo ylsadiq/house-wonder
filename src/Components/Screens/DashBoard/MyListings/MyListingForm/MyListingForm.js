@@ -1,6 +1,6 @@
 import React from 'react'
 import './MyListingForm.css'
-import SecondForm from './SecondForm/SecondForm'
+// import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
 
 function MyListingForm() {

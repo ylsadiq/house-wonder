@@ -1,129 +1,84 @@
 import React, { useEffect, useState } from 'react';
-import './Testimonial.css';
+import axios from 'axios';
 import { Swiper, SwiperSlide } from "swiper/react";
 import quoteIcon from '../../../../Assets/home/quote icon.svg';
-import avater from '../../../../Assets/home/testimonial image 2.png'
+import { FreeMode, Navigation } from "swiper";
+import { IMAGE_URL, TESTIMONIALS_API } from '../../../../Utilities/APIs/APIs';
 
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { FreeMode, Navigation } from "swiper";
-import { TESTIMONIALS_API } from '../../../../Utilities/APIs/APIs';
-import axios from 'axios';
+import './Testimonial.css';
 
 function Testimonial() {
 
     const [testimonials, setTestimonials] = useState(null);
+    console.log(testimonials)
 
     useEffect(() => {
         async function getAndSetTestimonials() {
-          const {data} = await axios.get(TESTIMONIALS_API)
-          setTestimonials(data.name)
+            const { data } = await axios.get(TESTIMONIALS_API)
+            setTestimonials(data)
         }
-    
+
         getAndSetTestimonials()
-      }, [])
+    }, [])
 
 
-  return (
-    <section className="testimonial">
-        <div className="container-fluid">
-            <div className="custom-container">
-                <h1 className="section-title">What Our Customers
-                    <span className='luxury'>Say About Us</span></h1>
+    return (
+        <section className="testimonial">
+            <div className="container-fluid">
+                <div className="custom-container">
+                    <h1 className="section-title">What Our Customers
+                        <span className='luxury'>Say About Us</span></h1>
                     <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-        freeMode={true}
-        navigation={true}
-        modules={[FreeMode, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide> 
-            <div className="card testmonial-card">
-                <img className="quote-icon" src={quoteIcon} alt="" />
-                <p>They promised was it delivered. There is a minor Communication issues. Being not
-                    communicated timely. The experience was really fun and rewarding. I would definitey
-                    recommend to everyone.</p>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={30}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            freeMode={true}
+                            navigation={true}
+                            modules={[FreeMode, Navigation]}
+                            className="mySwiper"
+                        >
 
-                <div className="testmonial-user">
-                    <div><img src={avater} alt="" /></div>
-                    <div>
-                        <h5>Shaon Minhaj</h5>
-                        <h6>Happy Customer</h6>
-                    </div>
+                            {testimonials?.map(testimonial => (
+                                <SwiperSlide key={testimonial._id}>
+                                    <div className="card testmonial-card">
+                                        <img className="quote-icon" src={quoteIcon} alt="" />
+                                        <p>{testimonial.description}</p>
+
+                                        <div className="testmonial-user">
+                                            <div>
+                                                <img src={IMAGE_URL + testimonial.image} alt="" />
+                                            </div>
+                                            <div>
+                                                <h5>{testimonial.name}</h5>
+                                                <h6>{testimonial.designation}</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </>
                 </div>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="card testmonial-card">
-                <img className="quote-icon" src={quoteIcon} alt="" />
-                <p>They promised was it delivered. There is a minor Communication issues. Being not
-                    communicated timely. The experience was really fun and rewarding. I would definitey
-                    recommend to everyone.</p>
-
-                <div className="testmonial-user">
-                    <div><img src={avater} alt="" /></div>
-                    <div>
-                        <h5>Shaon Minhaj</h5>
-                        <h6>Happy Customer</h6>
-                    </div>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="card testmonial-card">
-                <img className="quote-icon" src={quoteIcon} alt="" />
-                <p>They promised was it delivered. There is a minor Communication issues. Being not
-                    communicated timely. The experience was really fun and rewarding. I would definitey
-                    recommend to everyone.</p>
-
-                <div className="testmonial-user">
-                    <div><img src={avater} alt="" /></div>
-                    <div>
-                        <h5>Shaon Minhaj</h5>
-                        <h6>Happy Customer</h6>
-                    </div>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card testmonial-card">
-                <img className="quote-icon" src={quoteIcon} alt="" />
-                <p>They promised was it delivered. There is a minor Communication issues. Being not
-                    communicated timely. The experience was really fun and rewarding. I would definitey
-                    recommend to everyone.</p>
-
-                <div className="testmonial-user">
-                    <div><img src={avater} alt="" /></div>
-                    <div>
-                        <h5>Shaon Minhaj</h5>
-                        <h6>Happy Customer</h6>
-                    </div>
-                </div>
-            </div>
-            </SwiperSlide>
-      </Swiper>
-    </>
-            </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Testimonial

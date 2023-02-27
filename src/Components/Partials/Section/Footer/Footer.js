@@ -1,12 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import whiteLogo from '../../../../Assets/home/bastu logo white.svg';
-import facebook from '../../../../Assets/home/002-facebook.svg';
-import instagram from '../../../../Assets/home/001-instagram.svg';
-import twitter from '../../../../Assets/home/003-twitter.svg';
 import telephone from '../../../../Assets/home/phone-alt-solid 1.svg';
 import address from '../../../../Assets/home/envelope-open-text-solid 1.svg';
 import location from '../../../../Assets/home/location icon.svg';
+import { Link } from 'react-router-dom';
+import SocialLinks from './SocialLinks/SocialLinks';
 
 function Footer() {
   return (
@@ -15,33 +14,34 @@ function Footer() {
             <div className="custom-container">
                 <div className="footer-content">
                 <div className="social-home">
-                    <a href=""><img src={whiteLogo} alt="" /></a>
-                    <div className="social-link">
-                        <a href="#">
+                    <Link to="/"><img src={whiteLogo} alt="logo" /></Link>
+                    <SocialLinks />
+                    {/* <div className="social-link">
+                        <a href="s.com">
                             <img src={facebook} alt="" />
                         </a>
-                        <a href="#">
+                        <a href="s.com">
                             <img src={instagram} alt="" />
                         </a>
-                        <a href="#">
+                        <a href="s.com">
                             <img src={twitter} alt="" />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="footer-menu">
                 <h6>customer service</h6>
                 <ul>
-                    <li><a className='footer-link' href="">FAQs</a></li>
-                    <li><a className='footer-link' href="">Paument</a></li>
-                    <li><a className='footer-link' href="">Shipping</a></li>
+                    <li><Link className='footer-link' to="/">FAQs</Link></li>
+                    <li><Link className='footer-link' to="/">Paument</Link></li>
+                    <li><Link className='footer-link' to="/">Shipping</Link></li>
                 </ul>
                 </div>
                 <div className="footer-menu">
                 <h6>company</h6>
                 <ul>
-                    <li><a className='footer-link' href="">About Us</a></li>
-                    <li><a className='footer-link' href="">Careers</a></li>
-                    <li><a className='footer-link' href="">Terms & Policies</a></li>
+                    <li><Link className='footer-link' to="/">About Us</Link></li>
+                    <li><Link className='footer-link' to="/">Careers</Link></li>
+                    <li><Link className='footer-link' to="/">Terms & Policies</Link></li>
                 </ul>
                 </div>
                 <div className="footer-menu">
