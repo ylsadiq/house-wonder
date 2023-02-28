@@ -1,0 +1,29 @@
+.service_request {
+    padding: 3rem 8rem 0;
+}
+
+.service_request_content > * {
+    margin-bottom: 2.4rem;
+}
+
+.service_request_content h5 {
+    display     : inline-block;
+    font-weight : 500;
+    font-size   : 1.8rem;
+    line-height : 2.6rem;
+    color: var(--black);
+    margin-right: .5rem;
+}
+
+.service_request_content h6 {
+    display     : inline-block;
+    font-weight : 500;
+    font-size   : 1.5rem;
+    line-height : 2.6rem;
+    color: var(--gray-9);
+}
+
+.service_request_content button {
+    width: 100%;
+    margin-top: 4rem;
+}

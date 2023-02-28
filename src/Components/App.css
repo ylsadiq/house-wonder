@@ -34,6 +34,8 @@ html {
 }
 
 body {
+  font-weight: 400;
+  font-family: var(--fonts-2);
   position  : relative;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

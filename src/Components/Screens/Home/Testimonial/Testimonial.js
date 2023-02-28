@@ -13,7 +13,6 @@ import './Testimonial.css';
 function Testimonial() {
 
     const [testimonials, setTestimonials] = useState(null);
-    console.log(testimonials)
 
     useEffect(() => {
         async function getAndSetTestimonials() {

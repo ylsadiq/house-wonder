@@ -18,7 +18,6 @@ function SocialLinks() {
   async function fetchData() {
 		const res = await fetch(SOCIAL_LINKS_API);
 		const data = await res.json();
-    console.log(data)
 
     const fbObj = data?.find(item => item?.platform === 'facebook')
     setFbVisibility(fbObj?.visibility)
