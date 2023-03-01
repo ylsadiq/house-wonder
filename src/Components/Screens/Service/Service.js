@@ -30,6 +30,7 @@ function Service() {
 
     function handleClose() {
         setShowModal(false);
+        setShowRequestService(false);
     }
 
     return (

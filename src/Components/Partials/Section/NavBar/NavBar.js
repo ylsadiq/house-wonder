@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import SignIn from '../../Section/SignIn/SignIn';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, reset } from '../../../../Redux/Features/Auth/authSlice';
+import Modal from '../Modal/Modal';
 
 function NavBar() {
 
@@ -12,10 +13,16 @@ function NavBar() {
     const dispatch = useDispatch()
 
     const [showModal, setShowModal] = useState(false);
-    const handleModal = (e) => {
-        e.preventDefault();
-        setShowModal((showModal) => !showModal);
+    const [showSignIn, setShowSignIn] = useState(false);
+
+    function handleClose() {
+        setShowModal(false);
+        setShowSignIn(false);
     }
+    // const handleModal = (e) => {
+    //     e.preventDefault();
+    //     setShowModal((showModal) => !showModal);
+    // }
 
     function handleLogout() {
         dispatch(logout());
@@ -34,7 +41,11 @@ function NavBar() {
                             <ul className="navbar-nav">
                                 <li className="nav-item"><Link className="nav-link" to="/buy">Buy</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="">Rent</Link></li>
-                                <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
+                                {/* <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li> */}
+                                <li className="nav-item"><button onClick={()=>{
+                                            setShowModal(true)
+                                            setShowSignIn(true)
+                                        }} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
                             </ul>
                         </div>
                         <div className="nav-band">
@@ -50,13 +61,29 @@ function NavBar() {
                                         ?
                                         <button onClick={handleLogout} className='login btn'>Log Out</button>
                                         :
-                                        <button onClick={handleModal} className='login btn'>Log In</button>
+                                        // <button onClick={handleModal} className='login btn'>Log In</button>
+                                        <button onClick={()=>{
+                                            showModal(true)
+                                            showSignIn(true)
+                                        }} className='login btn'>Log In</button>
                                     }
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    {showModal && <SignIn showModal={showModal} setShowModal={setShowModal} />}
+                    {/* {showModal && <SignIn showModal={showModal} setShowModal={setShowModal} />} */}
+                    {showModal &&
+                        <Modal
+                            handleClose={handleClose}
+                            extraClass="sign_in_modal"
+                        >
+                            {showSignIn &&
+                                <SignIn
+                                    handleClose={handleClose}
+                                />
+                            }
+                        </Modal>
+                    }
                 </div>
             </nav>
         </>

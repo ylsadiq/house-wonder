@@ -1,200 +1,248 @@
-.sign-in{
-    position: absolute;
+
+
+.sign-in {
+    position : absolute;
     max-width: 80rem;
-    left: 5.5rem;
-    top: 0;
+    left     : 5.5rem;
+    top      : 0;
 }
+
 .fade {
     transition: opacity .15s linear;
-    display:block;
-    position: fixed;
-    width: 90%;
-    height: calc(100vh - 15px);
+    display   : block;
+    position  : fixed;
+    width     : 90%;
+    height    : calc(100vh - 15px);
 }
+
 .modal.show .modal-dialog {
     transform: none;
 }
+
 .modal.fade .modal-dialog {
     transition: transform .3s ease-out;
-    transform: translate(0,-61px);
+    transform : translate(0, -61px);
 }
+
 .modal.modal-dialog {
     transition: transform .3s ease-out;
 }
+
 .authModalcontent {
-    border-radius: 2.4rem;
-    overflow: hidden;
+    border-radius   : 2.4rem;
+    overflow        : hidden;
     background-color: var(--white);
-    position: relative;
+    position        : relative;
 }
+
 .modal-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
+    pointer-events : auto;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    outline: 0;
+    border         : 1px solid rgba(0, 0, 0, .2);
+    outline        : 0;
 }
-.modal-button{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;    
+
+.modal-button {
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
 }
-.modal-button button{
+
+.modal-button button {
     padding: 1.5rem 2rem;
 }
-.modal-button:hover button{
+
+.modal-button:hover button {
     cursor: pointer;
 }
-.modal-content{
-    display: flex;
-    align-content: center;
+
+.modal.sign_in_modal .modal_dialog {
+    max-width: 114rem;
+}
+
+.modal.sign_in_modal .modal_content {
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-content {
+    display        : flex;
+    align-content  : center;
     justify-content: space-between;
 }
-.modal-body{
-    display: grid;
+
+.modal-body {
+    display              : grid;
     grid-template-columns: 440px 1fr;
-    gap: 20px;
+    align-items: center;
+    gap                  : 20px;
 }
+
 .sideImage {
     position: relative;
 }
+
 .sideImage img:first-child {
-    width: 100%;
+    width : 100%;
     height: 100%;
 }
+
 .sideImage div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    height: 100%;
-    width: 100%;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    margin    : auto;
+    height    : 100%;
+    width     : 100%;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
 }
+
 .modalLogoImg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    right    : 0;
+    bottom   : 0;
+    margin   : auto;
     max-width: 16rem;
-    width: 100%;
+    width    : 100%;
 }
+
 .rightContent {
     max-width: 41.4rem;
-    width: 100%;
-    margin: 0 auto;
+    width    : 100%;
+    margin   : 0 auto;
 }
-.grid-1{
-    display: grid;
+
+.grid-1 {
+    display              : grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap                  : 20px;
 }
-.login-input input{
+
+.login-input input {
     width: 100%;
 }
+
 .rightContent h1 {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    font-size: 4.4rem;
+    font-size  : 4.4rem;
     line-height: 6.2rem;
-    color: var(--black);
+    color      : var(--black);
 }
+
 .rightContent h6 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: var(--black);
+    font-weight  : 400;
+    font-size    : 1.5rem;
+    line-height  : 2rem;
+    color        : var(--black);
     margin-bottom: 2rem;
 }
+
 .passwordToglerBtn {
-    position: absolute;
-    top: 3rem;
-    bottom: 0;
-    right: 1.8rem;
-    margin: auto;
-    cursor: pointer;
-    display: inline-block;
+    position   : absolute;
+    top        : 3rem;
+    bottom     : 0;
+    right      : 1.8rem;
+    margin     : auto;
+    cursor     : pointer;
+    display    : inline-block;
     align-items: center;
 }
-.grid-2{
-    display: grid;
+
+.grid-2 {
+    display              : grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap                  : 20px;
 }
-.login-btn{
+
+.login-btn {
     padding-top: 3rem;
 }
+
 .haveAccount span {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    cursor        : pointer;
+    font-weight   : bold;
+    font-size     : 1.6rem;
+    line-height   : 1.9rem;
     text-transform: uppercase;
-    color: var(--black);
-    margin-left: 0.3rem;
+    color         : var(--black);
+    margin-left   : 0.3rem;
 }
+
 .haveAccount {
     padding-top: 4rem;
     font-weight: normal;
-    font-size: 1.7rem;
+    font-size  : 1.7rem;
     line-height: 2rem;
-    color: var(--gray-1);
-}
-.haveAccount span {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    color: var(--black);
-    margin-left: 0.3rem;
+    color      : var(--gray-1);
 }
 
-@media screen and (max-width: 767.98px){
-    .modal-button button{
+.haveAccount span {
+    cursor        : pointer;
+    font-weight   : bold;
+    font-size     : 1.4rem;
+    line-height   : 1.5rem;
+    text-transform: uppercase;
+    color         : var(--black);
+    margin-left   : 0.3rem;
+}
+
+@media screen and (max-width: 767.98px) {
+    .modal-button button {
         padding: 1rem 1.5rem;
     }
-    .fade{
+
+    .fade {
         position: inherit;
-        height: calc(100vh - 20px);
+        height  : calc(100vh - 20px);
     }
-    .sign-in{
-        left: 2rem;
-        overflow-y:auto
+
+    .sign-in {
+        left      : 2rem;
+        overflow-y: auto
     }
-    .modal-body{
-        display: grid;
+
+    .modal-body {
+        display              : grid;
         grid-template-columns: 1fr;
     }
-    .right-modal{
-        display: grid;
+
+    .right-modal {
+        display              : grid;
         grid-template-columns: 1fr;
     }
-    .sideImage{
+
+    .sideImage {
         display: none;
     }
-    .rightContent{
+
+    .rightContent {
         width: 100%;
     }
-    .modal-body{
-        display: flex;
-        align-items: center;
+
+    .modal-body {
+        display        : flex;
+        align-items    : center;
         justify-content: center;
     }
-    .haveAccount{
-        font-size: 1.5rem;
+
+    .haveAccount {
+        font-size     : 1.5rem;
         padding-bottom: 1.5rem;
     }
-    .haveAccount p{
+
+    .haveAccount p {
         text-align: center;
     }
-    .haveAccount span{
+
+    .haveAccount span {
         display: inline-block;
     }
 }

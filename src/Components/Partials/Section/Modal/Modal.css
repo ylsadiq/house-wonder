@@ -17,8 +17,8 @@
 
 .modal_dialog {
     position      : relative;
-    width         : auto;
-    margin        : 1.75rem;
+    max-width     : 80rem;
+    margin        : 1.75rem auto;
     pointer-events: none;
 }
 
@@ -47,17 +47,18 @@
 }
 
 .modal_heading {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size  : 4.2rem;
-    line-height: 5.8rem;
-    text-align : center;
-    color      : var(--black);
+    font-family   : 'DM Serif Display', serif;
+    font-weight   : 400;
+    font-size     : 4.2rem;
+    line-height   : 5.8rem;
+    text-align    : center;
+    color         : var(--black);
+    padding-bottom: 3rem;
 }
 
-@media (min-width: 575.98px) {
+/* @media (min-width: 575.98px) {
     .modal_dialog {
         max-width: 80rem;
         margin   : 1.75rem auto;
     }
-}
+} */

@@ -7,7 +7,6 @@ import './ServiceRequest.css'
 function ServiceRequest({ targetId, handleClose, serviceName }) {
 
   const { consumer } = useSelector(state => state.auth)
-  console.log(consumer)
 
   async function handleSubmit(e) {
 
