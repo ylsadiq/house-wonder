@@ -1,6 +1,6 @@
 import React from 'react'
 import './MyListingForm.css'
-// import SecondForm from './SecondForm/SecondForm'
+import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
 
 function MyListingForm() {
@@ -12,13 +12,13 @@ function MyListingForm() {
                 <div className="container-fluid">
                     <div className="my-listing-step">
                         <div className="progress-count">
-                            <h6>step <span>1</span> of <span>2</span></h6>
+                            <h6>step <span>1</span> of <span>4</span></h6>
                         </div>
                         <div className="progress form-progress mb-4">
                             <div className="progress-bar form-prog"></div>
                         </div>
-                        <div className="form-title mt-2">
-                            Hi, <span>test11</span>
+                        <div className="form-title margin_top">
+                            Hi, <span>Test11!</span>
                             <span className='second-line'>Let's start posting your property.</span>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ function MyListingForm() {
                 </div>
             </div>
 
-            {/* <SecondForm /> */}
+            <SecondForm />
             <ThirdForm />
         </>
     )
