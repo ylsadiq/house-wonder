@@ -1,0 +1,87 @@
+.requestPackageBox {
+    padding: 2rem 4rem 2rem;
+}
+.packageBorder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-4);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.requestPackageBox h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 5.2rem;
+    color: var(--black);
+    padding-left: 0;
+}
+
+.requestPackageBox  .priceTitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 7rem;
+    color: var(--black);
+    text-decoration: line-through;
+}
+
+.requestPackageBox h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+    color: var(--black);
+}
+
+.facilitiesList h6 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+}
+
+.facilitiesList ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+.facilitiesList ul li {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.facilitiesList .authFormInput {
+    margin-bottom: 1.2rem;
+}
+
+.authFormInput .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: .125rem;
+}
+.authFormInput label, .authFormInput input, .authFormInput select, .authFormInput textarea {
+    font-weight: normal;
+    font-size: 1.6rem !important;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+}
+
+.authFormInput .form-check input{
+    float: left;
+    margin-left: -2.3rem;
+    margin-top: .5rem;
+    accent-color: var(--black);
+}
+
+.requestPackageBox .button_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3rem;
+}
+
+.requestPackageBox .button_wrapper>*:not(:last-child) {
+    margin-right: 1.5rem;
+}

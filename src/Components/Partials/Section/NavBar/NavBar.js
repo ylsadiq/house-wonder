@@ -6,6 +6,7 @@ import SignIn from '../../Section/SignIn/SignIn';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, reset } from '../../../../Redux/Features/Auth/authSlice';
 import Modal from '../Modal/Modal';
+import SignUp from '../SignIn/SignUp/SignUp';
 
 function NavBar() {
 
@@ -14,10 +15,12 @@ function NavBar() {
 
     const [showModal, setShowModal] = useState(false);
     const [showSignIn, setShowSignIn] = useState(false);
+    const [showSignUp, setShowSignUp] = useState(false);
 
     function handleClose() {
         setShowModal(false);
         setShowSignIn(false);
+        setShowSignUp(false);
     }
     // const handleModal = (e) => {
     //     e.preventDefault();
@@ -42,10 +45,10 @@ function NavBar() {
                                 <li className="nav-item"><Link className="nav-link" to="/buy">Buy</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="">Rent</Link></li>
                                 {/* <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li> */}
-                                <li className="nav-item"><button onClick={()=>{
-                                            setShowModal(true)
-                                            setShowSignIn(true)
-                                        }} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
+                                <li className="nav-item"><button onClick={() => {
+                                    setShowModal(true)
+                                    setShowSignIn(true)
+                                }} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
                             </ul>
                         </div>
                         <div className="nav-band">
@@ -62,7 +65,7 @@ function NavBar() {
                                         <button onClick={handleLogout} className='login btn'>Log Out</button>
                                         :
                                         // <button onClick={handleModal} className='login btn'>Log In</button>
-                                        <button onClick={()=>{
+                                        <button onClick={() => {
                                             showModal(true)
                                             showSignIn(true)
                                         }} className='login btn'>Log In</button>
@@ -75,11 +78,19 @@ function NavBar() {
                     {showModal &&
                         <Modal
                             handleClose={handleClose}
-                            extraClass="sign_in_modal"
                         >
                             {showSignIn &&
                                 <SignIn
                                     handleClose={handleClose}
+                                    setShowSignIn={setShowSignIn}
+                                    setShowSignUp={setShowSignUp}
+                                />
+                            }
+                            {showSignUp &&
+                                <SignUp
+                                    handleClose={handleClose}
+                                    setShowSignIn={setShowSignIn}
+                                    setShowSignUp={setShowSignUp}
                                 />
                             }
                         </Modal>

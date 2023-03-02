@@ -17,9 +17,13 @@
 
 .modal_dialog {
     position      : relative;
-    max-width     : 80rem;
+    max-width     : 114rem;
     margin        : 1.75rem auto;
     pointer-events: none;
+}
+
+.modal.small .modal_dialog {
+    max-width: 80rem;
 }
 
 .modal_dialog_centered {

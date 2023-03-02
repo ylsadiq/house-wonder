@@ -54,71 +54,6 @@ function Service() {
                                             </a>
                                         </div>
                                     ))}
-                                    {/* <div className="service-list">
-                                        <a href="#serv1" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post} alt="" />
-                                            </span>
-                                            Post Your Property
-                                        </a>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post5} alt="" />
-                                            </span>
-                                            Advertise Your Property
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post2} alt="" />
-                                            </span>
-                                            Home repair and refurbishment
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post6} alt="" />
-                                            </span>
-                                            Property management
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post3} alt="" />
-                                            </span>
-                                            Real estate/New developments
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post7} alt="" />
-                                            </span>
-                                            Legal services
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post4} alt="" />
-                                            </span>
-                                            Home Loan
-                                        </Link>
-                                    </div>
-                                    <div className="service-list">
-                                        <Link to="" className="service-pack">
-                                            <span className='service-img'>
-                                                <img src={post8} alt="" />
-                                            </span>
-                                            Pack and move
-                                        </Link>
-                                    </div> */}
-
                                 </div>
 
                                 <p className="service-property-details">You can post your property on our website for free
@@ -153,6 +88,7 @@ function Service() {
                 <Modal
                     handleClose={handleClose}
                     modalHeading='Requested Services'
+                    extraClass='small'
                 >
                     {showRequestService &&
                         <ServiceRequest

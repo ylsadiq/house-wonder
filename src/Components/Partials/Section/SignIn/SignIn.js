@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import modalBanner from '../../../../Assets/image/modal/modal-banner.png';
 import modalLogo from '../../../../Assets/image/bastu-login-logo.svg';
-import SignUp from './SignUp/SignUp';
+// import SignUp from './SignUp/SignUp';
 import { consumerLogin, reset } from '../../../../Redux/Features/Auth/authSlice';
 
 import './SignIn.css';
 
-function SignIn({ showModal, setShowModal, handleClose }) {
+function SignIn({ showModal, setShowModal, handleClose, setShowSignIn, setShowSignUp }) {
 
     const { consumer, isSuccess } = useSelector((state) => state.auth);
     const navigate = useNavigate();
@@ -37,12 +37,10 @@ function SignIn({ showModal, setShowModal, handleClose }) {
 
     }
 
-    const [showSignUp, setShowSignUp] = useState(false);
-
-    const handleSignUp = (e) => {
-        e.preventDefault();
-        setShowSignUp((showSignUp) => !showSignUp);
-    }
+    // const handleSignUp = (e) => {
+    //     e.preventDefault();
+    //     setShowSignUp((showSignUp) => !showSignUp);
+    // }
 
     return (
         <div className="modal-body">
@@ -94,7 +92,10 @@ function SignIn({ showModal, setShowModal, handleClose }) {
                                 <button type="button" className="btn">forgot password?</button>
                             </div>
                             <div className="grid-1 haveAccount">
-                                <p>Don’t have any account?<span onClick={handleSignUp}>Create one!</span>
+                                <p>Don’t have any account?<span onClick={()=>{
+                                    setShowSignIn(false)
+                                    setShowSignUp(true)
+                                }}>Create one!</span>
                                 </p>
                             </div>
                         </div>

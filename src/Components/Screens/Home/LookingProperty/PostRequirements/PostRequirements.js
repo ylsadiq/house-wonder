@@ -197,22 +197,26 @@ function PostRequirements({ handleClose }) {
                     <h6>Property Info</h6>
                     <div className="radio_inputs">
                         <label>You’re looking to:</label>
-                        <input
-                            type="radio"
-                            id='buy'
-                            value='buy'
-                            checked={acquisition === 'buy'}
-                            onChange={e => setAcquisition(e.target.value)}
-                        />
-                        <label htmlFor="buy">Buy</label>
-                        <input
-                            type="radio"
-                            id='rent'
-                            value='rent'
-                            checked={acquisition === 'rent'}
-                            onChange={e => setAcquisition(e.target.value)}
-                        />
-                        <label htmlFor="rent">Rent</label>
+                        <div>
+                            <input
+                                type="radio"
+                                id='buy'
+                                value='buy'
+                                checked={acquisition === 'buy'}
+                                onChange={e => setAcquisition(e.target.value)}
+                            />
+                            <label htmlFor="buy">Buy</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id='rent'
+                                value='rent'
+                                checked={acquisition === 'rent'}
+                                onChange={e => setAcquisition(e.target.value)}
+                            />
+                            <label htmlFor="rent">Rent</label>
+                        </div>
                     </div>
                     <div className="form-floation">
                         <input

@@ -1,116 +1,73 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { PACKGE_TYPES_API } from '../../../../Utilities/APIs/APIs';
+import Modal from '../../../Partials/Section/Modal/Modal';
 import PackagCard from '../PackagCard/PackagCard'
+import PackageRequest from '../PackageRequest/PackageRequest';
 
 import './PackageSquareFeets.css'
 
 function PackageSquareFeets({ psfId, psfName }) {
-
+    const [showModal, setShowModal] = useState(false);
+    const [showPackageRequest, setShowPackageRequest] = useState(false);
     const [packageTypes, setPackageTypes] = useState(null);
+    const [targetId, setTargetId] = useState('');
+    
 
     useEffect(() => {
         async function getAndSetPackageTypes() {
             const { data } = await axios.get(PACKGE_TYPES_API + 'getPackageTypeFromSquareFeet/' + psfId)
-            // const 
             setPackageTypes(data)
         }
 
         getAndSetPackageTypes()
     }, [psfId])
 
+    function handleClose() {
+        setShowModal(false);
+        setShowPackageRequest(false);
+    }
 
 
     return (
+        <>
         <div className='package_type'>
-            <h1 className="package-subTitle"> Upto {psfName} sqft area</h1>
+            <h1 className="package-subTitle">{psfName}</h1>
             <div className="package-card">
                 {packageTypes?.map(packageType => (
                     <PackagCard
-                        kay={packageType._id}
+                        key={packageType._id}
+                        id={packageType._id}
                         name={packageType.name}
                         amount={packageType.amount}
                         description={packageType.description}
+                        setShowModal={setShowModal}
+                        setShowPackageRequest={setShowPackageRequest}
+                        setTargetId={setTargetId}
                     />
-                ))}
-                {/* <PackagCard />
-                <PackagCard /> */}
-
-
-                {/* <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div>
-                <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div>
-                <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div>
-                <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div>
-                <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div>
-                <div className="card package-card-update">
-                    <div className="card-body">
-                        <h5>Basic</h5>
-                        <h3>Tk 1,800</h3>
-                    </div>
-                    <div className="card-footer">
-                        <div className="details">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
-                        </div>
-                        <button className="btn btn-dark">Request Package</button>
-                    </div>
-                </div> */}
+                    ))}
+                    <PackagCard
+                    name='Custom'
+                    amount='12000'
+                    description='Custom description Custom description Custom description'
+                    />
             </div>
+            <div></div>
         </div>
+        {showModal &&
+                <Modal
+                    handleClose={handleClose}
+                    extraClass="small"
+                >
+                    {showPackageRequest &&
+                        <PackageRequest
+                            targetId={targetId}
+                            handleClose={handleClose}
+                        />
+                    }
+                </Modal>
+            }
+        </>
     )
 }
 

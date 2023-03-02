@@ -1,6 +1,6 @@
 import './PackagCard.css';
 
-function PackagCard({name, amount, description}) {
+function PackagCard({id, name, amount, description, setShowModal, setShowPackageRequest, setTargetId}) {
     return (
         <div className="card package-card-update">
             <div className="card-body">
@@ -11,7 +11,13 @@ function PackagCard({name, amount, description}) {
                 <div className="details">
                     <p>{description}</p>
                 </div>
-                <button className="btn btn-dark">Request Package</button>
+                <button className="btn btn-dark" 
+                onClick={()=> {
+                    setShowModal(true)
+                    setShowPackageRequest(true)
+                    setTargetId(id)
+                }}
+                >Request Package</button>
             </div>
         </div>
     )

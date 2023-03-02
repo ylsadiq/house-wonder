@@ -16,6 +16,7 @@ export const FACILITIES_API = API_URL + 'package/facilities/'
 export const PACKGE_TYPE_FACILITIES_API = API_URL + 'package/packageTypeFacilities/'
 export const PACKGE_REQUESTS_API = API_URL + 'package/packageRequests/'
 export const PACKGE_REQUEST_FACILITIES_API = API_URL + 'package/packageRequestFacilities/'
+export const FACILITIES_FROM_PACKAGE_TYPE_API = API_URL + 'package/packageTypeFacilities/getFacilityFromPackageType/'
 export const CONSUMER_CONSULTENSIS_API = API_URL + 'users/consumerConsultancies/'
 
 export const PROPERTY_CATEGORIES_API = API_URL + 'property/propertyCategories/'
