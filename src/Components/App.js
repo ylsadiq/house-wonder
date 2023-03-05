@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Partials/Section/Footer/Footer';
 import NavBar from './Partials/Section/NavBar/NavBar';
 import Buy from './Screens/Buy/Buy';
+import BuyDetails from './Screens/Buy/BuyDetails/BuyDetails';
 import ContactForm from './Screens/ContactForm/ContactForm';
 import ChangePassword from './Screens/DashBoard/ChangePassword/ChangePassword';
 import DashBoard from './Screens/DashBoard/DashBoard';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/home" element={<Home />}/>
         <Route path="/buy" element={<Buy />}/>
+        <Route path="/buy/details" element={<BuyDetails />}/>
         <Route path="/packages" element={<Packages />}/>
         <Route path="/service" element={<Service />}/>
         <Route path="/contact" element={<ContactForm />}/>

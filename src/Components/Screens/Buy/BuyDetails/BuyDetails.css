@@ -1,0 +1,230 @@
+.buy-details{
+    padding: 10rem 0;
+}
+.buy-details-content{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding-top: 6.4rem;
+    max-width: 118rem;
+    margin: 0 auto;
+}
+.location{
+    display: flex;
+    align-items: center;
+    
+}
+.location img{
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-top: -0.7rem;
+    margin-right: 1rem;
+}
+.location-name{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+}
+.porperty-deal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.propery-name{
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 4.8rem;
+    line-height: 3.6rem;
+    color: var(--black);
+}
+.propery-id{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--black);
+}
+.info-header{
+    border-bottom: 1px solid var(--gray-2);
+    margin-bottom: 2.8rem;
+}
+.property-magerment{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.property-magerment ul{
+    display: flex;
+    align-items: center;
+    list-style-type: disc;
+    margin-block-start: .7em;
+    margin-block-end: .7em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+.property-magerment ul li {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: var(--black);
+    margin-right: 2.4rem;
+    position: relative;
+}
+.property-magerment ul li span {
+    font-weight: 600;
+}
+/* .porpery-icons-btn{
+    
+} */
+.properties-box {
+    background-color: var(--white);
+    border: 1px solid var(--gray-2);
+    box-shadow: 6px 10px 63px rgb(0 0 0 / 5%);
+    border-radius: 1.3rem;
+    padding: 4.4rem 5.2rem;
+    margin-bottom: 2rem;
+}
+.properties-box h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: var(--black);
+    margin-bottom: 3.2rem;
+}
+.properties-box h4 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: var(--black);
+}
+.properties-box h6 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray-1);
+}
+.left-input-box{
+    border-right: 1px solid var(--gray-2);
+    padding-right: 6rem;
+}
+
+.porpery-details{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+}
+.properties-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.properties-box ul{
+    padding-left: 1.5rem;
+}
+.properties-box ul li {
+    list-style-type: disc;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    color: var(--black);
+    margin-bottom: 2.2rem;
+}
+.map-title{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--black);
+    margin-bottom: 1.4rem;
+}
+.map-conatainer{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+#single_propery_map{
+    height: 41.8rem;
+    width: 100%;
+    border-radius: 1.6rem;
+}
+.location_porperty{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(229, 227, 223);
+}
+.map-style{
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    font: 400 11px Roboto, Arial, sans-serif;
+    text-decoration: none;
+}
+.claculate{
+    margin-top: 2rem;
+}
+.claculate button{
+    padding: 1.6rem 0;
+}
+.right-input{
+    display: flex;
+    align-self: center;
+}
+.right-input-box{
+    padding-left: 4rem;
+}
+.calculator-output{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.calculator-output>div:first-child {
+    color: var(--black);
+}
+.calculator-output>div {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+.buy-details-right{
+    height: 77vh;
+    position: sticky;
+    top: 13rem;
+}
+.request-box {
+    background-color: var(--white);
+    border: 1px solid var(--gray-2);
+    box-shadow: 8px 12px 65px rgb(0 0 0 / 5%);
+    border-radius: 1.6rem;
+    padding: 4.3rem 4rem 3.3rem 4rem;
+    margin-bottom: 2rem;
+}
+.request-box h6 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: var(--gray-1);
+    margin-bottom: 0.6rem;
+}
+.request-box h2 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: -0.01em;
+    color: var(--black);
+    margin-bottom: 3.8rem;
+}
+.request-box .btn{
+    width: 100%;
+}
