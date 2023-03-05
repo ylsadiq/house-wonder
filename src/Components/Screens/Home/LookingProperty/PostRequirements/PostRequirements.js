@@ -151,7 +151,10 @@ function PostRequirements({ handleClose }) {
                     </div>
 
                     <div class="form-floation mb-5">
-                        <select class="form-select">
+                        <select class="form-select"
+                        value={whenYouNeed}
+                        onChange={e => setWhenYouNeed(e.target.value)}
+                        >
                             <option value="Immediately">Immediately</option>
                             <option value="Within a month">Within a month</option>
                             <option value="Within 3 month">Within 3 month</option>
@@ -233,10 +236,13 @@ function PostRequirements({ handleClose }) {
 
                     <div className="grid-2">
                         <div class="form-floation mb-5">
-                        <select class="form-select">
-                                <option value="Immediately">Property Type</option>
-                                <option value="Within a month">Residential For Buy</option>
-                                <option value="Within 3 month">Commercial To Buy</option>
+                        <select class="form-select"
+                        value={selectedPropertyCategory}
+                        onChange={e => setSelectedPropertyCategory(e.target.value)}>
+                                <option value="0" hidden>Property Categorys</option>
+                            {propertyCategorys?.map(propertyCategory => (
+                                <option value={propertyCategory._id}>{propertyCategory.name}</option>
+                            ))}
 
                             </select>
                                 <label htmlFor="floatingSelect">Property Type</label>
@@ -253,9 +259,13 @@ function PostRequirements({ handleClose }) {
 
                     <div className="grid-2">
                         <div class="form-floation mb-5">
-                        <select class="form-select">
-                                <option value="">Preferred City</option>
-                                <option value="1">Dhaka</option>
+                        <select class="form-select"
+                        value={selectedPropertyCityArea}
+                        onChange={e => setSelectedPropertyCityArea(e.target.value)}>
+                                <option value="0" hidden>Property City Area</option>
+                            {propertyCityAreas?.map(propertyCityArea => (
+                                <option value={propertyCityArea._id}>{propertyCityArea.name}</option>
+                            ))}
 
                             </select>
                                 <label htmlFor="floatingSelect">Preferred City</label>
