@@ -9,6 +9,9 @@ function PostRequirements({ handleClose }) {
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [bedRooms, setBedRooms] = useState('');
+    const [bathRooms, setBathRooms] = useState('');
+    const [area, setArea] = useState('');
     const [streetAddress, setStreetAddress] = useState('');
     const [occupation, setOccupation] = useState('');
     const [maritalStatus, setMaritalStatus] = useState('');
@@ -19,7 +22,6 @@ function PostRequirements({ handleClose }) {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [acquisition, setAcquisition] = useState('buy');
-    console.log(acquisition)
     const [propertyCategorys, setPropertyCategorys] = useState(null);
     const [selectedPropertyCategory, setSelectedPropertyCategory] = useState('');
     const [propertyCityAreas, setPropertyCityAreas] = useState(null);
@@ -52,8 +54,11 @@ function PostRequirements({ handleClose }) {
             email,
             phone,
             message,
+            bedRooms,
+            bathRooms,
             streetAddress,
             occupation,
+            area,
             maritalStatus,
             longYouNeed,
             whenYouNeed,
@@ -121,7 +126,7 @@ function PostRequirements({ handleClose }) {
                             className="form-control"
                             placeholder="Your Phone Number"
                             value={phone}
-                            onChange={e => setName(e.target.value)}
+                            onChange={e => setPhone(e.target.value)}
                         />
                         <label>Your Phone Number</label>
                         </div>
@@ -136,8 +141,8 @@ function PostRequirements({ handleClose }) {
                                 type="email"
                                 className="form-control"
                                 placeholder="Your Email (Optional)"
-                                value={phone}
-                                onChange={e => setName(e.target.value)}
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
                             />
                             <label>Your Email (Optional)</label>
                             </div>
@@ -203,8 +208,8 @@ function PostRequirements({ handleClose }) {
                             type="text"
                             className="form-control"
                             placeholder="No. Of Bedrooms"
-                            value={phone}
-                            onChange={e => setName(e.target.value)}
+                            value={bedRooms}
+                            onChange={e => setBedRooms(e.target.value)}
                         />
                         <label>No. Of Bedrooms</label>
                         </div>
@@ -215,9 +220,9 @@ function PostRequirements({ handleClose }) {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="No. Of Bedrooms"
-                            value={phone}
-                            onChange={e => setName(e.target.value)}
+                            placeholder="No. Of Bathrooms"
+                            value={bathRooms}
+                            onChange={e => setBathRooms(e.target.value)}
                         />
                         <label>No. Of Bedrooms</label>
                         </div>
@@ -261,8 +266,8 @@ function PostRequirements({ handleClose }) {
                             <input
                                 type="text"
                                 className="form-control"
-                                value={phone}
-                                onChange={e => setName(e.target.value)}
+                                value={area}
+                                onChange={e => setArea(e.target.value)}
                             />
                             <label>Area</label>
                             </div>
@@ -279,8 +284,8 @@ function PostRequirements({ handleClose }) {
                                 type="text"
                                 className="form-control"
                                 placeholder="flatSize"
-                                value={phone}
-                                onChange={e => setName(e.target.value)}
+                                value={sqft}
+                                onChange={e => setSqft(e.target.value)}
                             />
                             <label>Flat Size (sqft.)</label>
                             </div>
@@ -296,10 +301,10 @@ function PostRequirements({ handleClose }) {
                             type="text"
                             className="form-control"
                             placeholder="Price (Max)- BDT"
-                            value={maxPrice}
-                            onChange={e => setMaxPrice(e.target.value)}
+                            value={minPrice}
+                            onChange={e => setMinPrice(e.target.value)}
                         />
-                        <label>Price (Max)- BDT</label>
+                        <label>Price (Min)- BDT</label>
                         </div>
                         
                     </div>
