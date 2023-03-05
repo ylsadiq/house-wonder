@@ -1,0 +1,19 @@
+.form-title-info{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 3.4rem;
+    color: var(--black);
+    margin-bottom: 2.4rem;
+}
+.mb-5{
+    margin-bottom: 2.3rem;
+}
+.my-profile-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post_requirement_form{
+    height: 380px;
+    overflow: auto;
+}

@@ -1,5 +1,4 @@
 import { RiCloseLine } from 'react-icons/ri'
-
 import './Modal.css';
 
 function Modal({ modalHeading, handleClose, children, extraClass }) {

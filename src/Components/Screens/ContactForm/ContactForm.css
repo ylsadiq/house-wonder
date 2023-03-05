@@ -102,3 +102,21 @@
     padding: 1.5rem 0;
     width: 100%;
 }
+.radio_inputs {
+    padding: 2.4rem 2rem 3rem 0;
+}
+.radio_inputs, .radio_inputs>div {
+    display: flex;
+    align-items: center;
+}
+.radio_inputs label {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--gray-1);
+}
+
+.radio_inputs input[type=radio] {
+    accent-color: black;
+    margin: .2rem .6rem 0 3rem;
+}
