@@ -8,11 +8,16 @@ import share from '../../../../Assets/icon/fi_share-2.svg';
 import print from '../../../../Assets/icon/u_print.svg';
 import heart from '../../../../Assets/icon/u_heart.svg';
 import plus from '../../../../Assets/icon/fi_plus-square.svg';
+import user from '../../../../Assets/image/profile/agentImage.png';
+import arrow from '../../../../Assets/home/arrowDown.svg';
+import phone from '../../../../Assets/home/phoneAltBox.svg';
+import email from '../../../../Assets/home/email-box.svg'
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import './BuyDetails.css';
+import FeaturedProperties from '../../Home/FeaturedProperties/FeaturedProperties';
 
 function BuyDetails() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -99,7 +104,7 @@ function BuyDetails() {
                     </div>
                     </div>
                     </div>
-                    <div className="grid-1">
+                    <div className="grid-1 pb-4">
                         <p className="porpery-details">
                         vbhmghjfg
                         </p>
@@ -220,6 +225,7 @@ function BuyDetails() {
                         </form>
                     </div>
                 </div>
+
                 <div className="buy-details-right">
                 <div className="request-box desktop-box">
                     <div>
@@ -228,13 +234,57 @@ function BuyDetails() {
                         <input type="hidden" name="map_price" id="map_price" value="21,345"/ >
                     </div>
                     <div>
-                        <button className="btn btn-dark">
+                        <button className="btn btn-dark ">
                             Buy request
                         </button>
                         
                     </div>
                 </div>
+                <div className="contact-info-box">
+                    <div className="user-info">
+                        <div className="user-img">
+                            <img src={user} alt="" />
+                        </div>
+                        <div className="user-details">
+                            <h5>Shaon</h5>
+                            <h6>Owner</h6>
+                        </div> 
+                    </div>
+
+                    <div className="user-contact-info-box">
+                            <div className="user-contact">
+                                <h6>Email</h6>
+                            </div>
+                        </div>
+                    <div className="user-contact-info-box">
+                    <div class="user-contact">
+                        <h6>Phone Number</h6>
+                        <h5>01521401458</h5>
+                    </div>
+                    </div>
+                        
+                    <div  className="contact-btn">
+                    <button>Show contact info</button>
+                    <img src={arrow} alt="" />
+                    </div>
+                    
                 </div>
+                <div className="bastu-contact-info">
+                       <h1>contact Bastu</h1>
+                       <div>
+                       <a href="tel:+0000000000">
+                        <img src={phone} alt="" />
+                       </a>
+                       <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@bastu.com.bd">
+                        <img src={email} alt="" />
+                       </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div className="related-property">
+
+            <FeaturedProperties />
             </div>
             </div>
         </section>
