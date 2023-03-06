@@ -13,6 +13,7 @@ import MyProfile from './Screens/DashBoard/MyProfile/MyProfile';
 import RequestedPackages from './Screens/DashBoard/RequestedPackages/RequestedPackages';
 import Home from './Screens/Home/Home';
 import Packages from './Screens/Packages/Packages';
+import Rent from './Screens/Rent/Rent';
 import Service from './Screens/Service/Service';
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/home" element={<Home />}/>
         <Route path="/buy" element={<Buy />}/>
+        <Route path="/rent" element={<Rent />}/>
         <Route path="/buy/details" element={<BuyDetails />}/>
         <Route path="/packages" element={<Packages />}/>
         <Route path="/service" element={<Service />}/>

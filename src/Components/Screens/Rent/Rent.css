@@ -1,0 +1,83 @@
+
+.advacneSearchSticky {
+    position: fixed;
+    top: 9rem;
+    left: 0;
+    right: 0;
+    transition: .3s;
+    z-index: 1020;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.lg-advance-search{
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-2);
+}
+.property_filter_search {
+    background-color: var(--white);
+    max-width: 81.4rem;
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--gray2);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1.6rem;
+    transition: .2s;
+}
+.advanceSearchCont{
+    max-width: 139.9rem;
+    margin: auto;
+    position: relative;
+}
+.search-box {
+    border-radius: 1.2rem;
+    padding: 1.6rem 1.6rem 1.6rem 3.4rem;
+}
+.advance-input {
+    position: relative;
+}
+.advance-search-content{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 40px;
+}
+.advance-input input {
+    padding: 2.3rem 2.3rem 2.3rem 3rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+    border: none;
+}
+.rent-content{
+    margin-top: 15rem;
+}
+.rent-details-left h2{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 5.6rem;
+}
+.resultTitle span:last-child {
+    font-weight: 400;
+    color: var(--black);
+}
+.rent-details-right{
+    border: 1px solid #ccc;
+}
+.rent-container{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+}
+.rent-search{
+    padding: 0 3rem;
+}
+.advance-input img {
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
