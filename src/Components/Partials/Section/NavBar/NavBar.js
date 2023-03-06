@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logout, reset } from '../../../../Redux/Features/Auth/authSlice';
 import Modal from '../Modal/Modal';
 import SignUp from '../SignIn/SignUp/SignUp';
+import UserDropDown from './UserDropDown/UserDropDown';
 
 function NavBar() {
 
@@ -59,7 +60,7 @@ function NavBar() {
                                 <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/service">Service</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/contact">contact</Link></li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     {consumer
                                         ?
                                         <button onClick={handleLogout} className='login btn'>Log Out</button>
@@ -70,7 +71,9 @@ function NavBar() {
                                             showSignIn(true)
                                         }} className='login btn'>Log In</button>
                                     }
-                                </li>
+                                </li> */}
+
+                                <li className="nav-item"><UserDropDown /></li>
                             </ul>
                         </div>
                     </div>

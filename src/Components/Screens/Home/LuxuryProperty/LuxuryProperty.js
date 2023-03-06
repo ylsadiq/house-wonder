@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LuxuryProperty.css';
 import location from '../../../../Assets/home/location icon.svg';
 import luxuryImage from '../../../../Assets/home/luxury image.png'
+import Modal from '../../../Partials/Section/Modal/Modal';
+import BuyRequest from '../../BuyRequest/BuyRequest';
 
 function LuxuryProperty() {
+    const [showModal, setShowModal] = useState(false);
+    const [Buyrequest, setBuyRequest] = useState(false);
+    function handleClose() {
+        setShowModal(false);
+        setBuyRequest(false);
+    }
   return (
     <div className="Luxury-property">
         <div className="container-fluid">
@@ -34,7 +42,10 @@ function LuxuryProperty() {
                                 <h2>Tk. 2,00,00,000</h2>
                             </div>
                             <div className='buy-now'>
-                                <button className="btn btn-dark">buy now</button>
+                                <button className="btn btn-dark" onClick={() => {
+                                    setShowModal(true)
+                                    setBuyRequest(true)
+                                }}>buy now</button>
                             </div>
                         </div>
 
@@ -44,6 +55,18 @@ function LuxuryProperty() {
                     <img src={luxuryImage} alt="" />
                 </div>
             </div>
+            {showModal &&
+                <Modal
+                    handleClose={handleClose}
+                    modalHeading='Buy Request'
+                >
+                    {Buyrequest &&
+                        <BuyRequest
+                            handleClose={handleClose}
+                        />
+                    }
+                </Modal>
+            }
         </div>
     </div>  
     )

@@ -1,0 +1,55 @@
+.user-dropdown-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all ease-out .6s;
+}
+.user-img{
+    height: 7.6rem;
+    width: 7.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+.user-img img{
+    width: 100%;
+    height: 100%;
+}
+.user-name h4{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: var(--black);
+}
+.user-arrow{
+    transition: all ease-out .6s;
+    transform: rotate(180deg);
+}
+.user-icon-rotate{
+    transition: all ease-out .6s;
+    transform: rotate(360deg);
+}
+.user-login-info{
+    position: absolute;
+    top: 9rem;
+    right: 2rem;
+    padding: 3rem 8rem;
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+}
+.user-hidden{
+    display: none;
+}
+.user-item{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
