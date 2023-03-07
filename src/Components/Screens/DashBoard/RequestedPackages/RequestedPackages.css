@@ -126,3 +126,21 @@ table tbody td {
 
     }
 }
+@media screen and (max-width: 380px){
+    .table-container {
+        display: block;
+        width: 30rem;
+        overflow: auto;
+  /* height: 2em; */
+    }
+    .table-container 
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: #aaa;
+      }
+      .table-container::-webkit-scrollbar-thumb {
+        background: #000;
+      }
+    .table-row{}
+}
