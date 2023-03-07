@@ -34,8 +34,8 @@ function DashBoard() {
                                             <Properties /> <span className={`${dropDown ? "dropdown-toggle" : null}`}>
                                                 <span>Requested properties <img className={`${dropDown ? "arrow-down" : null}`} src={arrowDown} alt="" /></span>
                                                 <ul className='dropdown'>
-                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="">Buy Requests</Link></li>
-                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="">Rent Requests</Link></li>
+                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="/dashboard/buyRequests">Buy Requests</Link></li>
+                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="/dashboard/rentRequests">Rent Requests</Link></li>
                                                 </ul>
                                             </span>
                                         </div>

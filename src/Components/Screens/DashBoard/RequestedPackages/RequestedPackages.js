@@ -1,16 +1,15 @@
 import React from 'react';
 import TableListing from '../Listing/TableListing';
+import RequestsTable from '../RequestsTable/RequestsTable';
 import './RequestedPackages.css';
 
-function RequestedPackages() {
+function RequestedPackages({RequestsHeading}) {
   return (
     <section className="requested-packages">
         <div className="container-fluid">
-        <h1 class="listing-title">Package Requests</h1>
-        <div className="listing-items">
-            <TableListing />
-        </div>
-        
+        <RequestsTable
+        RequestsHeading='Package Requests' 
+        />    
         </div>
     </section>
   )

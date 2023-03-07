@@ -16,6 +16,7 @@ function BuySlider() {
   return (
     <div className="porpery-image-slider">
       <Swiper
+      
         spaceBetween={10}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Thumbs]}
