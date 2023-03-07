@@ -2,6 +2,7 @@
 .post-user-info{
     display: flex;
     align-items: center;
+    padding-bottom: 4rem;
 }
 .post-user-img{
     height: 18rem;

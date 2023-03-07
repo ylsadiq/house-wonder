@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 160px;
     gap: 40px;
+    padding-bottom: 3.5rem;
 }
 .listing-title{
     font-family: 'DM Serif Display', serif;
@@ -146,8 +147,13 @@
     .listings-content{
         padding: 0 3.2rem;
     }
+    .add-listing svg{
+        width: 30px;
+        height: 30px;
+    }
+    
     .tab-content-header h1{
-        font-size: 3rem !important;
+        font-size: 4rem !important;
         line-height: 3rem;
     }
     .tab-content-header{
@@ -157,12 +163,11 @@
     }
     .tab-content-header button{
         margin: 0;
-        
+        border: none;
     }
    
     .tab-content .add-listing {
         width: 30px;
-        height: 30px;
     }
     .listing-card {
         /* margin-left: 2rem; */
