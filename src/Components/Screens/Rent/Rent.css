@@ -48,6 +48,7 @@
     line-height: 2.4rem;
     color: var(--gray-1);
     border: none;
+    width: 80%;
 }
 .rent-content{
     margin-top: 15rem;
@@ -68,9 +69,6 @@
     display: grid;
     grid-template-columns: 1fr 400px;
     gap: 40px;
-}
-.rent-search{
-    padding: 0 3rem;
 }
 .advance-input img {
     height: 2.4rem;

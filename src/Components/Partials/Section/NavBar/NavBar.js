@@ -44,7 +44,7 @@ function NavBar() {
                         <div className="left_menu">
                             <ul className="navbar-nav">
                                 <li className="nav-item"><Link className="nav-link" to="/buy">Buy</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="">Rent</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/rent">Rent</Link></li>
                                 {/* <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li> */}
                                 <li className="nav-item"><button onClick={() => {
                                     setShowModal(true)

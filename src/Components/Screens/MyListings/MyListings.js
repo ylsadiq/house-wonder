@@ -30,7 +30,7 @@ function MyListings() {
                                                 <img src={location} alt="" />
                                             </div>
                                         </div>
-                                        <p><img src="assets/images/home/location icon.svg" alt="" />Gulshan 1, Dhaka</p>
+                                        <p><img src={location} alt="" />Gulshan 1, Dhaka</p>
 
                                         <ul>
                                             <li>4 Bed</li>
@@ -61,7 +61,7 @@ function MyListings() {
                                                 <img src={location} alt="" />
                                             </div>
                                         </div>
-                                        <p><img src="assets/images/home/location icon.svg" alt="" />Gulshan 1, Dhaka</p>
+                                        <p><img src={location} alt="" />Gulshan 1, Dhaka</p>
 
                                         <ul>
                                             <li>4 Bed</li>
@@ -92,7 +92,9 @@ function MyListings() {
                                                 <img src={location} alt="" />
                                             </div>
                                         </div>
-                                        <p><img src="assets/images/home/location icon.svg" alt="" />Gulshan 1, Dhaka</p>
+                                        <p>
+                                        <img src={location} alt="" />
+                                        Gulshan 1, Dhaka</p>
 
                                         <ul>
                                             <li>4 Bed</li>

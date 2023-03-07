@@ -13,7 +13,6 @@
 }
 .card-bg {
     filter: drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05));
-    /* background: rgba(0, 0, 0, 0.05); */
     border-radius: 1.6rem;
     border: none;
     overflow: hidden;
@@ -82,7 +81,6 @@
     font-size: 1.6rem;
     line-height: 1.9rem;
     color: var(--black);
-    /* margin-bottom: 2rem; */
 }
 .horizontalGps{
     display: flex;
@@ -149,6 +147,14 @@
     color: var(--black);
 }
 
+.horizontal-prop-card p img{
+    height: 1.4rem;
+    width: 1.4rem;
+    display: inline-block ;
+    width: initial ;
+    margin-top: -0.4rem;
+    margin-right: 0.8rem;
+}
 .my-listing-map{
     position: sticky;
     top: 10.1rem;

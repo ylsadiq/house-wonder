@@ -1,5 +1,5 @@
 import React from 'react';
-// import AdvanceSearch from '../../Partials/Section/AdvanceSearch/AdvanceSearch';
+import FullWidthSearch from '../../Partials/Section/AdvanceSearch/FullWidthSearch/FullWidthSearch';
 import MyListings from '../MyListings/MyListings';
 import './Buy.css';
 
@@ -7,7 +7,7 @@ function Buy() {
   return (
     <section className="buy">
         <div className="container-fluid">
-            {/* <AdvanceSearch /> */}
+            <FullWidthSearch />
             <MyListings />
         </div>
     </section>

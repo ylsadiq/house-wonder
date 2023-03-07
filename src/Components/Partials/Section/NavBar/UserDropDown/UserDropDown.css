@@ -23,12 +23,12 @@
     color: var(--black);
 }
 .user-arrow{
-    transition: all ease-out .6s;
-    transform: rotate(180deg);
+    transition: all ease-out .3s;
+    transform: rotate(-180deg);
 }
 .user-icon-rotate{
-    transition: all ease-out .6s;
-    transform: rotate(360deg);
+    transition: all ease-out .3s;
+    transform: rotate(-90deg);
 }
 .user-login-info{
     position: absolute;
