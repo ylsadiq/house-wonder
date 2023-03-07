@@ -99,6 +99,9 @@
         max-width: 500px !important;
         width: 400px !important;
     } */
+    .services{
+        padding: 6rem 3rem;
+    }
     .services-img {
         max-width: 400px;
         width    : 300px !important;
