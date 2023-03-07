@@ -12,6 +12,8 @@ function MyListings() {
   // }
   return (
     <section className="tab-content">
+      <div className="container-fluid">
+        <div className="listings-content">
       <div className="tab-content-header">
       <h1 class="listing-title">My Listings</h1>
       <button className='btn'>
@@ -25,6 +27,8 @@ function MyListings() {
         <Listings />
         <Listings />
         <Listings />
+      </div>
+      </div>
       </div>
     </section>
   )
