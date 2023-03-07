@@ -14,25 +14,32 @@
     max-width: 15rem;
     height: 5.5rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
 }
-.add-listing:hover{
-    border: 1px solid var(--white);
+.btn-outline{
+    transition: all ease-out .3s;
 }
-.add-listing:hover img svg{
-    stroke: var(--white);
-}
-/* .btn:hover{
-    color: var(--white);
+.btn-outline:hover{
+    color: #fff;
     background-color: #212529;
     border-color: #212529;
-} */
-.tab-content .add-listing{
-    width: 20px;
-    height: 20px;
-    margin: .4rem auto;
-    border: 1px solid var(--black);
-    border-radius: 5rem;
 }
+.btn-outline .add-text a{
+    margin-left: .4rem;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+.btn-outline:hover .add-text a{
+    color: #fff;
+}
+
+.btn-outline:hover svg path{
+    stroke: var(--white);
+}
+
 .tab-content .add-listing img{
     width: 100%;
     padding-bottom: .4rem;
@@ -150,7 +157,9 @@
     }
     .tab-content-header button{
         margin: 0;
+        
     }
+   
     .tab-content .add-listing {
         width: 30px;
         height: 30px;

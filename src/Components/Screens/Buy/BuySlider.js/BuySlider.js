@@ -58,11 +58,11 @@ function BuySlider() {
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={3}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Thumbs]}
-        className="mySwiper"
+        className="mySwiper mySubSwiper"
       >
         <SwiperSlide>
           <div className="swiper-image">

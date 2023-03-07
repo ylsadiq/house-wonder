@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './DashBoard.css';
 import userlogo from '../../../Assets/image/profile/userImg.svg';
 import arrowDown from '../../../Assets/home/arrowDown.svg';
-// import {HandleIcon} from './DashboardIcons/HandleIcon'
 import { Link, Outlet } from 'react-router-dom';
 import { Avatar, Home, Logout, Packages, Password, Properties, Services } from './DashboardIcons/DashboardIcons';
 

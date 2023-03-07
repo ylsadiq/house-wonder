@@ -31,7 +31,7 @@ function BuyDetails() {
               </div>
 
               <>
-              <BuySlider />
+              {/* <BuySlider /> */}
               </>
 
               <div className="info-header">
@@ -255,6 +255,19 @@ function BuyDetails() {
                 </div>
               </div>
             </div>
+
+          <div class="wrapper-box">
+          <div class="requestBox">
+              <div>
+                  <h6>For Sale</h6>
+                  <h2>Tk. 2,00,00,000</h2>
+              </div>
+              <div>
+                  <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyRequestModal">buy
+                      request</button>
+              </div>
+          </div>
+          </div>
             </>
           </div>
           <div className="related-property">
