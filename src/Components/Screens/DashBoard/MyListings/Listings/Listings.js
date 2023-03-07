@@ -16,7 +16,7 @@ function Listings() {
                 </div>
               </div>
               
-          <div className="card-body" style={}>
+          <div className="card-body">
                   <h1>Luxurious Apartment</h1>
                     <p><span className='listing-location'><img src={location} alt="" /></span> Gulshan 1,
                         Dhaka</p>
