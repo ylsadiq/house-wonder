@@ -169,9 +169,6 @@
     .tab-content .add-listing {
         width: 30px;
     }
-    .listing-card {
-        /* margin-left: 2rem; */
-    }
     .my-listing-card{
         grid-template-columns: 1fr;
         padding-bottom: 1rem;

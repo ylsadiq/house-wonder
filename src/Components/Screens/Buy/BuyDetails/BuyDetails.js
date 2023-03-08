@@ -31,7 +31,7 @@ function BuyDetails() {
               </div>
 
               <>
-              {/* <BuySlider /> */}
+              <BuySlider />
               </>
 
               <div className="info-header">

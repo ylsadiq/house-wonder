@@ -23,10 +23,6 @@ function NavBar() {
         setShowSignIn(false);
         setShowSignUp(false);
     }
-    // const handleModal = (e) => {
-    //     e.preventDefault();
-    //     setShowModal((showModal) => !showModal);
-    // }
 
     function handleLogout() {
         dispatch(logout());
@@ -59,7 +55,7 @@ function NavBar() {
                             <ul className="navbar-nav">
                                 <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/service">Service</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/contact">contact</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                                 {/* <li className="nav-item">
                                     {consumer
                                         ?

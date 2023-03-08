@@ -1,5 +1,6 @@
 import React from 'react';
 import search from '../../../../../Assets/home/search icon.svg';
+import filter from '../../../../../Assets/home/filter icon.svg';
 
 function FullWidthSearch() {
   return (
@@ -11,13 +12,15 @@ function FullWidthSearch() {
             <div className="advance-search-content">
                 <div className="rent-search">
         <div className="advance-input">
-            <input className='form-control' type="text" placeholder="Search for city, area, ZIP..." />
-            <img src={search} alt="" />
+        <div className="property_search_box">
+                            <input type="email" className='search_input' placeholder='Search for city, area, ZIP...' />
+                            <img src={search} alt="" />
+                        </div>
     </div>
     </div>
     <div className="text-end">
         <button type="button" className="btn">
-            <img src="https://bastu.com.bd/beta-thirteen/frontend/new_ui/assets/images/home/filter icon.svg" alt="" />
+            <img src={filter} alt="" />
             </button>
         <button type="submit" className="btn btn-dark">search</button>
     </div>

@@ -33,7 +33,7 @@ function Testimonial() {
                     <>
                         <Swiper
                             slidesPerView={1}
-                            spaceBetween={30}
+                            spaceBetween={20}
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,

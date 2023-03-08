@@ -1,6 +1,8 @@
 import React from 'react';
 import './OneStopSolution.css';
 import soul from '../../../../Assets/home/illustration 1.png'
+import soul2 from '../../../../Assets/home/illustration 2.png'
+import soul3 from '../../../../Assets/home/illustration 3.png'
 
 function OneStopSolution() {
   return (
@@ -26,7 +28,7 @@ function OneStopSolution() {
                                <span className='card-wrap'> for Free</span>
                             </h2>
 
-                            <img src={soul} alt="" />
+                            <img src={soul2} alt="" />
                         </div>
                     </div>
                 <div className="card property-soul-card">
@@ -36,7 +38,7 @@ function OneStopSolution() {
                                <span className='card-wrap'> for Free</span>
                             </h2>
 
-                            <img src={soul} alt="" />
+                            <img src={soul3} alt="" />
                         </div>
                     </div>
             </div>

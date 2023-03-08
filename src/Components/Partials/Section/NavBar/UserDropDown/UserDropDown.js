@@ -14,6 +14,7 @@ function UserDropDown() {
   return (
     <section className="user-dropdown">
         <div className="container-fluid">
+            <div className="user-profile-content">
             <div className="user-dropdown-content" onClick={handleLogin}>
                 <div className="user-img">
                     <img src={userImg} alt="" />
@@ -31,6 +32,7 @@ function UserDropDown() {
             <li className="nav-item user-item"> <Avatar /> <Link className="nav-link" to="/dashboard">Service</Link></li>
             <li className="nav-item user-item"> <Logout /> <Link className="nav-link" to="/contact">contact</Link></li>
             </ul>
+            </div>
             </div>
         </div>
     </section>
