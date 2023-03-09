@@ -27,11 +27,11 @@
 }
 .user-arrow{
     transition: all ease-out .3s;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 .user-icon-rotate{
     transition: all ease-out .3s;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 .user-login-info{
     position: absolute;
@@ -47,9 +47,6 @@
     border-radius: 8px;
 }
 .user-nav span{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: 10px 1fr;
     gap: 5px;
@@ -63,6 +60,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.user-dropdown:hover .user-profile-content{
+    background: var(--gray-1);
+    
+}
+.user-profile-content{
+    transition: all ease-in .3s;
+    padding: .6rem;
+    border-radius: 4rem;
+}
+#dropdown-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dropdown-toggle{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 0rem;
+    height: 7rem;
 }
 @media screen and (min-width: 1600px) {
     .user-login-info{

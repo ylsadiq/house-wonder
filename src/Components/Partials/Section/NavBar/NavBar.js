@@ -39,8 +39,8 @@ function NavBar() {
                         </Link>
                         <div className="left_menu">
                             <ul className="navbar-nav">
-                                <li className="nav-item"><Link className="nav-link" to="/buy">Buy</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/rent">Rent</Link></li>
+                                <li className="nav-item"><Link className="nav-link nav-hover" to="/buy">Buy</Link></li>
+                                <li className="nav-item"><Link className="nav-link nav-hover" to="/rent">Rent</Link></li>
                                 {/* <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li> */}
                                 <li className="nav-item"><button onClick={() => {
                                     setShowModal(true)
@@ -53,9 +53,9 @@ function NavBar() {
                         </div>
                         <div className="right_menu">
                             <ul className="navbar-nav">
-                                <li className="nav-item"><Link className="nav-link" to="/packages">Packages</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/service">Service</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+                                <li className="nav-item"><Link className="nav-link nav-hover" to="/packages">Packages</Link></li>
+                                <li className="nav-item"><Link className="nav-link nav-hover" to="/service">Service</Link></li>
+                                <li className="nav-item"><Link className="nav-link nav-hover" to="/contact">Contact</Link></li>
                                 {/* <li className="nav-item">
                                     {consumer
                                         ?
