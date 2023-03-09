@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import location from "../../../../Assets/home/location icon.svg";
 import share from "../../../../Assets/icon/fi_share-2.svg";
 import print from "../../../../Assets/icon/u_print.svg";
@@ -12,8 +12,14 @@ import email from "../../../../Assets/home/email-box.svg";
 import "./BuyDetails.css";
 import FeaturedProperties from "../../Home/FeaturedProperties/FeaturedProperties";
 import BuySlider from "../BuySlider.js/BuySlider";
+import { RiNurseFill } from "react-icons/ri";
 
 function BuyDetails() {
+  const [dropDown, setDropDown] = useState(false);
+  const handleDropDown = () => {
+    setDropDown(!dropDown)
+  }
+
   return (
     <section className="buy-details">
       <div className="container-fluid">
@@ -223,9 +229,11 @@ function BuyDetails() {
                   </div>
                 </div>
 
+                {dropDown && <div className="user-info-dropdown">
                 <div className="user-contact-info-box">
                   <div className="user-contact">
                     <h6>Email</h6>
+                    <h5>sheehanvy@gmail.com</h5>
                   </div>
                 </div>
                 <div className="user-contact-info-box">
@@ -234,10 +242,12 @@ function BuyDetails() {
                     <h5>01521401458</h5>
                   </div>
                 </div>
+                </div>}
 
                 <div className="contact-btn">
-                  <button>Show contact info</button>
+                  <button onClick={handleDropDown}>Show contact info
                   <img src={arrow} alt="" />
+                  </button>
                 </div>
               </div>
               <div className="bastu-contact-info">
