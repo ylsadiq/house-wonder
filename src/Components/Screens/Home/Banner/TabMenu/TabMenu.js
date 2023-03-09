@@ -3,22 +3,24 @@ import './TabMenu.css';
 import searchIcon from '../../../../../Assets/home/search icon.svg';
 import filter from '../../../../../Assets/home/filter icon.svg'
 function TabMenu() {
-
+    const [toggleState, setToggleState] = useState(1);
     const [expandFilter, setExpandFilter] = useState(false);
 
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
     const toggleExpandFilter = () => {
         setExpandFilter(pervState => !pervState)
     }
-
-
+   
     return (
         <div className="property_filter_wrapper">
             <div className="property_filter_tabs">
-                <button className='property_filter_tab active'>Buy</button>
-                <button className='property_filter_tab'>Rent</button>
+                <button onClick={() => toggleTab(1)} className={toggleState === 1 ? 'property_filter_tab active' : 'property_filter_tab'}>Buy</button>
+                <button onClick={() => toggleTab(2)} className={toggleState === 2 ? 'property_filter_tab active' : 'property_filter_tab'}>Rent</button>
             </div>
 
-            <div className={`property_filter_search ${expandFilter ? 'expanded' : ''}`}>
+            {toggleState && <div className={`property_filter_search ${expandFilter ? 'expanded' : null}`}>
                 <form className="flex_container">
                     <div className='flex_item'>
                         <div className="property_search_box">
@@ -59,7 +61,7 @@ function TabMenu() {
                         </div>
                     </div>
                 </form>
-            </div>
+            </div>}
         </div>
     )
 }
