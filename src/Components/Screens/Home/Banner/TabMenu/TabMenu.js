@@ -5,7 +5,6 @@ import filter from '../../../../../Assets/home/filter icon.svg'
 function TabMenu() {
 
     const [expandFilter, setExpandFilter] = useState(false);
-    console.log(expandFilter)
 
     const toggleExpandFilter = () => {
         setExpandFilter(pervState => !pervState)

@@ -27,11 +27,11 @@
 }
 .user-arrow{
     transition: all ease-out .3s;
-    transform: rotate(-180deg);
+    transform: rotate(360deg);
 }
 .user-icon-rotate{
     transition: all ease-out .3s;
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
 }
 .user-login-info{
     position: absolute;

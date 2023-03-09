@@ -56,8 +56,9 @@ function SignIn({ showModal, setShowModal, handleClose, setShowSignIn, setShowSi
                     <form onSubmit={handleSubmit}>
                         {/* <input type="hidden" name="_token" value="g5JtVGdfjVpkSAbP4vlYT58QNNqHEbhJ5MaCFVky" /> */}
                         <div className="login-input">
-                            <div className="grid-1 authFormInput">
+                            <div className="grid-1">
                                 <div className="form-floation mb-4">
+                                    <input type="text" />
                                     <input
                                         type="text"
                                         className="form-control"

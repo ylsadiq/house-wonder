@@ -1,6 +1,7 @@
 import React from 'react'
 import './Rent.css';
 import FullWidthSearch from '../../Partials/Section/AdvanceSearch/FullWidthSearch/FullWidthSearch';
+import FullFilter from '../../Partials/Section/AdvanceSearch/FullWidthSearch/FullFilter';
 
 function Rent() {
   return (
@@ -9,6 +10,7 @@ function Rent() {
     <div className="rent-content">
     <div className="container-fluid">
         <div className="package-container">
+
         <div className="rent-container">
             <div className="rent-details-left">
                 <h2><span> 0 Listings Available</span></h2>
@@ -19,6 +21,7 @@ function Rent() {
         </div>
         </div>
     </div>
+            
     </div>
     </>
   )
