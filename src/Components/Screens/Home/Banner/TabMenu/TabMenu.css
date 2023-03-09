@@ -15,6 +15,11 @@
     background-color: var(--gray-4);
     padding         : 1.4rem 2.4rem;
     border-radius   : 8px 8px 0px 0px;
+    transition: all ease-in .2s;
+}
+.property_filter_tab:hover {
+    color           : var(--gray-4);
+    background-color: var(--gray-2);
 }
 
 .property_filter_tab:not(:last-child) {
@@ -113,14 +118,19 @@
 }
 
 .search_btn {
-    padding: 2.4rem 5.2rem !important;
+    padding: 2.2rem 5rem !important;
+    transition: all ease-in .3s;
+}
+.search_btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border: 0.2rem solid var(--black);
 }
 
 .dark_btn {
     color           : var(--white);
     background-color: var(--black);
-    border-color    : var(--black);
-    border-width    : 0.2rem;
+    border: 0.2rem solid var(--black);
 }
 
 /* filter select options */

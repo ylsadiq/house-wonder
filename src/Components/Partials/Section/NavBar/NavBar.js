@@ -42,10 +42,11 @@ function NavBar() {
                                 <li className="nav-item"><Link className="nav-link nav-hover" to="/buy">Buy</Link></li>
                                 <li className="nav-item"><Link className="nav-link nav-hover" to="/rent">Rent</Link></li>
                                 {/* <li className="nav-item"><button onClick={handleModal} className='propery-fee btn'>Post property <span className='free'>free</span></button></li> */}
-                                <li className="nav-item"><button onClick={() => {
+                                <li className="nav-item">
+                                    <button onClick={() => {
                                     setShowModal(true)
                                     setShowSignIn(true)
-                                }} className='propery-fee btn'>Post property <span className='free'>free</span></button></li>
+                                }} className='propery-fee btn btn-outline-light'>Post property <span className='free'>free</span></button></li>
                             </ul>
                         </div>
                         <div className="nav-band">

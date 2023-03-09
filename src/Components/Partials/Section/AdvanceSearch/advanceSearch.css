@@ -47,8 +47,8 @@
     background: var(--black);
     color: var(--white);
     padding: 1.3rem 2rem;
+    transition: all ease-in .3s;
 }
-
 .advance-search-btn{
     display: flex;
     align-items: center;
