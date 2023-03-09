@@ -30,7 +30,7 @@ function LookingProperty() {
                                 <p>Bastu helps you sell your home faster and for more money by covering the cost of home
                                     improvement services — no upfront fees or interest charged.</p>
                                 <button
-                                    className="btn btn-light"
+                                    className="btn btn-light btn-outline"
                                     onClick={() => {
                                         setShowModal(true);
                                         setPostRequirements(true);
