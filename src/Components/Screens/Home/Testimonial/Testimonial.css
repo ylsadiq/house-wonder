@@ -55,7 +55,7 @@
 .swiper-button-prev {
     background-color: white;
     background-color: var(--section-bg);
-    right           : 10px;
+    right           : 0px;
     padding         : 20px;
     width           : 35px !important;
     height          : 35px !important;

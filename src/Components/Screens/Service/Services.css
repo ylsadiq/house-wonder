@@ -1,8 +1,12 @@
 .services-container {
-    max-width: 140rem;
+    /* max-width: 140rem;
     width    : 100%;
     padding  : 5rem 1rem;
-    margin   : auto;
+    margin   : auto; */
+    max-width: 118rem;
+    width: 100%;
+    padding: 10rem 0;
+    margin: auto;
 }
 
 .pt {

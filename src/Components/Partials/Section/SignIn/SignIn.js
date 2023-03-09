@@ -56,21 +56,32 @@ function SignIn({ showModal, setShowModal, handleClose, setShowSignIn, setShowSi
                     <form onSubmit={handleSubmit}>
                         {/* <input type="hidden" name="_token" value="g5JtVGdfjVpkSAbP4vlYT58QNNqHEbhJ5MaCFVky" /> */}
                         <div className="login-input">
-                            <div className="grid-1">
-                                <div className="form-floation mb-4">
-                                    <input type="text" />
+                                <div className="form-floation">
                                     <input
-                                        type="text"
+                                        type="email"
                                         className="form-control"
                                         placeholder="Enter email"
                                         value={email}
                                         onChange={e => setEmail(e.target.value)}
                                     />
-                                    <label htmlFor="phoneNumber">Your Email</label>
+                                    <label htmlFor="email">Your Email</label>
                                 </div>
                                 <label className="error" htmlFor="mobile_number"></label>
                                 <label htmlFor=""></label>
-                            </div>
+
+                                <div className="form-floation">
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        placeholder="Your Password"
+                                        value={password}
+                                        onChange={e => setPassword(e.target.value)}
+                                    />
+                                    <label htmlFor="password">Your Password</label>
+                                </div>
+                                <label className="error" htmlFor="mobile_number"></label>
+                                <label htmlFor=""></label>
+
 
                             <div className="authFormInput">
                                 <div className="form-floation mb-5">

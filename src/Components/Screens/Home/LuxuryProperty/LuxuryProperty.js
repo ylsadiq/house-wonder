@@ -15,6 +15,7 @@ function LuxuryProperty() {
   return (
     <div className="Luxury-property">
         <div className="container-fluid">
+            <div className="custom-container">
             <h1 className='section-title'>
             Property That Defines <span className='luxury'>A New Dimension Of Luxury</span>
             </h1>
@@ -67,6 +68,7 @@ function LuxuryProperty() {
                     }
                 </Modal>
             }
+            </div>
         </div>
     </div>  
     )

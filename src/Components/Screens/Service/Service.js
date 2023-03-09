@@ -37,7 +37,7 @@ function Service() {
         <>
             <section className="services pt" id='isTop'>
                 <div className="container-fluid">
-                    <div className="services-container">
+                    <div className="custom-container">
                         <div className="services-items">
                             <div className="services-details">
                                 <h3>Introducing</h3>
