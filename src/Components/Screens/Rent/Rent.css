@@ -25,7 +25,7 @@
     transition: .2s;
 }
 .advanceSearchCont{
-    max-width: 139.9rem;
+    /* max-width: 139.9rem; */
     margin: auto;
     position: relative;
 }

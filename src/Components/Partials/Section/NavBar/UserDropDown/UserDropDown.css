@@ -37,7 +37,6 @@
     position: absolute;
     top: 9rem;
     right: 2rem;
-    padding: 3rem 6rem;
     width: 150px;
     height: 120px;
     display: flex;
@@ -47,6 +46,16 @@
     border: 1px solid #C4C4C4;
     border-radius: 8px;
 }
+.user-nav span{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
 .user-hidden{
     display: none;
 }
@@ -54,4 +63,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (min-width: 1600px) {
+    .user-login-info{
+        padding: 1rem;
+        width: 200px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .user-login-info{
+        padding: .7rem;
+    }
 }

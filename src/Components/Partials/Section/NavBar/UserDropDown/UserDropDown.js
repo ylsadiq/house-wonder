@@ -29,8 +29,8 @@ function UserDropDown() {
             </div>
             <div className={` ${arrow ? "user-login-info" : "user-hidden"}`}>
             <ul className="user-nav">
-            <li className="nav-item user-item"> <Avatar /> <Link className="nav-link" to="/dashboard">Service</Link></li>
-            <li className="nav-item user-item"> <Logout /> <Link className="nav-link" to="/contact">contact</Link></li>
+            <li className="nav-item user-item"> <span><Avatar /> <Link className="nav-link" to="/dashboard">My Profile</Link></span></li>
+            <li className="nav-item user-item"> <span><Logout /> <Link className="nav-link" to="/contact">Log Out</Link></span></li>
             </ul>
             </div>
             </div>
