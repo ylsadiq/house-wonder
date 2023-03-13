@@ -17,12 +17,12 @@ function LuxuryProperty() {
         <div className="container-fluid">
             <div className="custom-container">
             <h1 className='section-title'>
-            Property That Defines <span className='luxury'>A New Dimension Of Luxury</span>
+                <span className='luxury'>This is Luxry Property</span>
             </h1>
             <div className="luxury-content">
                 <div className="luxury-details">
                 <div className="property-card-body luxury-box">
-                        <h1>Luxurious Apartment</h1>
+                        <h1>EXCELLENT FLAT FOR SALE</h1>
                         <p><img src={location} alt="" />Gulshan 1, Dhaka</p>
 
                         <ul>

@@ -40,7 +40,15 @@
     font-weight: 700;
     padding: 1.4rem 2rem;
 }
+@media screen and (min-width: 1900px){
+    .custom-container {
+        max-width: 140rem;
+    }
+}
 @media screen and (max-width: 767.98px){
+    .Looking-property{
+        padding: 0 2rem;
+    }
     .looking-content{
     grid-template-columns: 1fr;
     gap: 50px;
@@ -54,13 +62,16 @@
     .looking-content-img img{
         width: 100%;
     }
+    .looking-content-details{
+        text-align: center;
+    }
     .looking-content-details h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
         line-height: 5rem;
     }
     .looking-content-details p{
-        font-size: 1rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
         margin-top: 1rem;
         margin-bottom: 3rem;
     }

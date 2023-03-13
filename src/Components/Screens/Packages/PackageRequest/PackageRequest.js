@@ -48,18 +48,30 @@ function PackageRequest({ targetId }) {
         </div>
         <div class="facilitiesList">
           <h6>Add Ons </h6>
-          <div class="row">
-            {facilitiesFromPackageType?.missingFacilities?.map(missingFacility => (
-              <div class="authFormInput" key={missingFacility._id}>
+
+      {facilitiesFromPackageType?.missingFacilities?.map(missingFacility =>(
+        <div class="missing-facility" key={missingFacility._id}>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="7" />
-                  <label class="form-check-label price_7" for="7">
+                  <label class="form-check-label price_7" htmlFor="7">
+                  {missingFacility?.facility?.name} (Tk {missingFacility?.facility?.amount})
+                  </label>
+                </div>
+              </div>
+      ))}
+          
+            {/* {facilitiesFromPackageType?.missingFacilities?.map(missingFacility => (
+              <div class="authFormInput" key={missingFacility._id}>
+                <div class="form-check">
+                  <input type="text" />
+                  <input class="form-check-input" type="checkbox" id="7" />
+                  <label class="form-check-label price_7" htmlFor="7">
                     {missingFacility?.facility?.name} (Tk {missingFacility?.facility?.amount})
                   </label>
                 </div>
               </div>
-            ))}
-          </div>
+            ))} */}
+         
         </div>
       </div>
       <div class="button_wrapper">

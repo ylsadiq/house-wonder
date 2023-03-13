@@ -21,16 +21,16 @@ function MyProfile() {
             <div className="user-info-form grid-2">
                 <div class="form-floation">
                   <input type="text" class="form-control" placeholder="firstName" value="Sheehan" />
-                  <label for="firstName">First Name</label>
+                  <label htmlFor="firstName">First Name</label>
                 </div>
 
                 <div class="form-floation">
                       <input type="text" class="form-control" placeholder="lastName" value="Rahman" />
-                      <label for="lastName">Last Name</label>
+                      <label htmlFor="lastName">Last Name</label>
                   </div>
                 <div class="form-floation">
                       <input type="email" class="form-control" placeholder="Email" />
-                      <label for="email">Email Address</label>
+                      <label htmlFor="email">Email Address</label>
                   </div>
                 <div class="form-floation">
                   <select class="form-select">
@@ -41,11 +41,11 @@ function MyProfile() {
                   </div>
                   <div class="form-floation">
                       <input type="text" class="form-control" placeholder="primaryPhone" />
-                      <label for="primaryPhone">Phone Number</label>
+                      <label htmlFor="primaryPhone">Phone Number</label>
                   </div>
                   <div class="form-floation">
                       <input type="text" class="form-control" placeholder="secondaryPhone" />
-                      <label for="secondaryPhone">Secondary Phone Number</label>
+                      <label htmlFor="secondaryPhone">Secondary Phone Number</label>
                   </div>
                   <div class="form-floation">
                   <select class="form-select">
@@ -69,12 +69,12 @@ function MyProfile() {
             <div className="grid-1 mt-2">
             <div class="form-floation">
                 <input type="text" class="form-control" placeholder="streetAddress" />
-                <label for="streetAddress">Street Address</label>
+                <label htmlFor="streetAddress">Street Address</label>
             </div>
             </div>
             <div class="form-floation mt-2">
                   <textarea class="form-control" placeholder="aboutSelft"></textarea>
-                  <label for="aboutSelft">Short Note About Yourself</label>
+                  <label htmlFor="aboutSelft">Short Note About Yourself</label>
               </div>
               <div className="my-profile-footer mt-2">
                 <button className="btn btn-outline-dark">cancle</button>

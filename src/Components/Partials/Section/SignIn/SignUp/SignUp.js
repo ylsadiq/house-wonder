@@ -47,6 +47,7 @@ function SignUp({ setShowSignIn, setShowSignUp }) {
                                     <img src="https://bastu.com.bd/beta-thirteen/frontend/new_ui/assets/images/modals/eyeicon.svg" alt="" /></span>
                             </div>
                         </div>
+                        <div className="grid-1"><button className="btn btn-dark">Sign Up</button></div>
                         <div className="grid-1 haveAccount">
                             <p>Have an account?<span onClick={() => {
                                 setShowSignIn(true)

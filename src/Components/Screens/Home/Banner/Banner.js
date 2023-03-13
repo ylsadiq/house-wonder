@@ -6,7 +6,9 @@ function Banner() {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-details">
-          <div className="hero-box">
+          <div className="hero-text">
+            <div className="hero-wrap">
+            <div className="hero-box">
             <h1>Find Your Home</h1>
             <p>We provide platform for property buyers & seller to locate properties of interest on real estate,
               to help everyone find their place</p>
@@ -14,6 +16,8 @@ function Banner() {
           <div>
           </div>
           <TabMenu />
+            </div>
+          </div>
         </div>
       </div>
     </section>

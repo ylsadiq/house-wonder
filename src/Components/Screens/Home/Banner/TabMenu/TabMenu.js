@@ -19,10 +19,10 @@ function TabMenu() {
                 <button onClick={() => toggleTab(1)} className={toggleState === 1 ? 'property_filter_tab active' : 'property_filter_tab'}>Buy</button>
                 <button onClick={() => toggleTab(2)} className={toggleState === 2 ? 'property_filter_tab active' : 'property_filter_tab'}>Rent</button>
             </div>
-
+            
             {toggleState && <div className={`property_filter_search ${expandFilter ? 'expanded' : null}`}>
                 <form className="flex_container">
-                    <div className='flex_item'>
+                    <div className='flex_item search-expand-btn'>
                         <div className="property_search_box">
                             <input type="email" className='search_input' placeholder='Search for city, area, ZIP...' />
                             <img src={searchIcon} alt="" />

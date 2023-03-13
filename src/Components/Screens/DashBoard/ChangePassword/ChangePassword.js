@@ -10,15 +10,15 @@ function ChangePassword() {
         <div className="users-password-form grid-1">
         <div class="form-floation mt-2">
             <input type="text" class="form-control" placeholder="currentPass" />
-            <label for="currentPass">Current Password</label>
+            <label htmlFor="currentPass">Current Password</label>
         </div>
         <div class="form-floation mt-2">
             <input type="text" class="form-control" placeholder="newpass" />
-            <label for="newpass">Current Password</label>
+            <label htmlFor="newpass">Current Password</label>
         </div>
         <div class="form-floation mt-2">
             <input type="text" class="form-control" placeholder="confirmPass" />
-            <label for="confirmPass">Current Password</label>
+            <label htmlFor="confirmPass">Current Password</label>
         </div>
         </div>
         <div className="my-profile-footer mt-2">

@@ -5,7 +5,6 @@ import OneStopSolution from './OneStopSolution/OneStopSolution';
 import Testimonial from './Testimonial/Testimonial';
 import Banner from './Banner/Banner';
 import './Home.css';
-
 function Home() {
   return (
     <>

@@ -26,7 +26,7 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="City">Preferred Area</label>
+                                <label htmlFor="City">Preferred Area</label>
                             </div>
                             <div class="form-floation">
                                 <select class="form-select">
@@ -35,7 +35,7 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="Area">Preferred Area</label>
+                                <label htmlFor="Area">Preferred Area</label>
                             </div>
                             <div class="form-floation">
                                 <select class="form-select">
@@ -44,7 +44,7 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="Area">Property Type</label>
+                                <label htmlFor="Area">Property Type</label>
                             </div>
                             <div class="form-floation">
                                 <select class="form-select">
@@ -53,12 +53,12 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="Area">Property Sub-Type</label>
+                                <label htmlFor="Area">Property Sub-Type</label>
                             </div>
 
                             <div class="form-floation">
                                 <input type="text" class="form-control" placeholder="Property ID" value="" />
-                                <label for="lastName">Property ID</label>
+                                <label htmlFor="lastName">Property ID</label>
                             </div>
 
                         <div class="form-floation">
@@ -68,7 +68,7 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="Area">Bedroooms</label>
+                                <label htmlFor="Area">Bedroooms</label>
                             </div>
                             <div class="form-floation">
                                 <select class="form-select">
@@ -77,24 +77,24 @@ function FullFilter() {
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="Area">Bathrooms</label>
+                                <label htmlFor="Area">Bathrooms</label>
                             </div>
 
                             <div class="form-floation">
                                 <input type="text" class="form-control" placeholder="minSqft" value="" />
-                                <label for="lastName">Size (Min)- sqft.</label>
+                                <label htmlFor="lastName">Size (Min)- sqft.</label>
                             </div>
                             <div class="form-floation">
                                 <input type="text" class="form-control" placeholder="minSqft" value="" />
-                                <label for="lastName">Size (Max)- sqft.</label>
+                                <label htmlFor="lastName">Size (Max)- sqft.</label>
                             </div>
                             <div class="form-floation">
                                 <input type="text" class="form-control" placeholder="minSqft" value="" />
-                                <label for="lastName">Price (Min)- BDT</label>
+                                <label htmlFor="lastName">Price (Min)- BDT</label>
                             </div>
                             <div class="form-floation">
                                 <input type="text" class="form-control" placeholder="minSqft" value="" />
-                                <label for="lastName">Price (Max)- BDT</label>
+                                <label htmlFor="lastName">Price (Max)- BDT</label>
                             </div>
                             
                     </div>

@@ -39,7 +39,7 @@ function SecondForm() {
                             <option value="">Select Property Type</option>
                             <option value="property">Property</option><option value="package">Package</option>
                             <option value="service">Service</option></select>
-                        <label for="propertyType">Property Type</label>
+                        <label htmlFor="propertyType">Property Type</label>
                     </div>
 
                     <div class="form-floation">
@@ -60,7 +60,7 @@ function SecondForm() {
                                 <input type="checkbox" className='form-check-input' id="scales"
                                     onChange={handleCheckBox}
                                     name="scales" value={check} />
-                                <label for="scales" className='form-check-label'>Kitchen</label>
+                                <label htmlFor="scales" className='form-check-label'>Kitchen</label>
                             </div>
 
                             <div className={`${check ? 'active' : 'authFormInput'}`}>
@@ -76,14 +76,14 @@ function SecondForm() {
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Bath</label>
                             </div>
                         </div>
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Floor Size</label>
                                 <div class="floor_size">
                                     <div class="form-floation">
@@ -99,7 +99,7 @@ function SecondForm() {
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>BedRoom</label>
                             </div>
                         </div>
@@ -114,28 +114,28 @@ function SecondForm() {
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Garden</label>
                             </div>
                         </div>
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Pool</label>
                             </div>
                         </div>
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Gym</label>
                             </div>
                         </div>
                         <div className="grid-1">
                             <div className='check-box'>
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
-                                <label for="horns" onChange={handleCheckBox}
+                                <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Parking Spot</label>
                             </div>
                         </div>

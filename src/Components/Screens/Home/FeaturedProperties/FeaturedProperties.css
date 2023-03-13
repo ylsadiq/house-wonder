@@ -5,7 +5,7 @@
 }
 .swiper-slide .slider-img-wrapper{
     display: block;
-    width: 38rem;
+    max-width: 50rem;
     /* max-height: 37.7rem; */
     position: relative;
 }
