@@ -5,8 +5,11 @@
 }
 .rightContent h6 {
     font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     color: var(--black);
     margin-bottom: 2rem;
+}
+.rightContent .signup-btn{
+    padding: 1.3rem 5.9rem
 }

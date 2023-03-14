@@ -1,7 +1,29 @@
 import React from 'react';
 import './ThirdForm.css';
 
-function ThirdForm() {
+function ThirdForm({formStep, completeFormStep, goToPreStep}) {
+
+    const renderBtn = () => {
+        if(formStep > 2){
+            return undefined
+        }else if(formStep === 2){
+            return(
+            <button
+            type='submit'  
+            // disabled={gerror}
+            className="btn btn-dark mb-4 mt-2 listing-btn">Finish</button>
+            )
+        }
+        else{
+            return(
+            <button
+            type='button'   
+            onClick={completeFormStep}
+            // disabled={!treatment}
+            className="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
+            )
+        }
+        }
     return (
         <div className="my-listing-third-form">
             <div className="container-fluid">
@@ -58,8 +80,8 @@ function ThirdForm() {
                 </div>
             </div>
             <div className="second-form">
-                <button className='btn btn-outline-dark listing-btn'>Go back</button>
-                <button className='btn btn-dark listing-btn'>continue</button>
+                <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
+                {renderBtn()}
             </div>
         </div>
     )

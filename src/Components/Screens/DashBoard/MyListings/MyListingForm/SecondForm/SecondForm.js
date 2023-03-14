@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SecondForm.css'
 
-function SecondForm() {
+function SecondForm({formStep, completeFormStep, goToPreStep}) {
     const [count, setCount] = useState(1);
     const [check, setCheck] = useState(false);
 
@@ -17,6 +17,28 @@ function SecondForm() {
     const handleCheckBox = () => {
         setCheck((prevCheck) => !prevCheck)
     }
+
+    const renderBtn = () => {
+        if(formStep > 2){
+            return undefined
+        }else if(formStep === 2){
+            return(
+            <button
+            type='submit'  
+            // disabled={gerror}
+            className="btn btn-dark mb-4 mt-2 listing-btn">Finish</button>
+            )
+        }
+        else{
+            return(
+            <button
+            type='button'   
+            onClick={completeFormStep}
+            // disabled={!treatment}
+            className="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
+            )
+        }
+        }
 
     return (
         <div className="my-listing-second-form">
@@ -144,8 +166,8 @@ function SecondForm() {
                 </div>
 
                 <div className="second-form">
-                    <button className='btn btn-outline-dark listing-btn'>Go back</button>
-                    <button className='btn btn-dark listing-btn'>continue</button>
+                    <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
+                    {renderBtn()}
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ function SignIn({ showModal, setShowModal, handleClose, setShowSignIn, setShowSi
         if ((isSuccess === true) || (consumer !== null)) {
             navigate('/dashboard');
             dispatch(reset());
-            // handleClose();
+            handleClose();
         }
 
 
@@ -101,7 +101,10 @@ function SignIn({ showModal, setShowModal, handleClose, setShowSignIn, setShowSi
                             </div>
                             <div className="grid-2 login-btn">
                                 <button type="submit" className="btn btn-dark">Log In</button>
-                                <button type="button" className="btn">forgot password?</button>
+                                <button onClick={()=>{
+                                    setShowSignIn(false)
+                                    setShowSignUp(true)
+                                }} type="button" className="btn">forgot password?</button>
                             </div>
                             <div className="grid-1 haveAccount">
                                 <p>Don’t have any account?<span onClick={()=>{

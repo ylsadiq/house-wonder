@@ -14,40 +14,16 @@ function SignUp({ setShowSignIn, setShowSignUp }) {
             </div>
             <div className='create-one'>
                 <div className="rightContent">
-                    <h1>Welcome!</h1>
-                    <h6>Register for a new account</h6>
+                    <h6>Enter your phone number</h6>
                     <form method="post" >
                         <div className="grid-1">
-                            <div className="form-floation">
-                                <input type="text" name="mobile_number" className="form-control" placeholder="your phone number" />
-                                <label htmlFor="phoneNumber">Your Name</label>
-                            </div>
-                            <div className="form-floation">
-                                <input type="email" name="mobile_number" className="form-control" placeholder="your phone number" />
-                                <label htmlFor="phoneNumber">Your Email</label>
-                            </div>
-                            <div className="form-floation">
-                                <input
-                                    type="password"
-                                    className="form-control password"
-                                    placeholder="password"
-                                />
-                                <label htmlFor="password">Your Password</label>
-                                <span className="passwordToglerBtn">
-                                    <img src="https://bastu-new-ui.netlify.app/assets/images/modals/eyeicon.svg" alt="" /></span>
-                            </div>
                             <div className="form-floation mb-5">
-                                <input
-                                    type="password2"
-                                    className="form-control password"
-                                    placeholder="Confirm password"
-                                />
-                                <label htmlFor="password2">Confirm Password</label>
-                                <span className="passwordToglerBtn">
-                                    <img src="https://bastu.com.bd/beta-thirteen/frontend/new_ui/assets/images/modals/eyeicon.svg" alt="" /></span>
+                                <input type="text" name="mobile_number" className="form-control" placeholder="your phone number" />
+                                <label htmlFor="phoneNumber">Your Phone Number</label>
                             </div>
+
                         </div>
-                        <div className="grid-1"><button className="btn btn-dark">Sign Up</button></div>
+                        <button className="btn btn-dark signup-btn">send</button>
                         <div className="grid-1 haveAccount">
                             <p>Have an account?<span onClick={() => {
                                 setShowSignIn(true)

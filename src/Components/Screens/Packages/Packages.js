@@ -14,7 +14,6 @@ function Packages() {
             const { data } = await axios.get(PACKGE_SQUARE_FEETS_API)
             setPackageSquareFeets(data)
         }
-
         getAndSetPackageSquareFeets()
     }, [])
 

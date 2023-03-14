@@ -21,5 +21,6 @@ export const CONSUMER_CONSULTENSIS_API = API_URL + 'users/consumerConsultancies/
 
 export const PROPERTY_CATEGORIES_API = API_URL + 'property/propertyCategories/'
 export const PROPERTY_CITY_AREAS_API = API_URL + 'property/propertyCityAreas/'
+export const PROPERTY_PROPERTTIES_API = API_URL + 'property/Properties/'
 
 export const CONTACTS_API = API_URL + 'contacts/'
