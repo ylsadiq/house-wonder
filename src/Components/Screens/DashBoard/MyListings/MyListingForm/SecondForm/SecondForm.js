@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FormHeading from '../FormHeading/FormHeading';
 import './SecondForm.css'
 
 function SecondForm({formStep, completeFormStep, goToPreStep}) {
@@ -19,9 +20,9 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
     }
 
     const renderBtn = () => {
-        if(formStep > 2){
+        if(formStep > 4){
             return undefined
-        }else if(formStep === 2){
+        }else if(formStep === 4){
             return(
             <button
             type='submit'  
@@ -43,7 +44,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
     return (
         <div className="my-listing-second-form">
             <div className="container-fluid">
-                <div className="my-listing-step">
+                {/* <div className="my-listing-step">
                     <div className="progress-count">
                         <h6>step <span>2</span> of <span>4</span></h6>
                     </div>
@@ -53,7 +54,15 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
                     <div className="progress-count margin_top">
                         <h1 className='form-title'>Great! Now tell us more<span className='second-line'>about your property!</span></h1>
                     </div>
-                </div>
+                </div> */}
+                <FormHeading
+                formstepFirst='step'
+                formNumber='2'
+                formDivide='of'
+                formStepLast='4'
+                formTitle='Great! Now tell us more'
+                formsecondTitle="about your property!"
+                />
 
                 <div className="grid-2 mt-2">
                     <div class="form-floation">

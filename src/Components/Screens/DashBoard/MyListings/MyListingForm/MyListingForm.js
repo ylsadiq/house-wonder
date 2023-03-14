@@ -6,13 +6,13 @@ import FirstForm from './FirstForm/FirstForm';
 import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
 import './MyListingForm.css'
+import FourForm from './FourForm/FourForm';
 
 function MyListingForm() {
     
 
     const [formStep, setFormStep] = useState(1);
     const MAX_STEPS = 4;
-    const { consumer } = useSelector(state => state.auth)
 
     const completeFormStep = () =>{
         setFormStep(cur => cur + 1)
@@ -34,6 +34,10 @@ function MyListingForm() {
             
             {formStep >= 3 ? <div className={formStep === 3 ? 'd-block': 'd-none'}>
             <ThirdForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep} />
+            </div> : null}
+
+            {formStep >= 4 ? <div className={formStep === 4 ? 'd-block': 'd-none'}>
+                <FourForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep}/>
             </div> : null}
         </>
     )

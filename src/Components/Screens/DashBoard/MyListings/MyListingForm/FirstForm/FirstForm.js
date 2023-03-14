@@ -1,4 +1,8 @@
+import axios from 'axios';
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
+import { PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({formStep, completeFormStep }) {
 
@@ -21,6 +25,8 @@ function FirstForm({formStep, completeFormStep }) {
     const [relation, setRelation] = useState(null);
     const [email, setEmail] = useState(null);
     const [number, setNumber] = useState(null);
+
+    const { consumer } = useSelector(state => state.auth)
 
     const renderBtn = () => {
         if(formStep > 4){
@@ -45,11 +51,11 @@ function FirstForm({formStep, completeFormStep }) {
 
     async function handleSubmit(e) {
         e.preventDefault()
-    // const config = {
-    //   headers: {
-    //     Authorization: `Bearer ${consumer.token}`
-    //   }
-    // }
+    const config = {
+      headers: {
+        Authorization: `Bearer ${consumer.token}`
+      }
+    }
     const itemData = new FormData()
         itemData.append('acquisition', acquisition)
         itemData.append('propertyHeader', propertyHeader)
@@ -70,27 +76,24 @@ function FirstForm({formStep, completeFormStep }) {
         itemData.append('number', number)
         const property = {propertyHeader, propertyStreetAddress, PropertyLandArea, PropertyAddress, FlatNumber, houseNumber, totalFlat, myFlat, postCode, propertyDescription, name, relation, email, number}
         console.log(property);
-        // const response = await axios.post(PROPERTY_PROPERTTIES_API, data, config)
+        const response = await axios.post(PROPERTY_PROPERTTIES_API, property, config)
         }
 
   return (
     <div className="my-listing-form">
                 <div className="container-fluid">
-                    <div className="my-listing-step">
-                        <div className="progress-count">
-                            <h6>step <span>1</span> of <span>4</span></h6>
-                        </div>
-                        <div className="progress form-progress mb-4">
-                            <div className="progress-bar form-prog"></div>
-                        </div>
-                        <div className="form-title margin_top">
-                            Hi, <span>Test11!</span>
-                            <span className='second-line'>Let's start posting your property.</span>
-                        </div>
-                    </div>
+
+                    <FormHeading 
+                    formstepFirst='step'
+                    formNumber='1'
+                    formDivide='of'
+                    formStepLast='4'
+                    formTitle='Hi'
+                    formUser='Test11'
+                    formsecondTitle="Let's start posting your property"
+                    />
                     <div className="my-listing-map">
                         <div className="post-map">
-
                         </div>
                         <h1 className='map-heading'>Find and pin the exact location of your property. This will make finding your property easier htmlFor the tenants. </h1>
                         <form action="" onSubmit={handleSubmit}>

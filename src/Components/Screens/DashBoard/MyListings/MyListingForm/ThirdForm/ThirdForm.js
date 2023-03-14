@@ -1,12 +1,13 @@
 import React from 'react';
+import FormHeading from '../FormHeading/FormHeading';
 import './ThirdForm.css';
 
 function ThirdForm({formStep, completeFormStep, goToPreStep}) {
 
     const renderBtn = () => {
-        if(formStep > 2){
+        if(formStep > 4){
             return undefined
-        }else if(formStep === 2){
+        }else if(formStep === 4){
             return(
             <button
             type='submit'  
@@ -27,18 +28,15 @@ function ThirdForm({formStep, completeFormStep, goToPreStep}) {
     return (
         <div className="my-listing-third-form">
             <div className="container-fluid">
-                <div className="my-listing-step">
-                    <div className="progress-count">
-                        <h6>step <span>3</span> of <span>4</span></h6>
-                    </div>
-                    <div className="progress form-progress">
-                        <div className="progress-bar-third form-prog"></div>
-                    </div>
-                    <div className="progress-count margin_top">
-                        <h1 className='form-title'>Great! Now let’s upload<span className='second-line'>some photos
-                        </span></h1>
-                    </div>
-                </div>
+                
+                <FormHeading 
+                    formstepFirst='step'
+                    formNumber='3'
+                    formDivide='of'
+                    formStepLast='4'
+                    formTitle='Great! Now let’s upload'
+                    formsecondTitle="some photos"
+                    />
                 <div className="property_img">
                     <h5 className="feature-title">Property Images</h5>
                     <h5 className='image-size'>(Recomended Size: 1071×617)</h5>

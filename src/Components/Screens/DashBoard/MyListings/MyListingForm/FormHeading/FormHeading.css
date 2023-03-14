@@ -1,0 +1,45 @@
+.my-listing-form{
+    padding: 3rem 0 6rem 0;
+   
+}
+.my-listing-step{
+    padding-bottom: 2rem;
+}
+.form-progress{
+    height: 0.2rem;
+    background-color: var(--gray-2);
+}
+.progress{
+    display: flex;
+    border-radius: 0.18rem;
+}
+.progress-count h6 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--gray-1);
+    margin-bottom: 1.6rem;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--black);
+    opacity: 1;
+    transition: width .6s ease;
+    width: 25%;
+}
+.form-title{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    color: var(--black);
+}
+.second-line{
+    display: block;
+}
