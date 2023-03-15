@@ -24,9 +24,15 @@ function MyListingForm() {
     
     return (
         <>
-            {formStep >= 1 && <div className={formStep === 1 ? 'd-block': 'd-none'}>
-            <FirstForm formStep={formStep} completeFormStep={completeFormStep}/>
-            </div> }
+            {
+                formStep >= 1 &&
+                <div className={formStep === 1 ? 'd-block': 'd-none'}>
+                    <FirstForm 
+                        formStep={formStep} 
+                        completeFormStep={completeFormStep}
+                    />
+                </div>
+            }
 
             {formStep >= 2 && <div className={formStep === 2 ? 'd-block': 'd-none'}>
             <SecondForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep}/>
