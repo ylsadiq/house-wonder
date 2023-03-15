@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
 import FormHeading from '../FormHeading/FormHeading';
 import './FourForm.css'
 
@@ -14,11 +15,11 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
 
     async function handleSubmit(e) {
         e.preventDefault()
-    // const config = {
-    //   headers: {
-    //     Authorization: `Bearer ${consumer.token}`
-    //   }
-    // }
+    const config = {
+      headers: {
+        Authorization: `Bearer ${consumer.token}`
+      }
+    }
     
     const itemData = new FormData()
         itemData.append('propertyAmount', propertyAmount)
@@ -26,7 +27,8 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
         // itemData.append('propetySubTypes', propetySubTypes)
         const finalForm = {propertyAmount, priceNagotiable}
         console.log(finalForm);
-        // const response = await axios.post(PROPERTY_PROPERTTIES_API, propertyTypes, config)
+        const response = await axios.post(PROPERTY_PROPERTTIES_API, finalForm, config)
+        
         }
 
     const renderBtn = () => {
@@ -60,7 +62,7 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                 formTitle='Finally, how much do you want'
                 formsecondTitle="to sell your property for?"
                 />
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
             <div className="grid-1">
                         <div class="form-floating">
                             <div class="form-floation mb-4 mt-2">
@@ -73,11 +75,11 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                         <div className="grid-1 pb-4">
                             <div className="auth-form-start">
                                 <div className="auth-form-input">
-                                    <input type="radio" id="representative" name="mylisting" value="representative" />
-                                    <label htmlFor="representative">Representative</label>
+                                    <input type="radio" id="representative3" name="mylisting2" value="representative3" />
+                                    <label htmlFor="representative3">Representative</label>
                                 </div>
                                 <div className="auth-form-input">
-                                    <input type="radio" id="agent" name="mylisting" value="agent" />
+                                    <input type="radio" id="agent" name="mylisting2" value="agent" />
                                     <label htmlFor="agent">Agent</label>
                                 </div>
                             </div>
@@ -87,11 +89,11 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                         <p className='owner-title'>Is the price negotiable?</p>
                         <div className="auth-form">
                             <div className="auth-form-input">
-                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="representative" name="mylisting" value="representative" />
-                                <label htmlFor="representative">Negotiable</label>
+                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="representative2" name="mylisting3" value="representative2" />
+                                <label htmlFor="representative2">Negotiable</label>
                             </div>
                             <div className="auth-form-input">
-                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="agent" name="mylisting" value="agent" />
+                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="agent" name="mylisting3" value="agent" />
                                 <label htmlFor="agent">Non-negotiable</label>
                             </div>
                         </div>

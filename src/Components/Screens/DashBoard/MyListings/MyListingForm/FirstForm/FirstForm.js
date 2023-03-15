@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
-import { PROPERTY_CATEGORIES_API, PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
 import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({formStep, completeFormStep }) {

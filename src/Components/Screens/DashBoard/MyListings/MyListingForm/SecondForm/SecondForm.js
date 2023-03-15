@@ -11,6 +11,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
     const [count, setCount] = useState(1);
     const [check, setCheck] = useState(false);
     const [propetyTypes, setPropertyTypes] = useState(null);
+    const [propetyTypesCatagory, setPropertyTypesCatagory] = useState(null);
     const [propetySubTypes, setPropertySubTypes] = useState(null);
     const [propertyCatagories, setPropertyCatagories] = useState(null);
 
@@ -25,6 +26,9 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
         }
         getPropertyCatagories()
     }, [])
+
+        console.log(propetyTypesCatagory);
+    
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -54,6 +58,9 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
     }
     const handleCheckBox = () => {
         setCheck((prevCheck) => !prevCheck)
+    }
+    const handleSubClick = (e) => {
+        setPropertyTypesCatagory(e)
     }
 
     const renderBtn = () => {
@@ -107,7 +114,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
                         
                             <select onChange={(e) => setPropertyTypes(e.target.value)} className="form-select" name="contact_regarding" propertyType="propertyType">
                             {propertyCatagories?.map((propertyCatargory => (
-                            <option value="property">{propertyCatargory?.name}</option>
+                            <option onClick={(e) => handleSubClick(e)} value="property">{propertyCatargory?.name}</option>
                             )))}
                             </select>
                         
