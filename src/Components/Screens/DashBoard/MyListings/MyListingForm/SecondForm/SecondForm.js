@@ -7,13 +7,13 @@ import plus from '../../../../../../Assets/home/add.svg'
 import FormHeading from '../FormHeading/FormHeading';
 import './SecondForm.css'
 
-function SecondForm({formStep, completeFormStep, goToPreStep}) {
+function SecondForm({formStep, completeFormStep, goToPreStep, propetyTypes, setPropertyTypes, propetyTypesCatagory, setPropertyTypesCatagory, propetySubTypes, setPropertySubTypes, propertyCatagories, setPropertyCatagories}) {
     const [count, setCount] = useState(1);
     const [check, setCheck] = useState(false);
-    const [propetyTypes, setPropertyTypes] = useState(null);
-    const [propetyTypesCatagory, setPropertyTypesCatagory] = useState(null);
-    const [propetySubTypes, setPropertySubTypes] = useState(null);
-    const [propertyCatagories, setPropertyCatagories] = useState(null);
+    // const [propetyTypes, setPropertyTypes] = useState(null);
+    // const [propetyTypesCatagory, setPropertyTypesCatagory] = useState(null);
+    // const [propetySubTypes, setPropertySubTypes] = useState(null);
+    // const [propertyCatagories, setPropertyCatagories] = useState(null);
 
     const { consumer } = useSelector(state => state.auth)
 

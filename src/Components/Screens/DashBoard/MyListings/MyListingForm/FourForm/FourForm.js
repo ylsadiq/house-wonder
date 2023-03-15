@@ -6,10 +6,10 @@ import { PROPERTY_PROPERTIES_API } from '../../../../../../Utilities/APIs/APIs';
 import FormHeading from '../FormHeading/FormHeading';
 import './FourForm.css'
 
-function FourForm({formStep, completeFormStep, goToPreStep }) {
-    const [propertyAmount, setPropertyAmount] = useState(null);
-    const [amountPerSqft, setAmountPerSqft] = useState(null);
-    const [priceNagotiable, setPriceNegotiable] = useState(null);
+function FourForm({formStep, completeFormStep, goToPreStep, propertyAmount, setPropertyAmount, amountPerSqft, setAmountPerSqft, priceNagotiable, setPriceNegotiable }) {
+    // const [propertyAmount, setPropertyAmount] = useState(null);
+    // const [amountPerSqft, setAmountPerSqft] = useState(null);
+    // const [priceNagotiable, setPriceNegotiable] = useState(null);
 
     const { consumer } = useSelector(state => state.auth)
 
