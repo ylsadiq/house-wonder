@@ -23,24 +23,24 @@ function MyListings() {
             </div>
             <div className="items-details">
             <div className="propertyCardbody horizontal-prop-card">
-                                        <h5 className="propertyId">ID: #BB635340</h5>
-                                        <div className="horizontalGps">
-                                                <h1>Luxurious Apartment</h1>
-                                            <div>
-                                                <img src={location} alt="" />
-                                            </div>
-                                        </div>
-                                        <p><img src={location} alt="" />Gulshan 1, Dhaka</p>
+                <h5 className="propertyId">ID: #BB635340</h5>
+                <div className="horizontalGps">
+                        <h1>Luxurious Apartment</h1>
+                    <div>
+                        <img src={location} alt="" />
+                    </div>
+                </div>
+                <p><img src={location} alt="" />Gulshan 1, Dhaka</p>
 
-                                        <ul>
-                                            <li>4 Bed</li>
-                                            <li>5 Bath</li>
-                                            <li>2300 sqft.</li>
-                                        </ul>
+                <ul>
+                    <li>4 Bed</li>
+                    <li>5 Bath</li>
+                    <li>2300 sqft.</li>
+                </ul>
 
-                                        <h6>For Sale</h6>
-                                        <h2>Tk. 2,00,00,000</h2>
-                                    </div>
+                <h6>For Sale</h6>
+                <h2>Tk. 2,00,00,000</h2>
+            </div>
             </div>
         </Link>
         </div>
