@@ -1,10 +1,47 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { PROPERTY_CATEGORIES_API, PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import minus from '../../../../../../Assets/icon/remove.svg'
+import plus from '../../../../../../Assets/home/add.svg'
 import FormHeading from '../FormHeading/FormHeading';
 import './SecondForm.css'
 
 function SecondForm({formStep, completeFormStep, goToPreStep}) {
     const [count, setCount] = useState(1);
     const [check, setCheck] = useState(false);
+    const [propetyTypes, setPropertyTypes] = useState(null);
+    const [propetySubTypes, setPropertySubTypes] = useState(null);
+    const [propertyCatagories, setPropertyCatagories] = useState(null);
+
+    const { consumer } = useSelector(state => state.auth)
+
+
+    useEffect(() => {
+        async function getPropertyCatagories() {
+            const { data } = await axios.get(PROPERTY_CATEGORIES_API)
+            setPropertyCatagories(data)
+            console.log(data);
+        }
+        getPropertyCatagories()
+    }, [])
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+    // const config = {
+    //   headers: {
+    //     Authorization: `Bearer ${consumer.token}`
+    //   }
+    // }
+    
+    const itemData = new FormData()
+        itemData.append('propetyTypes', propetyTypes)
+        itemData.append('propetySubTypes', propetySubTypes)
+        itemData.append('propertyCatagories', propertyCatagories)
+        const propertyTypes = {propetyTypes, propetySubTypes, propertyCatagories}
+        console.log(propertyTypes);
+        // const response = await axios.post(PROPERTY_PROPERTTIES_API, propertyTypes, config)
+        }
 
     const handleIncreaseCounter = () => {
         setCount((prev) => prev + 1)
@@ -64,17 +101,21 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
                 formsecondTitle="about your property!"
                 />
 
+                <form onSubmit={handleSubmit} action="">
                 <div className="grid-2 mt-2">
-                    <div class="form-floation">
-                        <select class="form-select" name="contact_regarding" propertyType="propertyType">
-                            <option value="">Select Property Type</option>
-                            <option value="property">Property</option><option value="package">Package</option>
-                            <option value="service">Service</option></select>
+                    <div className="form-floation">
+                        
+                            <select onChange={(e) => setPropertyTypes(e.target.value)} className="form-select" name="contact_regarding" propertyType="propertyType">
+                            {propertyCatagories?.map((propertyCatargory => (
+                            <option value="property">{propertyCatargory?.name}</option>
+                            )))}
+                            </select>
+                        
                         <label htmlFor="propertyType">Property Type</label>
                     </div>
 
-                    <div class="form-floation">
-                        <select class="form-select" name="contact_regarding" id='property_sub_type_id'>
+                    <div className="form-floation">
+                        <select onChange={(e) => setPropertySubTypes(e.target.value)} className="form-select" name="contact_regarding" id='property_sub_type_id'>
                             <option value="">Select Property Sub Type</option>
                             <option value="property">Property</option><option value="package">Package</option>
                             <option value="service">Service</option></select>
@@ -96,10 +137,10 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
 
                             <div className={`${check ? 'active' : 'authFormInput'}`}>
                                 <div className="featuresInpGroup propFeature1">
-                                    <button className="decBtn" type="button" onClick={handleDecreaseCounter}><img src="https://bastu.com.bd/beta-twelve/frontend/new_ui/assets/images/icon/remove.svg" alt="" /></button>
+                                    <button className="decBtn" type="button" onClick={handleDecreaseCounter}><img src={minus} alt="" /></button>
                                     <input type="text" value={count} className='counter' name="property_info[0][property_info_quantity]" />
 
-                                    <button class="IncBtn" type="button" onClick={handleIncreaseCounter}><img src="https://bastu.com.bd/beta-twelve/frontend/new_ui/assets/images/icon/add.svg" alt="" /></button>
+                                    <button className="IncBtn" type="button" onClick={handleIncreaseCounter}><img src={plus} alt="" /></button>
                                 </div>
                             </div>
                         </div>
@@ -116,10 +157,10 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
                                 <input type="checkbox" className='form-check-input' id="horns" name="horns" />
                                 <label htmlFor="horns" onChange={handleCheckBox}
                                     className='form-check-label'>Floor Size</label>
-                                <div class="floor_size">
-                                    <div class="form-floation">
-                                        <div class="form-floation mb-4 mt-2">
-                                            <input type="text" name="property_header" class="form-control" id='yourFloor' placeholder="Area(Shift)" />
+                                <div className="floor_size">
+                                    <div className="form-floation">
+                                        <div className="form-floation mb-4 mt-2">
+                                            <input type="text" name="property_header" className="form-control" id='yourFloor' placeholder="Area(Shift)" />
                                             <label htmlFor="yourFloor">Area(Shift)</label>
                                         </div>
                                     </div>
@@ -139,7 +180,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
 
                 </div>
                 <div className="grid-1">
-                    <h5 class="feature-title margin_top">Property Amenities</h5>
+                    <h5 className="feature-title margin_top">Property Amenities</h5>
 
                     <div className="property-form">
                         <div className="grid-1">
@@ -178,6 +219,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep}) {
                     <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
                     {renderBtn()}
                 </div>
+                </form>
             </div>
         </div>
     )

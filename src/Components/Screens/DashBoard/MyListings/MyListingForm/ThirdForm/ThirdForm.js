@@ -1,8 +1,27 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import FormHeading from '../FormHeading/FormHeading';
 import './ThirdForm.css';
 
 function ThirdForm({formStep, completeFormStep, goToPreStep}) {
+
+    const { consumer } = useSelector(state => state.auth)
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+    // const config = {
+    //   headers: {
+    //     Authorization: `Bearer ${consumer.token}`
+    //   }
+    // }
+    
+    const itemData = new FormData()
+        // itemData.append('propetyTypes', propetyTypes)
+        // itemData.append('propetySubTypes', propetySubTypes)
+        // const propertyTypes = {propetyTypes}
+        // console.log(propertyTypes);
+        // const response = await axios.post(PROPERTY_PROPERTTIES_API, propertyTypes, config)
+        }
 
     const renderBtn = () => {
         if(formStep > 4){
@@ -50,6 +69,7 @@ function ThirdForm({formStep, completeFormStep, goToPreStep}) {
                                 <div className="text-center">
                                     <img className="mb-2" src="https://bastu.com.bd/beta-twelve/frontend/new_ui/assets/images/icon/u_image-plus.svg" alt="" />
                                     <p>Add Image</p>
+                                    <input type="file" />
                                 </div>
                             </div>
 

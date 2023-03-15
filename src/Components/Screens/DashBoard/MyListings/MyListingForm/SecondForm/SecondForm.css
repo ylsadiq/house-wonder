@@ -69,6 +69,7 @@
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 .8rem;
   }
   .featuresInpGroup button img {
     height: 1.6rem;
@@ -84,7 +85,7 @@
     color: var(--black);
     font-size: 1.6rem;
     font-weight: 600;
-    width: 5rem;
+    width: auto;
   }
   .margin_top {
     margin-top: 4rem;

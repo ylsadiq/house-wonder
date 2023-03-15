@@ -4,6 +4,18 @@
 .d-none{
     display: hidden;
 }
+.d-flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* .form-check-input.is-valid:checked{
+    background-color: #198754;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url(../../../../../Assets/icon/check.svg);
+} */
 
 .my-listing-form{
     padding: 3rem 0 6rem 0;
