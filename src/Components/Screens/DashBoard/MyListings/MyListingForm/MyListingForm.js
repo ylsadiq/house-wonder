@@ -61,7 +61,6 @@ function MyListingForm() {
             }
 
             {
-
                 formStep >= 2 && 
                 <div className={formStep === 2 ? 'd-block': 'd-none'}>
                     <SecondForm 
@@ -69,12 +68,10 @@ function MyListingForm() {
                         completeFormStep={completeFormStep} 
                         goToPreStep={goToPreStep}
                     />
-                </div> 
-            
+                </div>             
             }
             
             {
-            
                 formStep >= 3 && 
                 <div className={formStep === 3 ? 'd-block': 'd-none'}>
                     <ThirdForm 
@@ -82,8 +79,7 @@ function MyListingForm() {
                         completeFormStep={completeFormStep}
                         goToPreStep={goToPreStep} 
                     />
-                </div> 
-            
+                </div>             
             }
 
             {
