@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
-import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTIES_API } from '../../../../../../Utilities/APIs/APIs';
 import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({formStep, completeFormStep }) {
@@ -107,7 +107,7 @@ function FirstForm({formStep, completeFormStep }) {
         itemData.append('contactPersonPhone', contactPersonPhone)
         const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone}
         console.log(properties);
-        const response = await axios.post(PROPERTY_PROPERTTIES_API, properties, config)
+        const response = await axios.post(PROPERTY_PROPERTIES_API, properties, config)
         }
 
   return (
@@ -128,7 +128,7 @@ function FirstForm({formStep, completeFormStep }) {
                         </div>
                         <h1 className='map-heading'>Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. </h1>
                         <form action="" onSubmit={handleSubmit}>
-                        {/* {formStep >= 1 ? <div className={formStep === 1 ? 'd-block': 'd-none'}> */}
+
                             <div className="ratio-box">
                                 <p className='owner-title'>I am the:</p>
                                 <div className="auth-form">
@@ -331,7 +331,7 @@ function FirstForm({formStep, completeFormStep }) {
                                 {/* <input type="submit" className='btn btn-dark mb-4 mt-2 listing-btn' value="Continue" /> */}
                                 {renderBtn()}
                             </div>
-                            {/* </div> : null} */}
+
                         </form>
 
 

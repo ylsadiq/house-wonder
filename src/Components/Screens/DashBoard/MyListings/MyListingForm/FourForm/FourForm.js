@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { PROPERTY_PROPERTTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import { PROPERTY_PROPERTIES_API } from '../../../../../../Utilities/APIs/APIs';
 import FormHeading from '../FormHeading/FormHeading';
 import './FourForm.css'
 
@@ -27,7 +27,7 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
         // itemData.append('propetySubTypes', propetySubTypes)
         const finalForm = {propertyAmount, priceNagotiable}
         console.log(finalForm);
-        const response = await axios.post(PROPERTY_PROPERTTIES_API, finalForm, config)
+        const response = await axios.post(PROPERTY_PROPERTIES_API, finalForm, config)
         
         }
 
@@ -75,11 +75,11 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                         <div className="grid-1 pb-4">
                             <div className="auth-form-start">
                                 <div className="auth-form-input">
-                                    <input type="radio" id="representative3" name="mylisting2" value="representative3" />
-                                    <label htmlFor="representative3">Representative</label>
+                                    <input type="radio" id="representative" name="mylisting1" value="representative" />
+                                    <label htmlFor="representative">Representative</label>
                                 </div>
                                 <div className="auth-form-input">
-                                    <input type="radio" id="agent" name="mylisting2" value="agent" />
+                                    <input type="radio" id="agent" name="mylisting1" value="agent" />
                                     <label htmlFor="agent">Agent</label>
                                 </div>
                             </div>
@@ -89,12 +89,12 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                         <p className='owner-title'>Is the price negotiable?</p>
                         <div className="auth-form">
                             <div className="auth-form-input">
-                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="representative2" name="mylisting3" value="representative2" />
-                                <label htmlFor="representative2">Negotiable</label>
+                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="negotiable" name="mylisting3" />
+                                <label htmlFor="negotiable">Negotiable</label>
                             </div>
                             <div className="auth-form-input">
-                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="agent" name="mylisting3" value="agent" />
-                                <label htmlFor="agent">Non-negotiable</label>
+                                <input onChange={(e) => setPriceNegotiable(e.target.value)} type="radio" id="nonnegotiable" name="mylisting3" />
+                                <label htmlFor="nonnegotiable">Non-negotiable</label>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ function FourForm({formStep, completeFormStep, goToPreStep }) {
                             <div class="grid-1">
                                 <div class="check-box">
                                     <input type="checkbox" class="form-check-input" id="horns" name="horns" />
-                            <label htmlFor="representative">Accept Terms & <Link to="" className="condition">Conditions</Link></label>
+                            <label className="accept" htmlFor="representative">Accept Terms & <Link to="" className="condition">Conditions</Link></label>
                                 </div>
                                     </div>
                         </div>

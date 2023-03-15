@@ -24,21 +24,21 @@ function MyListingForm() {
     
     return (
         <>
-            {/* {formStep >= 1 ? <div className={formStep === 1 ? 'd-block': 'd-none'}> */}
+            {formStep >= 1 ? <div className={formStep === 1 ? 'd-block': 'd-none'}>
             <FirstForm formStep={formStep} completeFormStep={completeFormStep}/>
-            {/* </div> : null} */}
+            </div> : null}
 
-            {/* {formStep >= 2 ? <div className={formStep === 2 ? 'd-block': 'd-none'}> */}
+            {formStep >= 2 ? <div className={formStep === 2 ? 'd-block': 'd-none'}>
             <SecondForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep}/>
-            {/* </div> : null} */}
+            </div> : null}
             
-            {/* {formStep >= 3 ? <div className={formStep === 3 ? 'd-block': 'd-none'}> */}
+            {formStep >= 3 ? <div className={formStep === 3 ? 'd-block': 'd-none'}>
             <ThirdForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep} />
-            {/* </div> : null} */}
+            </div> : null}
 
-            {/* {formStep >= 4 ? <div className={formStep === 4 ? 'd-block': 'd-none'}> */}
+            {formStep >= 4 ? <div className={formStep === 4 ? 'd-block': 'd-none'}>
                 <FourForm formStep={formStep} completeFormStep={completeFormStep} goToPreStep={goToPreStep}/>
-            {/* </div> : null} */}
+            </div> : null}
         </>
     )
 }

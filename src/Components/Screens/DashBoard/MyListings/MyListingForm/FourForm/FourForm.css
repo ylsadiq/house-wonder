@@ -21,6 +21,14 @@
 .form-check-input[type=checkbox] {
     border-radius: 0.26rem;
 }
+.accept{
+    margin-left: .6rem;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1.6rem !important;
+    line-height: 2.4rem;
+    color: var(--gray-1);
+}
 .condition{
     text-decoration: underline;
     cursor: pointer;
