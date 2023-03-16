@@ -115,7 +115,7 @@ function MyListingForm() {
 
     const titles = [
         {
-            title: 'Hi! ' + {consumer.name},
+            title: 'Hi! ' + consumer?.name,
             secondTitle: "Let's start posting your properties"
         },
         {
