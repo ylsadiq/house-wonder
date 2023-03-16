@@ -57,53 +57,55 @@ function MyListingForm() {
       }
     const goToPreStep = () =>{
         setFormStep(cur => cur - 1)
-      }
-      const { consumer } = useSelector(state => state.auth)
+    }
 
-      async function handleSubmit(e) {
+    const { consumer } = useSelector(state => state.auth)
+
+    async function handleSubmit(e) {
         e.preventDefault()
-    // const config = {
-    //   headers: {
-    //     Authorization: `Bearer ${consumer.token}`
-    //   }
-    // }
+        // const config = {
+        //   headers: {
+        //     Authorization: `Bearer ${consumer.token}`
+        //   }
+        // }
     
-    const itemData = new FormData()
-        itemData.append('userPostAs', userPostAs)
-        itemData.append('acquisition', acquisition)
-        itemData.append('propertyHeader', propertyHeader)
-        itemData.append('propertyStreetAddress', propertyStreetAddress)
-        itemData.append('PropertyLandArea', PropertyLandArea)
-        itemData.append('PropertyAddress', PropertyAddress)
-        itemData.append('propertyFlat', propertyFlat)
-        itemData.append('propertyHouse', propertyHouse)
-        itemData.append('propertyRoad', propertyRoad)
-        itemData.append('readyToMove', readyToMove)
-        itemData.append('propertyAvailavleFrom', propertyAvailavleFrom)
-        itemData.append('contactPersonFlat', contactPersonFlat)
-        itemData.append('propertyTotalFlat', propertyTotalFlat)
-        itemData.append('postCode', postCode)
-        itemData.append('propertyDescription', propertyDescription)
-        itemData.append('contactPersonName', contactPersonName)
-        itemData.append('contactPersonRelation', contactPersonRelation)
-        itemData.append('videoUrl', videoUrl)
-        itemData.append('contactWithMe', contactWithMe)
-        itemData.append('contactPersonEmail', contactPersonEmail)
-        itemData.append('contactPersonPhone', contactPersonPhone)
-        itemData.append('propetyTypes', propetyTypes)
-        itemData.append('propertyCatagories', propertyCatagories)
-        itemData.append('propertyAmount', propertyAmount)
-        itemData.append('priceNagotiable', priceNagotiable)
+        const propertyData = new FormData()
+
+        propertyData.append('userPostAs', userPostAs)
+        propertyData.append('acquisition', acquisition)
+        propertyData.append('propertyHeader', propertyHeader)
+        propertyData.append('propertyStreetAddress', propertyStreetAddress)
+        propertyData.append('PropertyLandArea', PropertyLandArea)
+        propertyData.append('PropertyAddress', PropertyAddress)
+        propertyData.append('propertyFlat', propertyFlat)
+        propertyData.append('propertyHouse', propertyHouse)
+        propertyData.append('propertyRoad', propertyRoad)
+        propertyData.append('readyToMove', readyToMove)
+        propertyData.append('propertyAvailavleFrom', propertyAvailavleFrom)
+        propertyData.append('contactPersonFlat', contactPersonFlat)
+        propertyData.append('propertyTotalFlat', propertyTotalFlat)
+        propertyData.append('postCode', postCode)
+        propertyData.append('propertyDescription', propertyDescription)
+        propertyData.append('contactPersonName', contactPersonName)
+        propertyData.append('contactPersonRelation', contactPersonRelation)
+        propertyData.append('videoUrl', videoUrl)
+        propertyData.append('contactWithMe', contactWithMe)
+        propertyData.append('contactPersonEmail', contactPersonEmail)
+        propertyData.append('contactPersonPhone', contactPersonPhone)
+        propertyData.append('propetyTypes', propetyTypes)
+        propertyData.append('propertyCatagories', propertyCatagories)
+        propertyData.append('propertyAmount', propertyAmount)
+        propertyData.append('priceNagotiable', priceNagotiable)
         
-        const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone, propetyTypes, propertyCatagories, propertyAmount, priceNagotiable}
-        console.log(properties);
-        const response = await axios.post(PROPERTY_PROPERTIES_API, properties)
+        // const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone, propetyTypes, propertyCatagories, propertyAmount, priceNagotiable}
+        // console.log(properties);
+        const response = await axios.post(PROPERTY_PROPERTIES_API, propertyData)
         console.log(response)
-        }
+    }
     
     return (
         <>
-        <form action="" onSubmit={handleSubmit}>
+        <form encType='multipart/form-data'>
             {
                 formStep >= 1 &&
                 <div className={formStep === 1 ? 'd-block': 'd-none'}>
@@ -207,6 +209,7 @@ function MyListingForm() {
                         setAmountPerSqft={setAmountPerSqft}
                         priceNagotiable={priceNagotiable}
                         setPriceNegotiable={setPriceNegotiable}
+                        handleSubmit={handleSubmit}
                     />
                 </div> 
             }
