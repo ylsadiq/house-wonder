@@ -291,7 +291,9 @@ function FirstForm({
                         <div className="auth-form">
                             <div className="auth-form-input">
                                 <input
-                                    onChange={(e) => setContactWithMe(true)}
+                                    onChange={e => setContactWithMe(e.target.value)}
+                                    value={true}
+                                    checked={contactWithMe === true}
                                     type="radio"
                                 />
                                 <label htmlFor="contactWithMe">Contact With Me</label>
@@ -299,7 +301,9 @@ function FirstForm({
 
                             <div className="auth-form-input">
                                 <input
-                                    onChange={(e) => setContactWithMe(false)}
+                                    onChange={e => setContactWithMe(e.target.value)}
+                                    value={false}
+                                    checked={contactWithMe === false}
                                     type="radio"
                                 />
                                 <label htmlFor="assignPerson">Assign Contact Person</label>
