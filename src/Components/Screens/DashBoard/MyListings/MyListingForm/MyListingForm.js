@@ -46,8 +46,7 @@ function MyListingForm() {
     const [postCode, setPostCode] = useState(null);
     const [propertyDescription, setPropertyDescription] = useState(null);
     const [videoUrl, setVideoUrl] = useState(null);
-    const [contactWithMe, setContactWithMe] = useState(null);
-    console.log("🚀 ~ file: MyListingForm.js:50 ~ MyListingForm ~ contactWithMe:", contactWithMe)
+    const [contactWithMe, setContactWithMe] = useState('');
     const [contactPersonName, setContactPersonName] = useState(null);
     const [contactPersonRelation, setContactPersonRelation] = useState(null);
     const [contactPersonEmail, setContactPersonEmail] = useState(null);
@@ -104,8 +103,6 @@ function MyListingForm() {
         propertyData.append('propertyAmount', propertyAmount)
         propertyData.append('priceNagotiable', priceNagotiable)
 
-        // const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone, propetyTypes, propertyCatagories, propertyAmount, priceNagotiable}
-        // console.log(properties);
         const response = await axios.post(PROPERTY_PROPERTIES_API, propertyData, config)
         console.log(response)
     }
@@ -165,9 +162,7 @@ function MyListingForm() {
                             setContactPersonEmail={setContactPersonEmail}
                             contactPersonPhone={contactPersonPhone}
                             setContactPersonPhone={setContactPersonPhone}
-
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
                         />
                     </div>
                 }
@@ -184,10 +179,7 @@ function MyListingForm() {
                             setPropertySubTypes={setPropertySubTypes}
                             propertyCatagories={propertyCatagories}
                             setPropertyCatagories={setPropertyCatagories}
-
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -197,8 +189,6 @@ function MyListingForm() {
                     <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -210,8 +200,6 @@ function MyListingForm() {
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
@@ -235,8 +223,6 @@ function MyListingForm() {
                             setPropertyCatagories={setPropertyCatagories}
 
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -246,8 +232,6 @@ function MyListingForm() {
                     <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -259,8 +243,6 @@ function MyListingForm() {
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
-                            // NextStep={NextStep}
-                            // // PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
