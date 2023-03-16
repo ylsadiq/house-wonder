@@ -113,22 +113,36 @@ function MyListingForm() {
         console.log(response)
     }
 
+    const titles = [
+        {
+            title: 'Hi! ' + consumer?.name,
+            secondTitle: "Let's start posting your properties"
+        },
+        {
+            title: 'Hi! ',
+            secondTitle: "Now tell us more about your property"
+        },
+        {
+            title: 'Hi! ',
+            secondTitle: "Now let’s upload some photos"
+        },
+        {
+            title: 'Finally, ',
+            secondTitle: "how much do you want to sell your property for?"
+        },
+    ]
+
     return (
         <>
            <FormHeading
-                    formstepFirst='step'
-                    formNumber='1'
-                    formDivide='of'
-                    formStepLast='4'
-                    formTitle='Hi'
-                    formUser='Test11'
-                    formsecondTitle="Let's start posting your properties"
+                    screenNumber={screenNumber}
+                    formTitle={titles[screenNumber-1].title}
+                    formsecondTitle={titles[screenNumber-1].secondTitle}
             />
 
             <form encType='multipart/form-data'>
                 {
-                    screenNumber >= 1 &&
-                    <div className={screenNumber === 1 ? 'd-block' : 'd-none'}>
+                    screenNumber === 1 && <div className={screenNumber === 1 ? 'd-block' : 'd-none'}>
                         <FirstForm
                             properyTypeCityArea={properyTypeCityArea}
                             setProperyTypeCityArea={setProperyTypeCityArea}
@@ -184,8 +198,7 @@ function MyListingForm() {
                 }
 
                 {
-                    screenNumber >= 2 &&
-                    <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
+                    screenNumber === 2 && <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
                         <SecondForm
                             propetyTypes={propetyTypes}
                             setPropertyTypes={setPropertyTypes}
@@ -201,8 +214,7 @@ function MyListingForm() {
                 }
 
                 {
-                    screenNumber >= 3 &&
-                    <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
+                    screenNumber === 3 &&  <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
                             screenNumber={screenNumber}
                         />
@@ -210,8 +222,7 @@ function MyListingForm() {
                 }
 
                 {
-                    screenNumber >= 4 &&
-                    <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
+                    screenNumber === 4 && <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
                         <FourthForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}

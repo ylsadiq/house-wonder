@@ -1,5 +1,4 @@
 import React from 'react';
-import FormHeading from '../FormHeading/FormHeading';
 import './ThirdForm.css';
 
 function ThirdForm() {
@@ -9,15 +8,7 @@ function ThirdForm() {
         className="my-listing-third-form">
             <div 
             className="container-fluid">
-                
-                <FormHeading 
-                    formstepFirst='step'
-                    formNumber='3'
-                    formDivide='of'
-                    formStepLast='4'
-                    formTitle='Great! Now let’s upload'
-                    formsecondTitle="some photos"
-                    />
+
                 <div 
                 className="property_img">
                     <h5 

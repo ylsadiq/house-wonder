@@ -6,7 +6,7 @@ import mapImage from '../../../../../../Assets/image/form/map.PNG'
 import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({
-    formStep, completeFormStep, properyTypeCityArea, setProperyTypeCityArea, ownerAcquisition, setOwnerAcquisition, userPostAs, setUserPostAs, acquisition, setAcquisition, propertyHeader, setPropertyHeader, propertyPerspective, setpropertyPerspective, readyToMove, setReadyToMove,
+    formStep, screenNumber, properyTypeCityArea, setProperyTypeCityArea, ownerAcquisition, setOwnerAcquisition, userPostAs, setUserPostAs, acquisition, setAcquisition, propertyHeader, setPropertyHeader, propertyPerspective, setpropertyPerspective, readyToMove, setReadyToMove,
     propertyStreetAddress, setPropertyStreetAddress, propertyAvailavleFrom, setPropertyAvailavleFrom, propertyFlat, setPropertyFlat, propertyHouse, setPropertyHouse, propertyRoad, setPropertyRoad, propertyTotalFloor, contactPersonlFloor, setContactPersonlFloor, setPropertyTotalFloor, postCode, setPostCode, propertyDescription, setPropertyDescription, videoUrl, setVideoUrl, contactWithMe, setContactWithMe, PropertyLandArea, setPropertyLandArea, PropertyAddress, setPropertyAddress, contactPersonName, setContactPersonName, contactPersonRelation, setContactPersonRelation, contactPersonEmail, setContactPersonEmail, contactPersonPhone, setContactPersonPhone
 }) {
 

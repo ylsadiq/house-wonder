@@ -44,14 +44,6 @@ function SecondForm({setPropertyTypes,  setPropertyTypesCatagory, setPropertySub
             <div 
             className="container-fluid"
             >
-                <FormHeading
-                formstepFirst='step'
-                formNumber='2'
-                formDivide='of'
-                formStepLast='4'
-                formTitle='Great! Now tell us more'
-                formsecondTitle="about your property!"
-                />
                 <div 
                 className="grid-2 mt-2"
                 >
