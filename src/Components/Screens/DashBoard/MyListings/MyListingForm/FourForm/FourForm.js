@@ -117,10 +117,10 @@ function FourForm({formStep, completeFormStep, goToPreStep, propertyAmount, setP
                                     </div>
                         </div>
                         
-                        <div className="second-form">
+                        {/* <div className="second-form">
             <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
-            {/* {renderBtn()} */}
-            </div>
+            {renderBtn()}
+            </div> */}
 
             </form>
                 

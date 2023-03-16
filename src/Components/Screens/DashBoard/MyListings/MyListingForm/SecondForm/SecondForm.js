@@ -222,10 +222,10 @@ function SecondForm({formStep, completeFormStep, goToPreStep, propetyTypes, setP
 
                 </div>
 
-                <div className="second-form">
+                {/* <div className="second-form">
                     <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
-                    {/* {renderBtn()} */}
-                </div>
+                    {renderBtn()}
+                </div> */}
             </div>
         </div>
     )

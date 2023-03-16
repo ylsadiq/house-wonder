@@ -14,12 +14,19 @@ function MyListingForm() {
     const [screenNumber, setScreenNumber] = useState(1);
     const MAX_STEPS = 4;
 
-    const completeFormStep = () => {
-        setFormStep(cur => cur + 1)
+    function NextStep () {
+        setScreenNumber(cur => cur + 1)
     }
-    const goToPreStep = () => {
-        setFormStep(cur => cur - 1)
+    function PreviousStep () {
+        setScreenNumber(cur => cur - 1)
     }
+
+    // const completeFormStep = () => {
+    //     setScreenNumber(cur => cur + 1)
+    // }
+    // const goToPreStep = () => {
+    //     setScreenNumber(cur => cur - 1)
+    // }
 
     // form field states
     // first form states
@@ -109,8 +116,8 @@ function MyListingForm() {
         <>
             <form encType='multipart/form-data'>
                 {
-                    formStep >= 1 &&
-                    <div className={formStep === 1 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 1 &&
+                    <div className={screenNumber === 1 ? 'd-block' : 'd-none'}>
                         <FirstForm
                             properyTypeCityArea={properyTypeCityArea}
                             setProperyTypeCityArea={setProperyTypeCityArea}
@@ -161,15 +168,15 @@ function MyListingForm() {
                             contactPersonPhone={contactPersonPhone}
                             setContactPersonPhone={setContactPersonPhone}
 
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
                         />
                     </div>
                 }
 
                 {
-                    formStep >= 2 &&
-                    <div className={formStep === 2 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 2 &&
+                    <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
                         <SecondForm
                             propetyTypes={propetyTypes}
                             setPropertyTypes={setPropertyTypes}
@@ -180,33 +187,33 @@ function MyListingForm() {
                             propertyCatagories={propertyCatagories}
                             setPropertyCatagories={setPropertyCatagories}
 
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                         />
                     </div>
                 }
 
                 {
-                    formStep >= 3 &&
-                    <div className={formStep === 3 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 3 &&
+                    <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                         />
                     </div>
                 }
 
                 {
-                    formStep >= 4 &&
-                    <div className={formStep === 4 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 4 &&
+                    <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
                         <FourForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
@@ -217,8 +224,8 @@ function MyListingForm() {
 
 
                 {
-                    formStep >= 2 &&
-                    <div className={formStep === 2 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 2 &&
+                    <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
                         <SecondForm
                             propetyTypes={propetyTypes}
                             setPropertyTypes={setPropertyTypes}
@@ -229,33 +236,33 @@ function MyListingForm() {
                             propertyCatagories={propertyCatagories}
                             setPropertyCatagories={setPropertyCatagories}
 
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                         />
                     </div>
                 }
 
                 {
-                    formStep >= 3 &&
-                    <div className={formStep === 3 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 3 &&
+                    <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                         />
                     </div>
                 }
 
                 {
-                    formStep >= 4 &&
-                    <div className={formStep === 4 ? 'd-block' : 'd-none'}>
+                    screenNumber >= 4 &&
+                    <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
                         <FourForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
-                            formStep={formStep}
-                            completeFormStep={completeFormStep}
-                            goToPreStep={goToPreStep}
+                            screenNumber={screenNumber}
+                            NextStep={NextStep}
+                            PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
@@ -265,13 +272,29 @@ function MyListingForm() {
                     </div>
                 }
                 <div class="second-form">
+                    {screenNumber > 1 && screenNumber <= 4 &&
                     <button
                         class="btn btn-outline-dark listing-btn"
+                        onClick={PreviousStep}
                     >
                         Go back
+                    </button>}
+
+                    <button 
+                        type="button"
+                        class="btn btn-dark mb-4 mt-2 listing-btn"
+                        >
+                            Finish
                     </button>
-                    <button type="button"
-                        class="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
+                    :
+                    <button 
+                        type="button"
+                        class="btn btn-dark mb-4 mt-2 listing-btn"
+                        onClick={NextStep}
+                        >
+                            Continue
+                    </button>
+
                 </div>
             </form>
         </>

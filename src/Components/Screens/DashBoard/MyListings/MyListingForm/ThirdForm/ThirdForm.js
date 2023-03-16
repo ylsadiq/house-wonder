@@ -97,10 +97,10 @@ function ThirdForm({formStep, completeFormStep, goToPreStep}) {
                         dropdown menu and click bedroom.</p>
                 </div>
             </div>
-            <div className="second-form">
+            {/* <div className="second-form">
                 <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
-                {/* {renderBtn()} */}
-            </div>
+                {renderBtn()}
+            </div> */}
         </div>
     )
 }
