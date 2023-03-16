@@ -5,11 +5,9 @@ import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTIES_API } from '../../../../..
 import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({
-    formStep, completeFormStep, properyTypeCityArea, setProperyTypeCityArea, ownerAcquisition, setOwnerAcquisition, userPostAs, setUserPostAs, acquisition, setAcquisition, propertyHeader, setPropertyHeader, propertyPerspective,  setpropertyPerspective, readyToMove, setReadyToMove,
+    formStep, completeFormStep, properyTypeCityArea, setProperyTypeCityArea, ownerAcquisition, setOwnerAcquisition, userPostAs, setUserPostAs, acquisition, setAcquisition, propertyHeader, setPropertyHeader, propertyPerspective, setpropertyPerspective, readyToMove, setReadyToMove,
     propertyStreetAddress, setPropertyStreetAddress, propertyAvailavleFrom, setPropertyAvailavleFrom, propertyFlat, setPropertyFlat, propertyHouse, setPropertyHouse, propertyRoad, setPropertyRoad, propertyTotalFlat, contactPersonFlat, setContactPersonFlat, setPropertyTotalFlat, postCode, setPostCode, propertyDescription, setPropertyDescription, videoUrl, setVideoUrl, contactWithMe, setContactWithMe, PropertyLandArea, setPropertyLandArea, PropertyAddress, setPropertyAddress, contactPersonName, setContactPersonName, contactPersonRelation, setContactPersonRelation, contactPersonEmail, setContactPersonEmail, contactPersonPhone, setContactPersonPhone
-}) 
-
-{
+}) {
     // const [properyTypeCityArea, setProperyTypeCityArea] = useState(null);
     // const [ownerAcquisition, setOwnerAcquisition] = useState(null);
     // const [userPostAs, setUserPostAs] = useState(null);
@@ -36,7 +34,7 @@ function FirstForm({
     // const [contactPersonPhone, setContactPersonPhone] = useState(null);
 
     const [check, setCheck] = useState(false);
-    
+
 
     const { consumer } = useSelector(state => state.auth)
 
@@ -52,44 +50,45 @@ function FirstForm({
     // let adultMember = properyTypeCityArea?.find((c) => c?.name);
     // console.log(adultMember);
 
-    const handleAvailable = (e) =>{
+    const handleAvailable = (e) => {
         setReadyToMove(e.target.value)
         setReadyToMove(e.target.value)
         setPropertyAvailavleFrom(e.target.value)
         setCheck((prevCheck) => !prevCheck)
- 
+
     }
 
     const renderBtn = () => {
-        if(formStep > 4){
+        if (formStep > 4) {
             return undefined
-        }else if(formStep === 4){
-            return(
-            <button
-            type='submit'  
-            // disabled={error}
-            className="btn btn-dark mb-4 mt-2 listing-btn">Finish</button>
+        } else if (formStep === 4) {
+            return (
+                <button
+                    type='submit'
+                    // disabled={error}
+                    className="btn btn-dark mb-4 mt-2 listing-btn">Finish</button>
             )
         }
-        else{
-            return(
-            <button
-            type='button'   
-            onClick={completeFormStep}
-            // disabled={!treatment}
-            className="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
-            )}
+        else {
+            return (
+                <button
+                    type='button'
+                    onClick={completeFormStep}
+                    // disabled={!treatment}
+                    className="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
+            )
         }
+    }
 
     async function handleSubmit(e) {
         e.preventDefault()
-    const config = {
-      headers: {
-        Authorization: `Bearer ${consumer.token}`
-      }
-    }
-    
-    const itemData = new FormData()
+        const config = {
+            headers: {
+                Authorization: `Bearer ${consumer.token}`
+            }
+        }
+
+        const itemData = new FormData()
         itemData.append('userPostAs', userPostAs)
         itemData.append('acquisition', acquisition)
         itemData.append('propertyHeader', propertyHeader)
@@ -112,29 +111,29 @@ function FirstForm({
         itemData.append('contactPersonEmail', contactPersonEmail)
         itemData.append('contactPersonPhone', contactPersonPhone)
 
-        const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone}
+        const properties = { propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone }
         console.log(properties);
         const response = await axios.post(PROPERTY_PROPERTIES_API, properties, config)
         console.log(response)
-        }
+    }
 
-  return (
-    <div className="my-listing-form">
-        <div className="container-fluid">
+    return (
+        <div className="my-listing-form">
+            <div className="container-fluid">
 
-            <FormHeading 
-            formstepFirst='step'
-            formNumber='1'
-            formDivide='of'
-            formStepLast='4'
-            formTitle='Hi'
-            formUser='Test11'
-            formsecondTitle="Let's start posting your properties"
-            />
-            <div className="my-listing-map">
-                <div className="post-map">
-                </div>
-                <h1 className='map-heading'>Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. </h1>
+                <FormHeading
+                    formstepFirst='step'
+                    formNumber='1'
+                    formDivide='of'
+                    formStepLast='4'
+                    formTitle='Hi'
+                    formUser='Test11'
+                    formsecondTitle="Let's start posting your properties"
+                />
+                <div className="my-listing-map">
+                    <div className="post-map">
+                    </div>
+                    <h1 className='map-heading'>Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. </h1>
 
 
                     <div className="ratio-box">
@@ -291,12 +290,18 @@ function FirstForm({
                         <p className='owner-title'>Contact Person</p>
                         <div className="auth-form">
                             <div className="auth-form-input">
-                                <input onChange={(e) => setContactWithMe(e.target.value)} type="radio" id="contactWithMe" name="mylisting4" />
+                                <input
+                                    onChange={(e) => setContactWithMe(true)}
+                                    type="radio"
+                                />
                                 <label htmlFor="contactWithMe">Contact With Me</label>
                             </div>
 
                             <div className="auth-form-input">
-                                <input onChange={(e) => setContactWithMe(e.target.value)} type="radio" id="assignPerson" name="mylisting4" />
+                                <input
+                                    onChange={(e) => setContactWithMe(false)}
+                                    type="radio"
+                                />
                                 <label htmlFor="assignPerson">Assign Contact Person</label>
                             </div>
                         </div>
@@ -305,16 +310,16 @@ function FirstForm({
                     <div className="grid-2 mb-4 mt-2">
                         <div className="form-floation">
                             <input
-                            onChange={(e) => setContactPersonName(e.target.value)}
-                            id="contactPersonName" name="property_contact_person_name"
-                            type="text" className="form-control required" placeholder="contactPersonName" />
+                                onChange={(e) => setContactPersonName(e.target.value)}
+                                id="contactPersonName" name="property_contact_person_name"
+                                type="text" className="form-control required" placeholder="contactPersonName" />
                             <label htmlFor="contactPersonName">Contact Person
                                 Name</label>
                         </div>
                         <div className="form-floation">
                             <input
-                            onChange={(e) => setContactPersonRelation(e.target.value)}
-                            id="contactPersonRel" name="property_contact_person_relation" type="text" className="form-control required" placeholder="contactPersonRel" />
+                                onChange={(e) => setContactPersonRelation(e.target.value)}
+                                id="contactPersonRel" name="property_contact_person_relation" type="text" className="form-control required" placeholder="contactPersonRel" />
                             <label htmlFor="contactPersonRel">Contact Person
                                 Relation</label>
                         </div>
@@ -323,14 +328,14 @@ function FirstForm({
                     <div className="grid-2 mb-4 mt-2">
                         <div className="form-floation">
                             <input
-                            onChange={(e) => setContactPersonEmail(e.target.value)}
-                            id="contactPersonEmail" name="property_contact_person_email" type="text" className="form-control" placeholder="contactPersonRel" />
+                                onChange={(e) => setContactPersonEmail(e.target.value)}
+                                id="contactPersonEmail" name="property_contact_person_email" type="text" className="form-control" placeholder="contactPersonRel" />
                             <label htmlFor="contactPersonEmail">Contact Person Email</label>
                         </div>
                         <div className="form-floation">
                             <input
-                            onChange={(e) => setContactPersonPhone(e.target.value)}
-                            id="contactPersonPhone" name="property_contact_person_phone" type="text" className="form-control required" placeholder="contactPersonRel" />
+                                onChange={(e) => setContactPersonPhone(e.target.value)}
+                                id="contactPersonPhone" name="property_contact_person_phone" type="text" className="form-control required" placeholder="contactPersonRel" />
                             <label htmlFor="contactPersonPhone">Contact Person Phone</label>
                         </div>
 
@@ -339,10 +344,10 @@ function FirstForm({
                         {/* <input type="submit" className='btn btn-dark mb-4 mt-2 listing-btn' value="Continue" /> */}
                         {/* {renderBtn()} */}
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default FirstForm

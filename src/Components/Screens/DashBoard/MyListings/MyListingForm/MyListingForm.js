@@ -47,6 +47,7 @@ function MyListingForm() {
     const [propertyDescription, setPropertyDescription] = useState(null);
     const [videoUrl, setVideoUrl] = useState(null);
     const [contactWithMe, setContactWithMe] = useState(null);
+    console.log("🚀 ~ file: MyListingForm.js:50 ~ MyListingForm ~ contactWithMe:", contactWithMe)
     const [contactPersonName, setContactPersonName] = useState(null);
     const [contactPersonRelation, setContactPersonRelation] = useState(null);
     const [contactPersonEmail, setContactPersonEmail] = useState(null);
@@ -67,13 +68,13 @@ function MyListingForm() {
 
     const { consumer } = useSelector(state => state.auth)
 
-    async function handleSubmit(e) {
-        e.preventDefault()
-        // const config = {
-        //   headers: {
-        //     Authorization: `Bearer ${consumer.token}`
-        //   }
-        // }
+    async function handleSubmit() {
+
+        const config = {
+          headers: {
+            Authorization: `Bearer ${consumer.token}`
+          }
+        }
 
         const propertyData = new FormData()
 
@@ -105,7 +106,7 @@ function MyListingForm() {
 
         // const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone, propetyTypes, propertyCatagories, propertyAmount, priceNagotiable}
         // console.log(properties);
-        const response = await axios.post(PROPERTY_PROPERTIES_API, propertyData)
+        const response = await axios.post(PROPERTY_PROPERTIES_API, propertyData, config)
         console.log(response)
     }
 
