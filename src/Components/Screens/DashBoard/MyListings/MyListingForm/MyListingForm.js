@@ -113,16 +113,23 @@ function MyListingForm() {
         console.log(response)
     }
 
+    const titles = [
+        {
+            title: 'Hi! ' + {consumer.name},
+            secondTitle: "Let's start posting your properties"
+        },
+        {
+            title: 'Hi! ',
+            secondTitle: "Let's start posting your properties"
+        },
+    ]
+
     return (
         <>
            <FormHeading
-                    formstepFirst='step'
-                    formNumber='1'
-                    formDivide='of'
-                    formStepLast='4'
-                    formTitle='Hi'
-                    formUser='Test11'
-                    formsecondTitle="Let's start posting your properties"
+                    screenNumber={screenNumber}
+                    formTitle={titles[screenNumber-1].title}
+                    formsecondTitle={titles[screenNumber-1].secondTitle}
             />
 
             <form encType='multipart/form-data'>
