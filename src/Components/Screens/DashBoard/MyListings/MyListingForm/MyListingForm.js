@@ -12,21 +12,18 @@ function MyListingForm() {
 
     // Screen Number Section
     const [screenNumber, setScreenNumber] = useState(1);
-    const MAX_STEPS = 4;
 
-    function NextStep () {
-        setScreenNumber(cur => cur + 1)
+    function clickNextButton () {
+        if (screenNumber <= 3) {
+            setScreenNumber(cur => cur + 1)
+        }
+        if (screenNumber === 4) {
+            handleSubmit()
+        }
     }
-    function PreviousStep () {
+    function clickPreviousButton () {
         setScreenNumber(cur => cur - 1)
     }
-
-    // const completeFormStep = () => {
-    //     setScreenNumber(cur => cur + 1)
-    // }
-    // const goToPreStep = () => {
-    //     setScreenNumber(cur => cur - 1)
-    // }
 
     // form field states
     // first form states
@@ -169,7 +166,7 @@ function MyListingForm() {
                             setContactPersonPhone={setContactPersonPhone}
 
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
+                            // NextStep={NextStep}
                         />
                     </div>
                 }
@@ -188,8 +185,8 @@ function MyListingForm() {
                             setPropertyCatagories={setPropertyCatagories}
 
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -199,8 +196,8 @@ function MyListingForm() {
                     <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -212,8 +209,8 @@ function MyListingForm() {
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
@@ -237,8 +234,8 @@ function MyListingForm() {
                             setPropertyCatagories={setPropertyCatagories}
 
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -248,8 +245,8 @@ function MyListingForm() {
                     <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
                         <ThirdForm
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                         />
                     </div>
                 }
@@ -261,8 +258,8 @@ function MyListingForm() {
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
-                            NextStep={NextStep}
-                            PreviousStep={PreviousStep}
+                            // NextStep={NextStep}
+                            // // PreviousStep={PreviousStep}
                             amountPerSqft={amountPerSqft}
                             setAmountPerSqft={setAmountPerSqft}
                             priceNagotiable={priceNagotiable}
@@ -272,27 +269,22 @@ function MyListingForm() {
                     </div>
                 }
                 <div class="second-form">
-                    {screenNumber > 1 && screenNumber <= 4 &&
-                    <button
-                        class="btn btn-outline-dark listing-btn"
-                        onClick={PreviousStep}
-                    >
-                        Go back
-                    </button>}
+                    {
+                        screenNumber > 1 && screenNumber <= 4 &&
+                        <button
+                            class="btn btn-outline-dark listing-btn"
+                            onClick={clickPreviousButton}
+                        >
+                            Go back
+                        </button>
+                    }
 
                     <button 
                         type="button"
                         class="btn btn-dark mb-4 mt-2 listing-btn"
-                        >
-                            Finish
-                    </button>
-                    :
-                    <button 
-                        type="button"
-                        class="btn btn-dark mb-4 mt-2 listing-btn"
-                        onClick={NextStep}
-                        >
-                            Continue
+                        onClick={clickNextButton}
+                    >
+                            {screenNumber <= 3 ? 'Continue' : 'Finish'}
                     </button>
 
                 </div>
