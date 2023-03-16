@@ -108,7 +108,7 @@ function SecondForm({formStep, completeFormStep, goToPreStep, propetyTypes, setP
                 formsecondTitle="about your property!"
                 />
 
-                <form onSubmit={handleSubmit} action="">
+
                 <div className="grid-2 mt-2">
                     <div className="form-floation">
                         
@@ -226,7 +226,6 @@ function SecondForm({formStep, completeFormStep, goToPreStep, propetyTypes, setP
                     <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
                     {renderBtn()}
                 </div>
-                </form>
             </div>
         </div>
     )

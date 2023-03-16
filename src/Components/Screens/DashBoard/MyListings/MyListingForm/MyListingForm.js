@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
-import { PROPERTY_PROPERTTIES_API } from '../../../../../Utilities/APIs/APIs';
+import { PROPERTY_PROPERTIES_API } from '../../../../../Utilities/APIs/APIs';
 import FirstForm from './FirstForm/FirstForm';
 import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
@@ -58,10 +58,52 @@ function MyListingForm() {
     const goToPreStep = () =>{
         setFormStep(cur => cur - 1)
       }
+      const { consumer } = useSelector(state => state.auth)
 
+      async function handleSubmit(e) {
+        e.preventDefault()
+    // const config = {
+    //   headers: {
+    //     Authorization: `Bearer ${consumer.token}`
+    //   }
+    // }
+    
+    const itemData = new FormData()
+        itemData.append('userPostAs', userPostAs)
+        itemData.append('acquisition', acquisition)
+        itemData.append('propertyHeader', propertyHeader)
+        itemData.append('propertyStreetAddress', propertyStreetAddress)
+        itemData.append('PropertyLandArea', PropertyLandArea)
+        itemData.append('PropertyAddress', PropertyAddress)
+        itemData.append('propertyFlat', propertyFlat)
+        itemData.append('propertyHouse', propertyHouse)
+        itemData.append('propertyRoad', propertyRoad)
+        itemData.append('readyToMove', readyToMove)
+        itemData.append('propertyAvailavleFrom', propertyAvailavleFrom)
+        itemData.append('contactPersonFlat', contactPersonFlat)
+        itemData.append('propertyTotalFlat', propertyTotalFlat)
+        itemData.append('postCode', postCode)
+        itemData.append('propertyDescription', propertyDescription)
+        itemData.append('contactPersonName', contactPersonName)
+        itemData.append('contactPersonRelation', contactPersonRelation)
+        itemData.append('videoUrl', videoUrl)
+        itemData.append('contactWithMe', contactWithMe)
+        itemData.append('contactPersonEmail', contactPersonEmail)
+        itemData.append('contactPersonPhone', contactPersonPhone)
+        itemData.append('propetyTypes', propetyTypes)
+        itemData.append('propertyCatagories', propertyCatagories)
+        itemData.append('propertyAmount', propertyAmount)
+        itemData.append('priceNagotiable', priceNagotiable)
+        
+        const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone, propetyTypes, propertyCatagories, propertyAmount, priceNagotiable}
+        console.log(properties);
+        const response = await axios.post(PROPERTY_PROPERTIES_API, properties)
+        console.log(response)
+        }
     
     return (
         <>
+        <form action="" onSubmit={handleSubmit}>
             {
                 formStep >= 1 &&
                 <div className={formStep === 1 ? 'd-block': 'd-none'}>
@@ -168,6 +210,7 @@ function MyListingForm() {
                     />
                 </div> 
             }
+            </form>
         </>
     )
 }

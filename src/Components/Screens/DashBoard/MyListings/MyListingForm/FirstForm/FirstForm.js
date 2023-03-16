@@ -111,9 +111,11 @@ function FirstForm({
         itemData.append('contactWithMe', contactWithMe)
         itemData.append('contactPersonEmail', contactPersonEmail)
         itemData.append('contactPersonPhone', contactPersonPhone)
+
         const properties = {propertyHeader, acquisition, userPostAs, propertyStreetAddress, PropertyLandArea, PropertyAddress, propertyFlat, propertyHouse, propertyRoad, propertyTotalFlat, postCode, propertyDescription, readyToMove, propertyAvailavleFrom, contactPersonFlat, contactPersonName, contactPersonRelation, videoUrl, contactWithMe, contactPersonEmail, contactPersonPhone}
         console.log(properties);
         const response = await axios.post(PROPERTY_PROPERTIES_API, properties, config)
+        console.log(response)
         }
 
   return (
@@ -133,7 +135,7 @@ function FirstForm({
                 <div className="post-map">
                 </div>
                 <h1 className='map-heading'>Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. </h1>
-                <form action="" onSubmit={handleSubmit}>
+
 
                     <div className="ratio-box">
                         <p className='owner-title'>I am the:</p>
@@ -337,9 +339,6 @@ function FirstForm({
                         {/* <input type="submit" className='btn btn-dark mb-4 mt-2 listing-btn' value="Continue" /> */}
                         {renderBtn()}
                     </div>
-
-                </form>
-
 
             </div>
         </div>
