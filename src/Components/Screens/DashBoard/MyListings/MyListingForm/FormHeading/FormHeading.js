@@ -1,8 +1,9 @@
 import React from 'react';
 import './FormHeading.css'
 
-function FormHeading({formstepFirst, formNumber, formDivide, formStepLast, formTitle, formUser, formsecondTitle}) {
-  return (
+function FormHeading({ formstepFirst, formNumber, formDivide, formStepLast, formTitle, formUser, formsecondTitle }) {
+    return (
+        <div>
             <div className="my-listing-step">
                 <div className="progress-count">
                     <h6>{formstepFirst} <span>{formNumber}</span> {formDivide} <span> {formStepLast}</span></h6>
@@ -14,8 +15,9 @@ function FormHeading({formstepFirst, formNumber, formDivide, formStepLast, formT
                     {formTitle}<span>{formUser}</span>
                     <span className='second-line'>{formsecondTitle}</span>
                 </div>
-                </div>
-  )
+            </div>
+        </div>
+    )
 }
 
 export default FormHeading

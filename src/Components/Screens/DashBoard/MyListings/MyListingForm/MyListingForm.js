@@ -7,6 +7,7 @@ import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
 import './MyListingForm.css'
 import FourthForm from './FourthForm/FourthForm';
+import FormHeading from './FormHeading/FormHeading';
 
 function MyListingForm() {
 
@@ -114,6 +115,16 @@ function MyListingForm() {
 
     return (
         <>
+           <FormHeading
+                    formstepFirst='step'
+                    formNumber='1'
+                    formDivide='of'
+                    formStepLast='4'
+                    formTitle='Hi'
+                    formUser='Test11'
+                    formsecondTitle="Let's start posting your properties"
+            />
+
             <form encType='multipart/form-data'>
                 {
                     screenNumber >= 1 &&

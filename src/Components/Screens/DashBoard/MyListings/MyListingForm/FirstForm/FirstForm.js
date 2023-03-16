@@ -35,15 +35,6 @@ function FirstForm({
         <div className="my-listing-form">
             <div className="container-fluid">
 
-                <FormHeading
-                    formstepFirst='step'
-                    formNumber='1'
-                    formDivide='of'
-                    formStepLast='4'
-                    formTitle='Hi'
-                    formUser='Test11'
-                    formsecondTitle="Let's start posting your properties"
-                />
                 <div 
                 className="my-listing-map">
                     <div 
@@ -53,7 +44,8 @@ function FirstForm({
                     Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. 
                     </h1>
 
-                    <div 
+                    <div
+                    style={{backgroundColor: 'lightpink'}} 
                     className="ratio-box">
                         <p 
                         className='owner-title'>
