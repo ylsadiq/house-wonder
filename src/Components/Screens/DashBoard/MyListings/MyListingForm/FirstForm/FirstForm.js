@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import mapImage from '../../../../../../Assets/image/form/map.PNG'
 import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({
@@ -39,6 +40,9 @@ function FirstForm({
                 className="my-listing-map">
                     <div 
                     className="post-map">
+                        <div className="post-images">
+                            <img src={mapImage} alt="" />
+                        </div>
                     </div>
                     <h1 className='map-heading'>
                     Find and pin the exact location of your properties. This will make finding your properties easier htmlFor the tenants. 
