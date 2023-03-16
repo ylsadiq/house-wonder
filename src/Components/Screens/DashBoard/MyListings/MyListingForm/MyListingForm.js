@@ -6,7 +6,7 @@ import FirstForm from './FirstForm/FirstForm';
 import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
 import './MyListingForm.css'
-import FourForm from './FourForm/FourForm';
+import FourthForm from './FourthForm/FourthForm';
 
 function MyListingForm() {
 
@@ -27,30 +27,35 @@ function MyListingForm() {
 
     // form field states
     // first form states
-    const [properyTypeCityArea, setProperyTypeCityArea] = useState(null);
     const [ownerAcquisition, setOwnerAcquisition] = useState(null);
-    const [userPostAs, setUserPostAs] = useState(null);
     const [acquisition, setAcquisition] = useState(null);
-    const [propertyPerspective, setpropertyPerspective] = useState(null);
+    // Property Info
     const [propertyHeader, setPropertyHeader] = useState(null);
-    const [readyToMove, setReadyToMove] = useState(null);
+    const [properyTypeCityArea, setProperyTypeCityArea] = useState(null);
     const [propertyStreetAddress, setPropertyStreetAddress] = useState(null);
-    const [PropertyLandArea, setPropertyLandArea] = useState(null);
-    const [PropertyAddress, setPropertyAddress] = useState(null);
-    const [propertyAvailavleFrom, setPropertyAvailavleFrom] = useState(null);
     const [propertyFlat, setPropertyFlat] = useState(null);
     const [propertyHouse, setPropertyHouse] = useState(null);
     const [propertyRoad, setPropertyRoad] = useState(null);
-    const [propertyTotalFlat, setPropertyTotalFlat] = useState(null);
-    const [contactPersonFlat, setContactPersonFlat] = useState(null);
+    const [propertyTotalFloor, setPropertyTotalFloor] = useState(null);
+    const [contactPersonFloor, setContactPersonFloor] = useState(null);
     const [postCode, setPostCode] = useState(null);
     const [propertyDescription, setPropertyDescription] = useState(null);
     const [videoUrl, setVideoUrl] = useState(null);
+
     const [contactWithMe, setContactWithMe] = useState('');
+    // Asign Contact Person
     const [contactPersonName, setContactPersonName] = useState(null);
     const [contactPersonRelation, setContactPersonRelation] = useState(null);
     const [contactPersonEmail, setContactPersonEmail] = useState(null);
     const [contactPersonPhone, setContactPersonPhone] = useState(null);
+
+    const [userPostAs, setUserPostAs] = useState(null);
+
+    const [propertyPerspective, setpropertyPerspective] = useState(null);
+    const [readyToMove, setReadyToMove] = useState(null);
+    const [PropertyLandArea, setPropertyLandArea] = useState(null);
+    const [PropertyAddress, setPropertyAddress] = useState(null);
+    const [propertyAvailavleFrom, setPropertyAvailavleFrom] = useState(null);
     //Second form states
     const [propetyTypes, setPropertyTypes] = useState(null);
     const [propetyTypesCatagory, setPropertyTypesCatagory] = useState(null);
@@ -88,8 +93,8 @@ function MyListingForm() {
         propertyData.append('propertyRoad', propertyRoad)
         propertyData.append('readyToMove', readyToMove)
         propertyData.append('propertyAvailavleFrom', propertyAvailavleFrom)
-        propertyData.append('contactPersonFlat', contactPersonFlat)
-        propertyData.append('propertyTotalFlat', propertyTotalFlat)
+        propertyData.append('contactPersonFloor', contactPersonFloor)
+        propertyData.append('propertyTotalFloor', propertyTotalFloor)
         propertyData.append('postCode', postCode)
         propertyData.append('propertyDescription', propertyDescription)
         propertyData.append('contactPersonName', contactPersonName)
@@ -142,10 +147,10 @@ function MyListingForm() {
                             setPropertyHouse={setPropertyHouse}
                             propertyRoad={propertyRoad}
                             setPropertyRoad={setPropertyRoad}
-                            propertyTotalFlat={propertyTotalFlat}
-                            setPropertyTotalFlat={setPropertyTotalFlat}
-                            contactPersonFlat={contactPersonFlat}
-                            setContactPersonFlat={setContactPersonFlat}
+                            propertyTotalFloor={propertyTotalFloor}
+                            setPropertyTotalFloor={setPropertyTotalFloor}
+                            contactPersonFloor={contactPersonFloor}
+                            setContactPersonFloor={setContactPersonFloor}
                             postCode={postCode}
                             setPostCode={setPostCode}
                             propertyDescription={propertyDescription}
@@ -196,7 +201,7 @@ function MyListingForm() {
                 {
                     screenNumber >= 4 &&
                     <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
-                        <FourForm
+                        <FourthForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
@@ -239,7 +244,7 @@ function MyListingForm() {
                 {
                     screenNumber >= 4 &&
                     <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
-                        <FourForm
+                        <FourthForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
                             screenNumber={screenNumber}
