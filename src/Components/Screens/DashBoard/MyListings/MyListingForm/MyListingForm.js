@@ -119,11 +119,11 @@ function MyListingForm() {
             secondTitle: "Let's start posting your properties"
         },
         {
-            title: 'Hi! ',
+            title: 'Great! ',
             secondTitle: "Now tell us more about your property"
         },
         {
-            title: 'Hi! ',
+            title: 'Great ',
             secondTitle: "Now let’s upload some photos"
         },
         {
