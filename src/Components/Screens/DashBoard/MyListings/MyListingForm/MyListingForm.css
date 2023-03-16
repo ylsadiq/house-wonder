@@ -66,13 +66,15 @@
     height: 41.8rem;
     width: 100%;
     border-radius: 1.6rem;
-    border: 2px solid var(--gray-2);
     margin-bottom: 2.4rem;
 }
 .post-images{
     display: block;
-    width: 100%;
+    width: 65%;
     height: 100%;
+    border: 2px solid var(--gray-2);
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
 }
 .post-images img{
     width: 100%;
