@@ -10,6 +10,17 @@ import FourForm from './FourForm/FourForm';
 
 function MyListingForm() {
 
+    // Screen Number Section
+    const [screenNumber, setScreenNumber] = useState(1);
+    const MAX_STEPS = 4;
+
+    const completeFormStep = () => {
+        setFormStep(cur => cur + 1)
+    }
+    const goToPreStep = () => {
+        setFormStep(cur => cur - 1)
+    }
+
     // form field states
     // first form states
     const [properyTypeCityArea, setProperyTypeCityArea] = useState(null);
@@ -48,16 +59,7 @@ function MyListingForm() {
     const [amountPerSqft, setAmountPerSqft] = useState(null);
     const [priceNagotiable, setPriceNegotiable] = useState(null);
 
-    // form steps section
-    const [formStep, setFormStep] = useState(1);
-    const MAX_STEPS = 4;
-
-    const completeFormStep = () => {
-        setFormStep(cur => cur + 1)
-    }
-    const goToPreStep = () => {
-        setFormStep(cur => cur - 1)
-    }
+    
 
     const { consumer } = useSelector(state => state.auth)
 
@@ -264,7 +266,10 @@ function MyListingForm() {
                 }
                 <div class="second-form">
                     <button
-                        class="btn btn-outline-dark listing-btn">Go back</button>
+                        class="btn btn-outline-dark listing-btn"
+                    >
+                        Go back
+                    </button>
                     <button type="button"
                         class="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
                 </div>
