@@ -51,6 +51,7 @@ function FourForm({formStep, completeFormStep, goToPreStep, propertyAmount, setP
             className="btn btn-dark mb-4 mt-2 listing-btn">Continue</button>
             )}
         }
+
   return (
     <div className="my-listing-second-form">
             <div className="container-fluid">
@@ -118,7 +119,7 @@ function FourForm({formStep, completeFormStep, goToPreStep, propertyAmount, setP
                         
                         <div className="second-form">
             <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
-            {renderBtn()}
+            {/* {renderBtn()} */}
             </div>
 
             </form>

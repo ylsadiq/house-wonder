@@ -99,7 +99,7 @@ function ThirdForm({formStep, completeFormStep, goToPreStep}) {
             </div>
             <div className="second-form">
                 <button onClick={goToPreStep} className='btn btn-outline-dark listing-btn'>Go back</button>
-                {renderBtn()}
+                {/* {renderBtn()} */}
             </div>
         </div>
     )
