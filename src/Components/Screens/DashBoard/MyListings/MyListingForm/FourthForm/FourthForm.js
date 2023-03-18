@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FormHeading from '../FormHeading/FormHeading';
 import './FourthForm.css'
 
 function FourthForm({ setPropertyAmount,  setPriceNegotiable }) {
@@ -10,14 +9,6 @@ function FourthForm({ setPropertyAmount,  setPriceNegotiable }) {
         className="my-listing-second-form">
             <div 
             className="container-fluid">
-                <FormHeading
-                    formstepFirst='step'
-                    formNumber='4'
-                    formDivide='of'
-                    formStepLast='4'
-                    formTitle='Finally, how much do you want'
-                    formsecondTitle="to sell your property for?"
-                />
                     <div 
                     className="grid-1">
                         <div 

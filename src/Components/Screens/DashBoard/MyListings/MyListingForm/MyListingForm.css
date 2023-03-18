@@ -4,6 +4,11 @@
 .d-none{
     display: hidden;
 }
+.d-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .d-flex-between{
     display: flex;
     align-items: center;

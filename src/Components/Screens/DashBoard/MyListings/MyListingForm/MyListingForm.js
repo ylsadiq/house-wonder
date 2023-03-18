@@ -5,9 +5,9 @@ import { PROPERTY_PROPERTIES_API } from '../../../../../Utilities/APIs/APIs';
 import FirstForm from './FirstForm/FirstForm';
 import SecondForm from './SecondForm/SecondForm'
 import ThirdForm from './ThirdForm/ThirdForm'
-import './MyListingForm.css'
 import FourthForm from './FourthForm/FourthForm';
 import FormHeading from './FormHeading/FormHeading';
+import './MyListingForm.css'
 
 function MyListingForm() {
 
@@ -62,12 +62,14 @@ function MyListingForm() {
     const [propetyTypesCatagory, setPropertyTypesCatagory] = useState(null);
     const [propetySubTypes, setPropertySubTypes] = useState(null);
     const [propertyCatagories, setPropertyCatagories] = useState(null);
+
     //Third form states
 
     //Four form states
     const [propertyAmount, setPropertyAmount] = useState(null);
     const [amountPerSqft, setAmountPerSqft] = useState(null);
     const [priceNagotiable, setPriceNegotiable] = useState(null);
+
 
     
 
@@ -108,6 +110,7 @@ function MyListingForm() {
         propertyData.append('propertyCatagories', propertyCatagories)
         propertyData.append('propertyAmount', propertyAmount)
         propertyData.append('priceNagotiable', priceNagotiable)
+        console.log(propertyData);
 
         const response = await axios.post(PROPERTY_PROPERTIES_API, propertyData, config)
         console.log(response)
@@ -142,7 +145,7 @@ function MyListingForm() {
 
             <form encType='multipart/form-data'>
                 {
-                    screenNumber === 1 && <div className={screenNumber === 1 ? 'd-block' : 'd-none'}>
+                    screenNumber === 1 &&
                         <FirstForm
                             properyTypeCityArea={properyTypeCityArea}
                             setProperyTypeCityArea={setProperyTypeCityArea}
@@ -194,11 +197,10 @@ function MyListingForm() {
                             setContactPersonPhone={setContactPersonPhone}
                             screenNumber={screenNumber}
                         />
-                    </div>
                 }
 
                 {
-                    screenNumber === 2 && <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
+                    screenNumber === 2 && 
                         <SecondForm
                             propetyTypes={propetyTypes}
                             setPropertyTypes={setPropertyTypes}
@@ -210,19 +212,19 @@ function MyListingForm() {
                             setPropertyCatagories={setPropertyCatagories}
                             screenNumber={screenNumber}
                         />
-                    </div>
+                    
                 }
 
                 {
-                    screenNumber === 3 &&  <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
+                    screenNumber === 3 &&
                         <ThirdForm
                             screenNumber={screenNumber}
                         />
-                    </div>
+                    
                 }
 
                 {
-                    screenNumber === 4 && <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
+                    screenNumber === 4 &&
                         <FourthForm
                             propertyAmount={propertyAmount}
                             setPropertyAmount={setPropertyAmount}
@@ -232,57 +234,13 @@ function MyListingForm() {
                             priceNagotiable={priceNagotiable}
                             setPriceNegotiable={setPriceNegotiable}
                         />
-                    </div>
                 }
 
-
-                {
-                    screenNumber >= 2 &&
-                    <div className={screenNumber === 2 ? 'd-block' : 'd-none'}>
-                        <SecondForm
-                            propetyTypes={propetyTypes}
-                            setPropertyTypes={setPropertyTypes}
-                            propetyTypesCatagory={propetyTypesCatagory}
-                            setPropertyTypesCatagory={setPropertyTypesCatagory}
-                            propetySubTypes={propetySubTypes}
-                            setPropertySubTypes={setPropertySubTypes}
-                            propertyCatagories={propertyCatagories}
-                            setPropertyCatagories={setPropertyCatagories}
-
-                            screenNumber={screenNumber}
-                        />
-                    </div>
-                }
-
-                {
-                    screenNumber >= 3 &&
-                    <div className={screenNumber === 3 ? 'd-block' : 'd-none'}>
-                        <ThirdForm
-                            screenNumber={screenNumber}
-                        />
-                    </div>
-                }
-
-                {
-                    screenNumber >= 4 &&
-                    <div className={screenNumber === 4 ? 'd-block' : 'd-none'}>
-                        <FourthForm
-                            propertyAmount={propertyAmount}
-                            setPropertyAmount={setPropertyAmount}
-                            screenNumber={screenNumber}
-                            amountPerSqft={amountPerSqft}
-                            setAmountPerSqft={setAmountPerSqft}
-                            priceNagotiable={priceNagotiable}
-                            setPriceNegotiable={setPriceNegotiable}
-                            handleSubmit={handleSubmit}
-                        />
-                    </div>
-                }
-                <div class="second-form">
+                <div className={screenNumber === 1 ? "d-end" : "second-form"}>
                     {
                         screenNumber > 1 && screenNumber <= 4 &&
                         <button
-                            class="btn btn-outline-dark listing-btn"
+                            className="btn btn-outline-dark listing-btn"
                             onClick={clickPreviousButton}
                         >
                             Go back
@@ -291,13 +249,14 @@ function MyListingForm() {
 
                     <button 
                         type="button"
-                        class="btn btn-dark mb-4 mt-2 listing-btn"
+                        className="btn btn-dark mb-4 mt-2 listing-btn"
                         onClick={clickNextButton}
                     >
-                            {screenNumber <= 3 ? 'Continue' : 'Finish'}
+                        {screenNumber <= 3 ? 'Continue' : 'Finish'}
                     </button>
 
                 </div>
+
             </form>
         </>
     )

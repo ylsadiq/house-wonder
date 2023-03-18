@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { PROPERTY_CATEGORIES_API} from '../../../../../../Utilities/APIs/APIs';
 import minus from '../../../../../../Assets/icon/remove.svg'
 import plus from '../../../../../../Assets/home/add.svg'
-import FormHeading from '../FormHeading/FormHeading';
 import './SecondForm.css'
 
 function SecondForm({setPropertyTypes,  setPropertyTypesCatagory, setPropertySubTypes, propertyCatagories, setPropertyCatagories}) {
     const [count, setCount] = useState(1);
     const [check, setCheck] = useState(false);
+    
 
     useEffect(() => {
         async function getPropertyCatagories() {
@@ -147,13 +147,40 @@ function SecondForm({setPropertyTypes,  setPropertyTypesCatagory, setPropertySub
                                 type="checkbox" 
                                 className='form-check-input' 
                                 id="horns" 
+                                onChange={handleCheckBox}
+                                value={check}
+
+
                                 name="horns" />
                                 <label htmlFor="horns" 
-                                onChange={handleCheckBox}
                                 className='form-check-label'
                                 >
                                 Bath
                                 </label>
+                            </div>
+                            <div 
+                            className={`${check ? 'active' : 'authFormInput'}`}>
+                                <div 
+                                className="featuresInpGroup propFeature1"
+                                >
+                                    <button 
+                                    className="decBtn" 
+                                    type="button" 
+                                    onClick={handleDecreaseCounter}>
+                                    <img src={minus} alt="" />
+                                    </button>
+                                    <input type="text" 
+                                    value={count} 
+                                    className='counter' 
+                                    name="property_info[0][property_info_quantity]" 
+                                    />
+
+                                    <button 
+                                    className="IncBtn" 
+                                    type="button" onClick={handleIncreaseCounter}>
+                                    <img src={plus} alt="" />
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div 
