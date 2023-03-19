@@ -1,187 +1,214 @@
-.search-contentiner{
-    display: flex;
-    align-items: center;
+.search-contentiner {
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
-.mylistings-section{
+
+.mylisting_grid {
     padding-top: 10rem;
 }
-.mylistings-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-}
-.card-bg {
-    filter: drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05));
-    border-radius: 1.6rem;
-    border: none;
-    overflow: hidden;
-    margin-top: 1rem;
-    background-color: #fff;
-    background-clip: border-box;
-    margin-bottom: 2rem;
-}
-.result-title {
-    font-size: 2.2rem;
-    line-height: 3.3rem;
-    margin-bottom: 3.6rem;
-}
-.result-title span:first-child {
-    font-weight: normal;
-    color: var(--gray-4);
-}
-.result-title span:nth-child(2) {
-    font-weight: bold;
-    color: var(--black);
-}
-.my-listing-items{
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 10px;
+
+.mylisting_grid {
+    display              : grid;
+    grid-template-columns: 58rem auto;
+    gap                  : 40px;
 }
 
-.items-img{
-    border: none;
-    overflow: hidden;
-    max-height: 600px;
-    height: 285px;
-    position: relative;
+.card-bg {
+    filter          : drop-shadow(8px 12px 65px rgba(0, 0, 0, 0.05));
+    border-radius   : 1.6rem;
+    border          : none;
+    overflow        : hidden;
+    margin-top      : 1rem;
+    background-color: #fff;
+    background-clip : border-box;
+    margin-bottom   : 2rem;
 }
+
+.result-title {
+    font-size    : 2.2rem;
+    line-height  : 3.3rem;
+    margin-bottom: 3.6rem;
+}
+
+.result-title span:first-child {
+    font-weight: normal;
+    color      : var(--gray-4);
+}
+
+.result-title span:nth-child(2) {
+    font-weight: bold;
+    color      : var(--black);
+}
+
+.my-listing-items {
+    display              : grid;
+    grid-template-columns: 250px 1fr;
+    gap                  : 10px;
+}
+
+.items-img {
+    border    : none;
+    overflow  : hidden;
+    max-height: 600px;
+    height    : 285px;
+    position  : relative;
+}
+
 .items-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height         : 100%;
+    width          : 100%;
+    object-fit     : cover;
     object-position: center center;
 }
+
 .property-tag {
     position: absolute;
-    left: 1.2rem;
-    top: 1.2rem;
-    right: 1.2rem;
+    left    : 1.2rem;
+    top     : 1.2rem;
+    right   : 1.2rem;
 }
+
 .property-tag span {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--black);
-    padding: 0.4rem 0.8rem;
+    display         : inline-block;
+    font-weight     : 600;
+    font-size       : 1.2rem;
+    line-height     : 1.5rem;
+    letter-spacing  : 0.05em;
+    text-transform  : uppercase;
+    color           : var(--black);
+    padding         : 0.4rem 0.8rem;
     background-color: var(--white);
-    border: 0.1rem solid var(--black);
-    border-radius: 0.4rem;
+    border          : 0.1rem solid var(--black);
+    border-radius   : 0.4rem;
 }
-.items-details{
+
+.items-details {
     padding: 2rem;
 }
+
 .propertyId {
     font-weight: normal;
-    font-style: italic;
-    font-size: 1.6rem;
+    font-style : italic;
+    font-size  : 1.6rem;
     line-height: 1.9rem;
-    color: var(--black);
+    color      : var(--black);
 }
-.horizontalGps{
-    display: flex;
+
+.horizontalGps {
+    display        : flex;
     justify-content: space-between;
-    gap: 40px
+    gap            : 40px
 }
+
 .propertyCardbody h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 3.2rem;
-    color: var(--black);
+    font-weight  : bold;
+    font-size    : 2rem;
+    line-height  : 3.2rem;
+    color        : var(--black);
     margin-bottom: 0.6rem;
 }
+
 .propertyCardbody p {
     font-weight: normal;
-    font-size: 1.74rem;
+    font-size  : 1.74rem;
     line-height: 2rem;
-    color: var(--gray-1);
-    min-height: 50px;
+    color      : var(--gray-1);
+    min-height : 50px;
 }
+
 .propertyCardbody ul {
-    padding-left: 0;
-    padding-top: 1.2rem;
+    padding-left : 0;
+    padding-top  : 1.2rem;
     border-bottom: 0.1rem solid var(--gray-2);
-    min-height: 70px;
+    min-height   : 70px;
 }
 
 .propertyCardbody ul li {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 3.4rem;
-    color: var(--black);
+    display      : inline-block;
+    font-weight  : 600;
+    font-size    : 1.3rem;
+    line-height  : 3.4rem;
+    color        : var(--black);
     padding-right: 2.8rem;
-    position: relative;
+    position     : relative;
 }
+
 .propertyCardbody ul li::after {
-    content: '';
-    position: absolute;
-    height: 0.4rem;
-    width: 0.4rem;
+    content         : '';
+    position        : absolute;
+    height          : 0.4rem;
+    width           : 0.4rem;
     background-color: var(--black);
-    border-radius: 50%;
-    right: 0.8rem;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    border-radius   : 50%;
+    right           : 0.8rem;
+    bottom          : 0;
+    top             : 0;
+    margin          : auto;
 }
+
 .propertyCardbody ul li:last-child:after {
     background-color: transparent;
 }
+
 .propertyCardbody h6 {
-    font-weight: normal;
-    font-size: 1.3rem;
-    color: var(--black);
-    margin-top: 1.8rem;
+    font-weight  : normal;
+    font-size    : 1.3rem;
+    color        : var(--black);
+    margin-top   : 1.8rem;
     margin-bottom: 0.6rem;
 }
+
 .propertyCardbody h2 {
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-weight   : bold;
+    font-size     : 1.8rem;
+    line-height   : 2.2rem;
     letter-spacing: -0.03em;
-    color: var(--black);
+    color         : var(--black);
 }
 
-.horizontal-prop-card p img{
-    height: 1.4rem;
-    width: 1.4rem;
-    display: inline-block ;
-    width: initial ;
-    margin-top: -0.4rem;
+.horizontal-prop-card p img {
+    height      : 1.4rem;
+    width       : 1.4rem;
+    display     : inline-block;
+    width       : initial;
+    margin-top  : -0.4rem;
     margin-right: 0.8rem;
 }
-.my-listing-map{
+
+.map_wrapper {
     position: sticky;
-    top: 10.1rem;
+    top     : 10.1rem;
+    height: 80rem;
 }
-.property-map{
-    position: relative;
-    overflow: hidden;
-    height: calc(100vh - 10.1rem);
+.map_wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
-@media screen and (max-width: 767.98px){
-    .mylistings-section{
+
+
+@media screen and (max-width: 767.98px) {
+    .mylisting_grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
-        gap: 20px;
+        padding              : 0 1rem;
+        gap                  : 20px;
     }
-    .my-listing-items{
+
+    .my-listing-items {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap                  : 20px;
     }
-    .items-img{
+
+    .items-img {
         max-height: 400px;
-        height: 180px;
+        height    : 180px;
     }
-    .items-img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+
+    .items-img img {
+        height         : 100%;
+        width          : 100%;
+        object-fit     : cover;
         object-position: center center;
     }
 }

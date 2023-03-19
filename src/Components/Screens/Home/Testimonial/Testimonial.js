@@ -30,7 +30,9 @@ function Testimonial() {
                 <div className="custom-container">
                     <h1 className="section-title">What Our Customers
                         <span className='luxury'>Say About Us</span></h1>
-                    <>
+                    <div className="testimonial_slider">
+                        <div className="swiper-button-prev swiper-button-disabled"></div>
+                        <div className="swiper-button-next"></div>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={20}
@@ -49,7 +51,11 @@ function Testimonial() {
                                 },
                             }}
                             freeMode={true}
-                            navigation={true}
+                            navigation={{
+                                prevEl: `.swiper-button-prev`,
+                                nextEl: `.swiper-button-next`
+                            }}
+                            // navigation={true}
                             modules={[FreeMode, Navigation]}
                             className="mySwiper"
                         >
@@ -73,7 +79,7 @@ function Testimonial() {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-                    </>
+                    </div>
                 </div>
             </div>
         </section>
