@@ -15,7 +15,6 @@ import RentRequests from './Screens/DashBoard/RentRequests/RentRequests';
 import RequestedPackages from './Screens/DashBoard/RequestedPackages/RequestedPackages';
 import Home from './Screens/Home/Home';
 import Packages from './Screens/Packages/Packages';
-import Rent from './Screens/Rent/Rent';
 import Service from './Screens/Service/Service';
 
 
@@ -26,9 +25,8 @@ function App() {
         <NavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/buy" element={<Buy />}/>
-        <Route path="/rent" element={<Rent />}/>
-        <Route path="/buy/details" element={<BuyDetails />}/>
+        <Route path="/buyRent/*" element={<Buy />}/>
+        <Route path="/details" element={<BuyDetails />}/>
         <Route path="/packages" element={<Packages />}/>
         <Route path="/service" element={<Service />}/>
         <Route path="/contact" element={<ContactForm />}/>

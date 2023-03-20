@@ -15,7 +15,7 @@ function MyListings() {
                             <span>( 8 Listings Available)</span>
                         </h6>
                         <div className="card-bg">
-                            <Link className="my-listing-items">
+                            <Link to='/details' className="my-listing-items">
                                 <div className="card items-img">
                                     <img src={property} alt="" />
                                     <div className="property-tag">
@@ -46,7 +46,7 @@ function MyListings() {
                             </Link>
                         </div>
                         <div className="card-bg">
-                            <Link className="my-listing-items">
+                            <Link to='/details'  className="my-listing-items">
                                 <div className="card items-img">
                                     <img src={property} alt="" />
                                     <div className="property-tag">
@@ -77,7 +77,7 @@ function MyListings() {
                             </Link>
                         </div>
                         <div className="card-bg">
-                            <Link className="my-listing-items">
+                            <Link to='/details'  className="my-listing-items">
                                 <div className="card items-img">
                                     <img src={property} alt="" />
                                     <div className="property-tag">
@@ -114,7 +114,13 @@ function MyListings() {
                     <div className="my-listing-map">
                         {/* <iframe src="" title="description"></iframe> */}
                         <div className="map_wrapper">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7302.231854394116!2d90.4003407266515!3d23.778885856366898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77094eace8b%3A0x1cd8c2d9239b6cb7!2sMohakhali%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1679225785118!5m2!1sen!2sbd" allowFullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7302.231854394116!2d90.4003407266515!3d23.778885856366898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77094eace8b%3A0x1cd8c2d9239b6cb7!2sMohakhali%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1679225785118!5m2!1sen!2sbd" 
+                            allowFullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="iframe"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

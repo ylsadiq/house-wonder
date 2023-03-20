@@ -1,64 +1,81 @@
 .dashboard-container {
-    padding: 16.2rem 4rem 16.5rem 4rem ;
-    width: 100%;
-    margin: 0 auto;
+    padding: 16.2rem 2rem 16.5rem;
+    max-width: 144rem;
+    width  : 100%;
+    margin : 0 auto;
 }
-.dashboard-box{
-    display: grid;
+
+.dashboard-box {
+    display              : grid;
     grid-template-columns: 300px 1fr;
-    gap: 20px;
+    gap                  : 20px;
 }
-.dashboard-drawar{
+
+.dashboard-drawar {
     padding-bottom: 5rem;
 }
+
 .postUser img {
-    height: 12.2rem;
-    width: 12.2rem;
+    height       : 12.2rem;
+    width        : 12.2rem;
     border-radius: 50%;
     margin-bottom: 1.3rem;
 }
+
 .postUser h3 {
-    font-weight: bold;
-    font-size: 2.4rem;
-    line-height: 3rem;
-    color: var(--black);
+    font-weight  : bold;
+    font-size    : 2.4rem;
+    line-height  : 3rem;
+    color        : var(--black);
     margin-bottom: 4.2rem;
 }
-.post-item li:not(:last-child){
+
+.post-item li:not(:last-child) {
     margin-bottom: 3rem;
 }
+
 .nav-item>.nav-link.active {
-    font-weight: 600;
-    color: var(--black);
+    font-weight     : 600;
+    color           : var(--black);
     background-color: transparent;
 }
-.dropdown-wrapper{
+
+.dropdown-wrapper {
     height: 15rem;
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
     transition: all ease-in-out .3s;
 }
-.dropdown{
-    display: flex;
-    flex-direction: column;
+
+.dropdown {
+    display        : flex;
+    flex-direction : column;
     justify-content: flex-end;
-    margin-top: 6rem;
+    margin-top     : 6rem;
 }
-.dropdown .dropdown-link{
+
+.dropdown .dropdown-link {
     line-height: 3rem;
 }
-.arrow-down{
+
+.arrow-down {
     transform: rotate(180deg);
 }
-.nav-link svg{
-  margin-top: -.6rem;
-  margin-right: 1.5rem;
+
+.nav-link svg {
+    margin-top  : -.6rem;
+    margin-right: 1.5rem;
 }
-@media screen and (max-width: 767.98px){
-    .dashboard-drawar{
-        display: none;
+
+@media screen and (max-width: 1700px) {
+    .dashboard-container {
+        max-width: 120rem;
     }
 }
-@media screen and (min-width: 380px) and (max-width: 767.98px){
-    
+
+@media screen and (max-width: 767.98px) {
+    .dashboard-drawar {
+        display: none;
+    }
 }
