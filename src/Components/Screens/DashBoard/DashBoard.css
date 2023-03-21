@@ -40,24 +40,7 @@
     background-color: transparent;
 }
 
-.dropdown-wrapper {
-    height: 15rem;
-}
 
-.dropdown-toggle {
-    transition: all ease-in-out .3s;
-}
-
-.dropdown {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-end;
-    margin-top     : 6rem;
-}
-
-.dropdown .dropdown-link {
-    line-height: 3rem;
-}
 
 .arrow-down {
     transform: rotate(180deg);

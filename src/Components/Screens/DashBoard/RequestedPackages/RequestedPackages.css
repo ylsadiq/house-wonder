@@ -1,146 +1,172 @@
-.requested-header{
-    display: flex;
-    align-items: center;
+.requested-header {
+    display        : flex;
+    align-items    : center;
     justify-content: space-between;
-    padding: 2.4rem 0;
-}
-.dataTables_length {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    font-weight: bold;
-    margin-bottom: 2.8rem;
-}
-.dataTables_length select {
-    font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 1.2rem 2rem;
-    background-color: var(--white);
-    color: var(--gray-1);
-    max-width: 16rem;
-    border: 2px solid var(--gray-2);
-    border-radius: 1rem;
-}
-.dataTables_filter {
-    font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: var(--gray-1);
-    margin-bottom: 3rem;
-}
-.dataTables_filter input {
-    padding: 1.3rem 2.2rem;
-    border: 2px solid var(--gray-2);
-    border-radius: 1rem;
-    background-color: var(--white);
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: "Inter", sans-serif;
+    padding        : 2.4rem 0;
 }
 
-.table-header{
-    font-size: 1.4rem;
+.dataTables_length {
+    font-size    : 1.6rem;
+    line-height  : 2rem;
+    font-weight  : bold;
+    margin-bottom: 2.8rem;
+}
+
+.dataTables_length select {
+    font-weight     : normal;
+    font-size       : 1.5rem;
+    line-height     : 2rem;
+    padding         : 1.2rem 2rem;
+    background-color: var(--white);
+    color           : var(--gray-1);
+    max-width       : 16rem;
+    border          : 2px solid var(--gray-2);
+    border-radius   : 1rem;
+}
+
+.dataTables_filter {
+    font-weight  : normal;
+    font-size    : 1.5rem;
+    line-height  : 2.2rem;
+    color        : var(--gray-1);
+    margin-bottom: 3rem;
+}
+
+.dataTables_filter input {
+    padding         : 1.3rem 2.2rem;
+    border          : 2px solid var(--gray-2);
+    border-radius   : 1rem;
+    background-color: var(--white);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width          : 100%;
+    font-family    : "Inter", sans-serif;
+}
+
+.table-header {
+    font-size  : 1.4rem;
     font-weight: bold;
+}
+
+table td:last-child {
+    text-align: right;
 }
 
 table tbody td {
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 1rem;
-    color: var(--gray-1);
+    font-weight   : 500;
+    font-size     : 1.3rem;
+    line-height   : 1rem;
+    color         : var(--gray-1);
     letter-spacing: -0.02em;
-    padding: 3rem 0.8rem 3rem 0;
+    padding       : 3rem 0.8rem 3rem 0;
     vertical-align: middle;
-    font-weight: bold;
+    font-weight   : bold;
+    white-space: nowrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
+
 .accept-start {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    display       : inline-block;
+    font-weight   : 500;
+    font-size     : 1.2rem;
+    line-height   : 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--green-1);
-    padding: 0.4rem .8rem 0.4rem 0.4rem;
-    background: rgba(33, 150, 83, 0.05);
-    border-radius: 0.4rem;
-    min-width: 4rem;
-    text-align: center;
+    color         : var(--green-1);
+    padding       : 0.4rem .8rem 0.4rem 0.4rem;
+    background    : rgba(33, 150, 83, 0.05);
+    border-radius : 0.4rem;
+    min-width     : 4rem;
+    text-align    : center;
 }
-.pending-start{
-    display: inline-block;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+
+.pending-start {
+    display       : inline-block;
+    font-weight   : 500;
+    font-size     : 1.2rem;
+    line-height   : 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--orange);
-    padding: 0.4rem .8rem 0.4rem 0.4rem;
-    background: rgba(33, 150, 83, 0.05);
-    border-radius: 0.4rem;
-    min-width: 4rem;
-    text-align: center;
+    color         : var(--orange);
+    padding       : 0.4rem .8rem 0.4rem 0.4rem;
+    background    : rgba(33, 150, 83, 0.05);
+    border-radius : 0.4rem;
+    min-width     : 4rem;
+    text-align    : center;
 }
+
 .trash-btn {
-    background: rgba(235, 87, 87, 0.1);
+    background   : rgba(235, 87, 87, 0.1);
     border-radius: 0.4rem;
-    padding: .8rem;
-    border: none;
+    padding      : .8rem;
+    border       : none;
 }
-@media screen and (max-width: 767.98px){
-    .listing-title{
-        font-size: 3.5rem !important;
+
+@media screen and (max-width: 767.98px) {
+    .listing-title {
+        font-size  : 3.5rem !important;
         line-height: 5rem !important;
-        text-align: left;
+        text-align : left;
     }
-    .dashboard-box{
+
+    .dashboard-box {
         grid-template-columns: 1fr;
     }
-    .listing-title{
-        font-size: 3.5rem !important;
+
+    .listing-title {
+        font-size  : 3.5rem !important;
         line-height: 5rem !important;
     }
-    .listing-items{
+
+    .listing-items {
         display: block;
     }
-    .requested-header{
-        display: block !important;
-        margin: 0 auto;
+
+    .requested-header {
+        display    : block !important;
+        margin     : 0 auto;
         align-items: center !important;
     }
-    .dataTables_length{
-        display: block;
-    }
-    .dataTables_filter{
-        display: block;
-    }
-    .requested-header{
-        overflow: auto,
-    }
-    .table-container{
-    }
-    .table{
-        width: 90rem !important;
 
+    .dataTables_length {
+        display: block;
+    }
+
+    .dataTables_filter {
+        display: block;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table td {
+        min-width: 15rem;
+        /* width : 90rem !important; */
     }
 }
-@media screen and (max-width: 380px){
+
+@media screen and (max-width: 380px) {
     .table-container {
-        display: block;
-        width: 30rem;
-        overflow: auto;
-  /* height: 2em; */
+        display  : block;
+        width    : 30rem;
+        overflow : auto;
+        /* height: 2em; */
     }
-    .table-container 
-    ::-webkit-scrollbar {
-        width: 5px;
-        height: 8px;
+
+    .table-container ::-webkit-scrollbar {
+        width           : 5px;
+        height          : 8px;
         background-color: #aaa;
-      }
-      .table-container::-webkit-scrollbar-thumb {
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
         background: #000;
-      }
-    .table-row{}
+    }
+
+    .table-row {}
 }

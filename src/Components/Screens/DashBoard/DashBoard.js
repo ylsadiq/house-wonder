@@ -27,19 +27,23 @@ function DashBoard() {
                                 <li className='nav-item'><Link className='nav-link' to="/dashboard/changePassword"><Password />Change Password</Link></li>
                                 <li className='nav-item'><Link className='nav-link' to="/dashboard/RequestedPackages"> <Packages /> Requested Packages</Link></li>
                                 <li className='nav-item'><Link className='nav-link' to=""><Services /> Requested Services</Link></li>
-                                <li onClick={handleDropdown} id='dropdown-item' className='nav-item'>
-                                    <Link className='nav-link' to="">
-                                        <div className={` ${dropDown ? "dropdown-wrapper" : null}`}>
-                                            <Properties /> <span className={`${dropDown ? "dropdown-toggle" : null}`}>
-                                                <span>Requested properties <img className={`${dropDown ? "arrow-down" : null}`} src={arrowDown} alt="" /></span>
-                                                <ul className='dropdown'>
-                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="/dashboard/buyRequests">Buy Requests</Link></li>
-                                                    <li className='nav-item'><Link className='nav-link dropdown-link' to="/dashboard/rentRequests">Rent Requests</Link></li>
-                                                </ul>
-                                            </span>
-                                        </div>
-                                    </Link>
-
+                                <li className='nav-item d_lg_none'>
+                                    <div className="dropdown-wrapper">
+                                        <span className="dropdown-toggle nav-link" onClick={handleDropdown} >
+                                            <Properties />
+                                            Requested properties
+                                            &nbsp;
+                                            <img className={`${dropDown ? "arrow-down" : null}`} src={arrowDown} alt="" />
+                                        </span>
+                                        <ul className={`dropdown ${dropDown ? "show" : ''}`}>
+                                            <li className='nav-item'>
+                                                <Link className='nav-link dropdown-link' to="/dashboard/buyRequests">Buy Requests</Link>
+                                            </li>
+                                            <li className='nav-item'>
+                                                <Link className='nav-link dropdown-link' to="/dashboard/rentRequests">Rent Requests</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li className='nav-item'><Link className='nav-link' to=""><Logout /> Log Out </Link></li>
                             </ul>

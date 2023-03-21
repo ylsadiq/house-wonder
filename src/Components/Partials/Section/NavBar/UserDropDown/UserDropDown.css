@@ -1,99 +1,146 @@
-.user-dropdown-content{
+.user-dropdown {
     position: relative;
-    display: flex;
-    align-items: center;
-    transition: all ease-out .6s;
 }
-.user-dropdown-content:hover{
+
+.user-dropdown-content {
+    position   : relative;
+    display    : flex;
+    align-items: center;
+    transition : all ease-out .6s;
+    gap        : .5rem;
+}
+
+.user-dropdown-content:hover {
     cursor: pointer;
 }
-.user-img{
-    height: 7.6rem;
-    width: 7.6rem;
-    border-radius: 50%;
-    object-fit: cover;
+
+.user-dropdown-content .user-img {
+    height         : 5rem;
+    width          : 5rem;
+    border-radius  : 50%;
+    object-fit     : cover;
     object-position: center center;
 }
-.user-img img{
-    width: 100%;
+
+.user-dropdown-content .user-img img {
+    width : 100%;
     height: 100%;
 }
-.user-name h4{
-    display: inline-block;
+
+.user-name h4 {
+    display    : inline-block;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size  : 1.8rem;
     line-height: 2.4rem;
-    color: var(--black);
+    color      : var(--black);
     font-family: var(--fonts-2);
 }
-.user-arrow{
+
+.user-arrow {
     transition: all ease-out .3s;
-    transform: rotate(180deg);
+    transform : rotate(180deg);
 }
-.user-icon-rotate{
+
+.user-icon-rotate {
     transition: all ease-out .3s;
-    transform: rotate(360deg);
+    transform : rotate(360deg);
 }
-.user-login-info{
-    position: absolute;
-    top: 9rem;
-    right: 2rem;
-    width: 150px;
-    height: 120px;
-    display: flex;
-    align-items: center;
+
+.user-login-info {
+    position       : absolute;
+    top            : 8rem;
+    right          : 0;
+    width          : 17rem;
+    min-height     : 12rem;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    background: var(--white);
-    border: 1px solid #C4C4C4;
-    border-radius: 8px;
+    background     : var(--white);
+    border         : 1px solid #C4C4C4;
+    border-radius  : 8px;
 }
-.user-nav span{
-    display: grid;
-    grid-template-columns: 10px 1fr;
-    gap: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.user-hidden{
+
+.user-hidden {
     display: none;
 }
-.user-item{
-    display: flex;
-    align-items: center;
+
+.user-item {
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 
-.user-dropdown:hover .user-profile-content{
+.user-dropdown:hover .user-profile-content {
     background: var(--gray-1);
-    
 }
-.user-profile-content{
-    transition: all ease-in .3s;
-    padding: .6rem;
+
+.user-profile-content {
+    transition   : all ease-in .3s;
+    padding      : .6rem;
     border-radius: 4rem;
 }
-#dropdown-item{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+
+.dropdown-toggle {
+    position  : relative;
+    transition: all ease-in-out .3s;
 }
-.dropdown-toggle{
-    position: relative;
+
+.dropdown {
+    height      : 0;
+    opacity: 0;
+    padding-left: 3.5rem;
+    visibility: hidden;
+    overflow    : hidden;
 }
-.dropdown{
-    position: absolute;
-    top: 0rem;
-    height: 7rem;
+
+.dropdown.show {
+    height     : auto;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 2rem;
 }
-@media screen and (min-width: 1600px) {
-    .user-login-info{
-        padding: 1rem;
-        width: 200px;
-        height: 150px;
+
+.dropdown .dropdown-link {
+    line-height: 3rem;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .user-dropdown {
+        margin-top: 2rem;
     }
-}
-@media screen and (max-width: 767.98px){
-    .user-login-info{
+
+    .user-dropdown-content {
+        width: 100%;
+    }
+
+    .user-profile-content {
+        padding      : 0;
+        border-radius: 0;
+    }
+
+    .user-dropdown:hover .user-profile-content {
+        background: transparent;
+    }
+
+    .user-login-info {
+        right          : 0;
+        width          : 100%;
+        left           : 0;
+        min-height     : 12rem;
+        display        : flex;
+        align-items    : center;
+        justify-content: flex-start;
+        background     : var(--white);
+        border         : transparent;
+        border-radius  : 0;
+    }
+
+    .user-item {
+        justify-content: flex-start;
+    }
+
+    .user-login-info {
         padding: .7rem;
     }
 }
