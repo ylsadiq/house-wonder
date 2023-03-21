@@ -41,7 +41,7 @@
 
 table {
     border-collapse: collapse;
-    table-layout: fixed;
+    table-layout   : fixed;
     width          : 100%;
     font-family    : "Inter", sans-serif;
 }
@@ -64,9 +64,6 @@ table tbody td {
     padding       : 3rem 0.8rem 3rem 0;
     vertical-align: middle;
     font-weight   : bold;
-    white-space: nowrap;
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
 }
 
 .accept-start {
@@ -146,16 +143,14 @@ table tbody td {
 
     .table td {
         min-width: 15rem;
-        /* width : 90rem !important; */
     }
 }
 
 @media screen and (max-width: 380px) {
     .table-container {
-        display  : block;
-        width    : 30rem;
-        overflow : auto;
-        /* height: 2em; */
+        display : block;
+        width   : 30rem;
+        overflow: auto;
     }
 
     .table-container ::-webkit-scrollbar {
@@ -167,6 +162,4 @@ table tbody td {
     .table-container::-webkit-scrollbar-thumb {
         background: #000;
     }
-
-    .table-row {}
 }
