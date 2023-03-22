@@ -42,7 +42,10 @@
 }
 @media screen and (min-width: 1900px){
     .custom-container {
-        max-width: 140rem;
+        max-width: 175rem;
+        width: 100%;
+        padding: 10rem 0;
+        margin: auto;
     }
 }
 @media screen and (max-width: 767.98px){

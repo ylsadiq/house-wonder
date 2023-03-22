@@ -68,6 +68,7 @@
 }
 
 @media screen and (max-width: 1600px) {
+    
     .hero-details {
         padding-top: 24rem;
     }
@@ -168,7 +169,7 @@
 
 @media screen and (max-width: 340px) {
     .hero-details {
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
     .tab-input::after {
         right: -10px;

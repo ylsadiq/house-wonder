@@ -1,3 +1,8 @@
+.mylistings-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .search-contentiner {
     display        : flex;
     align-items    : center;

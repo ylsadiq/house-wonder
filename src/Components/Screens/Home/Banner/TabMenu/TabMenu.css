@@ -112,6 +112,7 @@
     line-height: 2.4rem;
     color      : var(--gray-1);
     border     : none;
+    width: 100%;
 }
 
 .property_search_box img {
@@ -163,6 +164,7 @@
 }
 
 .property_filter_search .grid_item:last-child {
+    display: flex;
     text-align: right;
 }
 
@@ -278,5 +280,10 @@
 
     .form_search .form_select {
         border: 2px solid var(--gray-1);
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .property_filter_search .grid_item:last-child{
+        display: none;
     }
 }
