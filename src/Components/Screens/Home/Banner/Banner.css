@@ -34,7 +34,7 @@
 
 .hero-box h1 {
     font-weight: 400;
-    font-size  : 7.2rem;
+    font-size  : 7.4rem;
     line-height: 9.9rem;
     text-align : center;
     color      : var(--white);
@@ -75,22 +75,23 @@
 
 @media screen and (max-width: 1280px) {
     .hero-details {
-        padding-top: 14rem;
+        padding-top: 4rem;
     }
 }
 
 @media screen and (max-width: 767.98px) {
     .hero-wrap {
-        margin-top: 4rem;
+        margin-top: 0;
     }
 
     .hero-details {
         padding-left : 2.4rem;
         padding-right: 2.4rem;
+        padding-top: 10rem;
     }
 
     .hero-box h1 {
-        font-size  : 3.8rem;
+        font-size  : 4rem;
         line-height: 6rem;
     }
 
@@ -112,6 +113,9 @@
 
     .tab-input::after {
         right: -150px;
+    }
+    .property_filter_search{
+        max-width: 34rem;
     }
 }
 
@@ -141,6 +145,10 @@
     .tab-input::after {
         right: -70px;
     }
+    .hero-box{
+        max-width  : 40rem;
+        width      : 100%;
+    }
 
 }
 
@@ -152,9 +160,16 @@
     .tab-container {
         margin-top: 1.5rem;
     }
+    .hero-box{
+        max-width  : 35rem;
+        width      : 100%;
+    }
 }
 
 @media screen and (max-width: 340px) {
+    .hero-details {
+        padding-top: 5rem;
+    }
     .tab-input::after {
         right: -10px;
     }
@@ -162,4 +177,24 @@
     .tab-container {
         margin-top: 1rem;
     }
+    .hero-box{
+        max-width  : 30rem;
+        width      : 100%;
+    }
+    .hero-box h1 {
+        padding-bottom: 1rem;
+    }
+    .hero-box p {
+        font-size  : 1.6rem;
+        line-height: 2.8rem;
+    }
+    .property_filter_wrapper{
+        margin-top: 10rem;
+        width: 30rem;
+    }
+    .property_search_box .search_input {
+        width: 20rem;
+    }
+
+
 }

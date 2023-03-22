@@ -1,9 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
-import { PROPERTY_CITY_AREAS_API, PROPERTY_PROPERTIES_API } from '../../../../../../Utilities/APIs/APIs';
+import { PROPERTY_CITY_AREAS_API } from '../../../../../../Utilities/APIs/APIs';
 import mapImage from '../../../../../../Assets/image/form/map.PNG'
-import FormHeading from '../FormHeading/FormHeading';
 
 function FirstForm({
     formStep, screenNumber, properyTypeCityArea, setProperyTypeCityArea, ownerAcquisition, setOwnerAcquisition, userPostAs, setUserPostAs, acquisition, setAcquisition, propertyHeader, setPropertyHeader, propertyPerspective, setpropertyPerspective, readyToMove, setReadyToMove,
@@ -11,9 +9,6 @@ function FirstForm({
 }) {
 
     const [check, setCheck] = useState(false);
-
-
-    const { consumer } = useSelector(state => state.auth)
 
     useEffect(() => {
         async function getProperyTypeCityArea() {
@@ -25,7 +20,7 @@ function FirstForm({
 
 
     const handleAvailable = (e) => {
-        setReadyToMove(e.target.value)
+        console.log();
         setReadyToMove(e.target.value)
         setPropertyAvailavleFrom(e.target.value)
         setCheck((prevCheck) => !prevCheck)
