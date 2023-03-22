@@ -149,7 +149,9 @@
     .luxury-details {
         order: 2;
     }
-
+    .luxury-block{
+        display: block;
+    }
     .luxury-img {
         max-width: 300px;
         width    : 100%;

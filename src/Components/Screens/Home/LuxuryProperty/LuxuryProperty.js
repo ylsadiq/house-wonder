@@ -17,7 +17,7 @@ function LuxuryProperty() {
         <div className="container-fluid">
             <div className="custom-container">
             <h1 className='section-title'>
-                <span className='luxury'>This is Luxry Property</span>
+                <span className='luxury'>This is Luxry <span className="luxury-block">Property</span></span>
             </h1>
             <div className="luxury-content">
                 <div className="luxury-details">

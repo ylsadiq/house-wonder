@@ -93,6 +93,7 @@
     margin-top: -0.4rem;
 }
 .card-body{
+    text-align: center;
     padding: 2rem 2.4rem 2.8rem 2.4rem;
 }
 .card-body h1{
@@ -121,18 +122,19 @@
 .card-body h6{
     margin-top: 1.6rem;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--black);
     margin-top: 1.6rem;
     margin-bottom: 0.4rem;
 }
 .listing-card>.card-body h2{
-    font-size: 1.5rem;
-    line-height: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
     text-align: left;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.05em;
     font-weight: 600;
     color: var(--black);
+    font-family: var(--fonts-2);
 }
 .card-body>.property-card-body{
     padding: 0;

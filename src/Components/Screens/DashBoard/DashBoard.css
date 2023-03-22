@@ -51,9 +51,9 @@
     margin-right: 1.5rem;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (min-width: 1600px) {
     .dashboard-container {
-        max-width: 120rem;
+        max-width: 175rem;
     }
 }
 

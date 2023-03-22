@@ -1,6 +1,6 @@
-.service_request {
+/* .service_request {
     padding: 0 8rem;
-}
+} */
 
 .service_request_content > * {
     margin-bottom: 2.4rem;
@@ -24,6 +24,7 @@
 }
 
 .service_request_content button {
+    display: block;
     width: 100%;
     margin-top: 4rem;
 }

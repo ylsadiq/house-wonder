@@ -37,6 +37,12 @@
         gap: 20px;
     }
     .post-btn{
+        margin-left: .8rem;
         display: block;
+    }
+    .my-profile-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }

@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import property from '../../../Assets/home/property image 1.png';
-import location from '../../../Assets/home/gps_fixed.svg'
+import location from '../../../Assets/home/gps_fixed.svg';
 
 import './MyListings.css';
+import { useState } from 'react';
 
 function MyListings() {
+    const [viewMap, setViewMap] = useState(false);
+    const handleMapProperty = () =>{
+        setViewMap(viewPropeties => !viewPropeties)
+    }
     return (
         <section className="mylistings-section">
             <div className="custom-container">
@@ -122,6 +127,9 @@ function MyListings() {
                             title="iframe"
                             ></iframe>
                         </div>
+                    </div>
+                    <div className="list_view_btn">
+                        <button className="btn btn-dark">Map View</button>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,6 @@
 .custom-container {
     max-width: 118rem;
     width: 100%;
-    padding: 10rem 0;
     margin: auto;
 }
 .looking-content{
@@ -49,6 +48,9 @@
     }
 }
 @media screen and (max-width: 767.98px){
+    .custom-container {
+        padding: 7rem 0;
+    }
     .Looking-property{
         padding: 0 2rem;
     }
