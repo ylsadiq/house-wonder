@@ -154,6 +154,14 @@
     position: relative;
 }
 
+.property_filter_search .grid_item:not(:last-child) {
+    display: none;
+}
+
+.property_filter_search.expanded .grid_item:not(:last-child) {
+    display: block;
+}
+
 .property_filter_search .grid_item:last-child {
     text-align: right;
 }
@@ -161,6 +169,10 @@
 .property_filter_search .grid_item:last-child img {
     cursor      : pointer;
     margin-right: 1.6rem;
+}
+
+.property_filter_search .flex_item:nth-child(1) .search-expand-btn {
+    display: none;
 }
 
 /* form input and label design */
@@ -201,24 +213,70 @@
         display: block;
     }
 
-    .property_filter_search .flex_container>*, .property_filter_search .flex_container>*:nth-child(1), .property_filter_search.expanded .flex_container>*:nth-child(1), .property_filter_search.expanded .flex_container>*:nth-child(2) {
+    .property_filter_search .flex_container>*,
+    .property_filter_search .flex_container>*:nth-child(1),
+    .property_filter_search .flex_container>*:nth-child(2),
+    .property_filter_search.expanded .flex_container>*:nth-child(1),
+    .property_filter_search.expanded .flex_container>*:nth-child(2) {
         width: 100%;
     }
 
-    .filter_select_group .search_btn {
-        display: none;
+    .property_filter_search .flex_item:nth-child(1) {
+        display              : grid;
+        grid-template-columns: 1fr 6rem;
+        align-items          : center;
     }
 
-    .property_filter_search, .property_filter_search.expanded {
+    .property_filter_search .flex_item:nth-child(1) .search-expand-btn {
+        display   : block;
+        position  : relative;
+        text-align: right;
+    }
+
+    .property_filter_search .flex_item:nth-child(1) .search-expand-btn::before {
+        content         : '';
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        bottom          : 0;
+        margin          : auto;
+        height          : 4rem;
+        width           : 0.2rem;
+        background-color: var(--gray-2);
+    }
+
+    .property_filter_search,
+    .property_filter_search.expanded {
         max-width: 100%;
         width    : 100%;
     }
 
     .property_filter_search .flex_container>*:nth-child(2)::before {
-        left: 4.2rem;
+        width: 0;
     }
 
     .property_filter_search.expanded .grid_container {
         grid-template-columns: 1fr;
+    }
+
+    .property_filter_search .grid_item {
+        display: none;
+    }
+
+    .property_filter_search.expanded .grid_item {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+    .property_filter_search.expanded .grid_item:nth-child(3)>img {
+        display: none;
+    }
+
+    .property_filter_search.expanded .grid_item:nth-child(3)>button {
+        width: 100%;
+    }
+
+    .form_search .form_select {
+        border: 2px solid var(--gray-1);
     }
 }

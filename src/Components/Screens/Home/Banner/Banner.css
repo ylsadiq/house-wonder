@@ -1,133 +1,165 @@
-.hero{
+.hero {
     position: relative;
 }
-.hero-container{
-    background-image: url(../../../../Assets/home/hero-img.svg);
-    height: calc(100vh - 15px);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.hero-container {
+    background-image   : url(../../../../Assets/home/hero-img.svg);
+    height             : calc(100vh - 15px);
+    background-repeat  : no-repeat;
+    background-size    : cover;
     background-position: center;
 }
-.hero-details{
-    padding-top: 34rem;
-    display: block;
-    flex-direction: column;
-    align-items: center;
+
+.hero-details {
+    padding-top    : 34rem;
+    display        : block;
+    flex-direction : column;
+    align-items    : center;
     justify-content: center;
-    height:75vh;
+    height         : 75vh;
 }
-.hero-text{
-    display: flex;
-    align-items: center;
+
+.hero-text {
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 
-.hero-box{
-    max-width: 69.9rem;
-    width: 100%;
-    margin: auto;
+.hero-box {
+    max-width  : 69.9rem;
+    width      : 100%;
+    margin     : auto;
     font-family: var(--fonts-1);
 }
-.hero-box h1{
+
+.hero-box h1 {
     font-weight: 400;
-    font-size: 7.2rem;
+    font-size  : 7.2rem;
     line-height: 9.9rem;
-    text-align: center;
-    color: var(--white);
+    text-align : center;
+    color      : var(--white);
 }
-.hero-box p{
+
+.hero-box p {
     font-weight: 400;
-    font-size: 2rem;
+    font-size  : 2rem;
     line-height: 3.4rem;
-    text-align: center;
-    color: var(--gray-3);
+    text-align : center;
+    color      : var(--gray-3);
     font-family: var(--fonts-2);
 }
-.tab-button img{
+
+.tab-button img {
     padding: 0 1.5rem;
 }
-@media screen and (max-width: 1900px){
-    
-}
-@media screen and (min-width: 1601px) and (max-width: 1900px){
-    .hero-details{
+
+@media screen and (max-width: 1900px) {
+    .hero-details {
         padding-top: 30rem;
     }
-    .hero-wrap{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+
+    .hero-wrap {
+        display        : flex;
+        flex-direction : column;
+        align-self     : center;
         justify-content: center;
-        margin-top: 12rem;
+        margin-top     : 12rem;
     }
 }
-@media screen and (min-width: 1281px) and (max-width: 1600px){
-    .hero-details{
+
+@media screen and (max-width: 1600px) {
+    .hero-details {
         padding-top: 24rem;
     }
 }
-@media screen and (max-width: 1280px){
-    .hero-details{
+
+@media screen and (max-width: 1280px) {
+    .hero-details {
         padding-top: 14rem;
     }
 }
-@media screen and (max-width: 767.98px){
-    .hero-box h1{
-        font-size: 3.8rem;
+
+@media screen and (max-width: 767.98px) {
+    .hero-wrap {
+        margin-top: 4rem;
+    }
+
+    .hero-details {
+        padding-left : 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    .hero-box h1 {
+        font-size  : 3.8rem;
         line-height: 6rem;
     }
-    .heroBox p{
+
+    .heroBox p {
         font-size: 1.6;
     }
-    .tab-button>button{
+
+    .tab-button>button {
         display: none;
     }
-    .search-box{
+
+    .search-box {
         max-width: 60rem;
     }
-    .tab-container{
+
+    .tab-container {
         margin-top: 3rem;
     }
-    .tab-input::after{
+
+    .tab-input::after {
         right: -150px;
     }
 }
-@media screen and (max-width: 620px){
-    .search-box{
+
+@media screen and (max-width: 620px) {
+    .search-box {
         max-width: 50rem;
     }
-    .tab-container{
+
+    .tab-container {
         margin-top: 2.5rem;
     }
-    .tab-input::after{
+
+    .tab-input::after {
         right: -130px;
     }
 }
-@media screen and (max-width: 520px){
-    .search-box{
+
+@media screen and (max-width: 520px) {
+    .search-box {
         max-width: 40rem;
     }
-    .tab-container{
+
+    .tab-container {
         margin-top: 2rem;
     }
-    .tab-input::after{
+
+    .tab-input::after {
         right: -70px;
     }
-    
+
 }
-@media screen and (max-width: 390px){
-    .tab-input::after{
+
+@media screen and (max-width: 390px) {
+    .tab-input::after {
         right: -20px;
     }
-    .tab-container{
+
+    .tab-container {
         margin-top: 1.5rem;
     }
 }
-@media screen and (max-width: 340px){
-    .tab-input::after{
+
+@media screen and (max-width: 340px) {
+    .tab-input::after {
         right: -10px;
     }
-    .tab-container{
+
+    .tab-container {
         margin-top: 1rem;
     }
 }

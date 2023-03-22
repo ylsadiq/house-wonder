@@ -146,11 +146,14 @@ table tbody td {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 414.98px) {
     .table-container {
         display : block;
-        width   : 30rem;
+        width   : 35rem;
         overflow: auto;
+    }
+    .table-container table {
+        width: 64rem;
     }
 
     .table-container ::-webkit-scrollbar {
