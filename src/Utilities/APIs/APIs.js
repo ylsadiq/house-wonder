@@ -1,4 +1,4 @@
-import { backendUrl, spacesBucketUrl } from "../../Constants";
+import { backendUrl, spacesBucketUrl } from "../../../Constants";
 
 export const BASE_URL = backendUrl
 export const IMAGE_URL = spacesBucketUrl
